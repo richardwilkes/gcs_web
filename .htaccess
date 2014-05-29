@@ -1,10 +1,10 @@
 RewriteEngine on
 RewriteRule ^downloads/current.txt   /current.txt       [R=301,L]
-RewriteRule ^downloads/gcs-.*        /                  [R=301,L]
-RewriteRule ^Welcome.html            /                  [R=301,L]
+RewriteRule ^downloads/gcs-.*        /index.php         [R=301,L]
+RewriteRule ^Welcome.html            /index.php         [R=301,L]
 RewriteRule ^Release_Notes           /release_notes.php [R=301,L]
-RewriteRule ^.git/.*                 /                  [R=301,L]
-RewriteRule ^wiki/.*                 /                  [R=301,L]
+RewriteRule ^.git/.*                 /index.php         [R=301,L]
+RewriteRule ^wiki/.*                 /index.php         [R=301,L]
 
 php_value upload_max_filesize 20M
 php_value post_max_size 20M

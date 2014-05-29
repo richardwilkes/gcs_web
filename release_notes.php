@@ -8,11 +8,11 @@
 		<?php include 'parts/page_header.php'; ?>
 		<div id="main">
 			<?php include 'parts/menu.php'; ?>
-			<div id="rcol">
+			<div id="right_column">
 				<div id="release_notes">
 					<h1>Release Notes</h1>
 					<h2>Version <span class="version">2011.01.02.1054</span><span class="release_date">January 2, 2011</span></h2>
-					<h3 class="first">Features Added</h3>
+					<h3>Features Added</h3>
 					<ul>
 						<li>Implemented support for measurement units other than the GURPS standard feet/inches and pounds.
 							User-entered values (including those entered into equipment, for example) can be in any of the
@@ -20,7 +20,7 @@
 							anywhere the program calculates values from these, a preference controls what unit is used for
 							the end result. Because of the bias of the rules for imperial units, using metric isn&#039;t a
 							clean proposition using this feature, but it is possible now. This covers:
-							<ul class="inner_ul">
+							<ul>
 								<li><a href="http://sourceforge.net/p/gcs-java/feature-requests/103">Feature #103</a>:
 									Allow Height &amp; Weight in metric units.</li>
 								<li><a href="http://sourceforge.net/p/gcs-java/feature-requests/95">Feature #95</a>:

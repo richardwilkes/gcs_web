@@ -8,11 +8,11 @@
 		<?php include 'parts/page_header.php'; ?>
 		<div id="main">
 			<?php include 'parts/menu.php'; ?>
-			<div id="rcol">
+			<div id="right_column">
 				<div id="release_notes">
 					<h1>In Progress Release Notes</h1>
 					<h2>Version <span class="version">4.0.0</span><span class="release_date">Not released yet</span></h2>
-					<h3 class="first">Features Added</h3>
+					<h3>Features Added</h3>
 					<ul>
 						<li>Added native launchers for each platform and embedded an appropriate Java Runtime Environment
 							so that GCS will always have the version it needs to run.</li>
