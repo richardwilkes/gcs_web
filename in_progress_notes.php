@@ -18,7 +18,7 @@
 							so that GCS will always have the version it needs to run.</li>
 						<li>Implemented a docking interface for all of the files. This replaces the old window-based
 							file management.</li>
-						<li>Replaced the Data menu with the Library Browser.</li>
+						<li>Replaced the Data menu with the Library Explorer.</li>
 						<li>Switched back to a version numbering scheme more familiar to most people, i.e.
 							&lt;major&gt;.&lt;minor&gt;.&lt;bugfix&gt;.</li>
 					</ul>
