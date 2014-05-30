@@ -145,6 +145,10 @@ h3 {
 	margin: 0.75em;
 }
 
+#links ul {
+	margin-left: 1.1em;
+}
+
 #links li {
 	font-size: 0.8em;
 	line-height: 2em;
