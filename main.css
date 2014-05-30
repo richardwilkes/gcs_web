@@ -17,9 +17,8 @@ body {
 
 ol, ul {
 	list-style: square;
-	margin-left: 1.1em;
 	list-style-position: outside;
-	margin-left: 1.1em;
+	margin-left: 2.2em;
 }
 
 p {
@@ -177,10 +176,6 @@ h3 {
 
 #release_notes h3 {
 	margin-left: 1em;
-}
-
-#release_notes ul {
-	margin-left: 2.2em;
 }
 
 #release_notes li {
