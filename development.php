@@ -17,8 +17,9 @@
 					<li><a href="git://code.trollworks.com/toolkit.git">git://code.trollworks.com/toolkit.git</a></li>
 				</ul>
 				<p>The code is compiled with <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java 8</a>.
-					Ant is used to build the product and produce the distribution bundles, however, I use the latest
-					<a href="http://www.eclipse.org/downloads/index-developer.php">Eclipse</a> release for daily development.</p>
+					<a href="http://ant.apache.org">Ant</a> is used to build the product and produce the distribution bundles,
+					however, I use the latest <a href="http://www.eclipse.org/downloads/index-developer.php">Eclipse</a> release
+					for daily development.</p>
 				<h2>Building from the command line</h2>
 				<p>1. Clone the source repositories:</p>
 				<div class="code">% git clone git://code.trollworks.com/apple_stubs.git
