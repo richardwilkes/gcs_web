@@ -33,10 +33,18 @@
 % ant
 % cd ../gcs
 % ant</div>
-				<p>3. Build a distribution package for your platform:</p>
+				<p>If you want to build a distribution package, you'll also need to:</p>
+				<p>3. Download one (or all) of the JRE packages I've already prepared for use and place them into the
+					<code>launcher</code> directory of the toolkit:</p>
+				<ul>
+					<li><a href="dev_artifacts/jre-mac.zip">JRE for Mac OS X</a></li>
+					<li><a href="dev_artifacts/jre-windows.zip">JRE for Windows</a></li>
+					<li><a href="dev_artifacts/jre-linux.zip">JRE for Linux</a></li>
+				</ul>
+				<p>4. Build a distribution package for your platform:</p>
 				<div class="code">% cd gcs
 % ant bundle</div>
-			</div>
+</div>
 		</div>
 		<?php include 'parts/footer.php'; ?>
 	</body>
