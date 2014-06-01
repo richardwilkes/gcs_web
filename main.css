@@ -232,7 +232,11 @@ h3 {
 }
 
 #linux_download {
-	background-image: url('images/linux.png');
+	background-image: url('images/linux-64.png');
+}
+
+#linux32_download {
+	background-image: url('images/linux-32.png');
 }
 
 #downloads a {

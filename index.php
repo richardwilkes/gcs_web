@@ -20,7 +20,8 @@
 						<h2>Download<br>Version 4.0</h2>
 						<p><a href="http://sourceforge.net/projects/gcs-java/files/gcs-4.0.0-mac.zip/download" id="macintosh_download" title="Click to download the Macintosh version"></a>
 							<a href="http://sourceforge.net/projects/gcs-java/files/gcs-4.0.0-windows.zip/download" id="windows_download" title="Click to download the Windows version"></a>
-							<a href="http://sourceforge.net/projects/gcs-java/files/gcs-4.0.0-linux.zip/download" id="linux_download" title="Click to download the Linux version"></a>
+							<a href="http://sourceforge.net/projects/gcs-java/files/gcs-4.0.0-linux.zip/download" id="linux_download" title="Click to download the 64-bit Linux version"></a>
+							<a href="http://sourceforge.net/projects/gcs-java/files/gcs-4.0.0-linux-32.zip/download" id="linux32_download" title="Click to download the 32-bit Linux version"></a>
 							<br>Released May 29, 2014</p>
 					</div>
 				</div>
