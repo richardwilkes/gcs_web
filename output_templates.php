@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>GURPS Character Sheet - Output Templates</title>
+		<?php include 'parts/head.php'; ?>
+	</head>
+	<body>
+		<?php include 'parts/page_header.php'; ?>
+		<div id="main">
+			<?php include 'parts/menu.php'; ?>
+			<div id="right_column">
+				<h1>Output Templates</h1>
+				<p>When GCS exports a character sheet to .html, it uses a modifiable template to create
+					the resulting file. This template is itself a .html file, and can be customized in
+					any way desired. An example can be found in
+					<strong>Library/Output Templates/template.html</strong>, the default HTML export
+					template. To change the HTML template used when exporting, check the
+					<strong>HTML Template Override</strong> box in the <strong>Sheet</strong> tab of
+					the <strong>Preferences</strong> window, and select the desired template file. If
+					you've selected an image for your character and the template you're using displays
+					it, a copy of the image will be saved with the character sheet.</p>
+				<h2>Creating New Templates</h2>
+				<p>Templates are .html files, and can contain any standard HTML, XHTML, XML, and CSS.
+					Instructions on inserting character information and other functions are given to
+					GCS with <strong>keys</strong>, which are of the form, <strong>@KEY</strong>.
+					(Note that this turns @ into a reserved character, and so you must use
+					<strong&amp;#64;</strong> if you wish the final character sheet to include one.)
+					Keys are case-sensitive and must be in all-caps. Incorrectly entered keys will
+					be replaced with <strong>Unidentified key!</strong> in the character sheet.</p>
+				<p>The following examples show the creation of a template that will output a plain
+					text list of the sort generally used to post characters on Internet forums. The
+					most basic keys are simply markers for a find-and-replace operation. The template...</p>
+				<div class="code">@NAME [@TOTAL_POINTS]
+Race: @RACE
+Sex: @GENDER
+Age: @AGE
+Size: @SIZE
+TL: @TL
+Unused Points: @EARNED_POINTS
+
+Attributes [@ATTRIBUTE_POINTS]
+ST @ST
+DX @DX
+IQ @IQ
+HT @HT
+
+HP @BASIC_HP
+FP @BASIC_FP
+PR @PERCEPTION
+WL @WILL
+
+Basic Speed: @BASIC_SPEED
+Basic Move: @BASIC_MOVE</div>
+				<p>...will output...</p>
+				<div class="code">Jack Jackson [120]
+Race: Human
+Sex: Male
+Age: 38
+Size: +0
+TL: 4
+
+Unused Points: 0
+
+Attributes [50]
+ST 12
+DX 10
+IQ 10
+HT 12
+
+HP 12
+FP 12
+PER 12
+WILL 10
+
+Basic Speed: 5.5
+Basic Move: 5</div>
+				<p>Lists of traits are generated with loop keys. When GCS encounters a loop, it
+					applies the template within the loop once for each item on the list. If one adds...</p>
+				<div class="code">@ADVANTAGES_LOOP_START
+@DESCRIPTION_PRIMARY @DESCRIPTION_MODIFIER_NOTES_PAREN [@POINTS]
+@ADVANTAGES_LOOP_END</div>
+				<p>...GCS will output...</p>
+				<div class="code">Advantages  [15]
+Fit  [5]
+High Pain Threshold  [10]
+Language: English  (Native, -6; Spoken (Native), +3; Written (Native), +3.) [0]
+Disadvantages  [-25]
+Bad Temper  (CR: 15 (Almost All The Time).) [-5]
+Charitable  (CR: 12 (Quite Often).) [-15]
+Skinny  [-5]</div>
+				<p>There are several different forms of the <strong>@DESCRIPTION</strong> keys.
+					<strong>_PRIMARY</strong> outputs the name only, <strong>_MODIFIER_NOTES</strong>
+					outputs those notes due to modifers, and <strong>_NOTES</strong> outputs the text
+					in the Notes field of the advantage, skill, or equipment. The latter two can also
+					have <strong>_PAREN</strong> appended to them to surround the output, if any, in
+					parenthesis. <strong>@DESCRIPTION_NOTES</strong> is omitted here because notes on
+					advantages are rules summaries, which, while useful on character sheets meant for
+					use in play, are not desirable in this template. Notes are, however, meaningful
+					on skills, equipment, and spells, and so are included in those loops:</p>
+				<div class="code">Skills [@SKILL_POINTS]
+@SKILLS_LOOP_START
+@DESCRIPTION_PRIMARY @DESCRIPTION_NOTES_PAREN @SL (@RSL) [@POINTS]
+@SKILLS_LOOP_END
+
+Spells [@SPELL_POINTS]
+@SPELLS_LOOP_START
+@DESCRIPTION_PRIMARY @DESCRIPTION_NOTES_PAREN @SL (@RSL) [@POINTS]
+@SPELLS_LOOP_END
+
+Equipment (@CARRIED_VALUE, @CARRIED_WEIGHT)
+@EQUIPMENT_LOOP_START
+@DESCRIPTION_PRIMARY, $@COST, @WEIGHT, x@QTY
+@EQUIPMENT_LOOP_END</div>
+				<p>Adding <strong>@NOTES</strong> to the end finishes this template.</p>
+				<h2>Available Keys</h2>
+				<h3>Description</h3>
+				<ul>
+					<li>AGE</li>
+					<li>BIRTHDAY</li>
+					<li>CAMPAIGN</li>
+					<li>CREATED_ON</li>
+					<li>EYES</li>
+					<li>GENDER</li>
+					<li>HAIR</li>
+					<li>HAND</li>
+					<li>HEIGHT</li>
+					<li>NAME</li>
+					<li>NOTES</li>
+					<li>PLAYER</li>
+					<li>PORTRAIT<br>(Outputs the file name of the character's portrait, which is saved in the same directory as the character sheet)</li>
+					<li>RACE</li>
+					<li>RELIGION</li>
+					<li>SIZE</li>
+					<li>SKIN</li>
+					<li>TITLE</li>
+					<li>TL</li>
+					<li>WEIGHT</li>
+				</ul>
+				<h3>Point Cost</h3>
+				<ul>
+					<li>ADVANTAGE_POINTS</li>
+					<li>DISADVANTAGE_POINTS</li>
+					<li>EARNED_POINTS</li>
+					<li>QUIRK_POINTS</li>
+					<li>RACE_POINTS</li>
+					<li>SKILL_POINTS</li>
+					<li>SPELL_POINTS</li>
+					<li>TOTAL_POINTS</li>
+				</ul>
+				<h3>Attributes</h3>
+				<ul>
+					<li>BASIC_MOVE</li>
+					<li>BASIC_SPEED</li>
+					<li>DX</li>
+					<li>FRIGHT_CHECK</li>
+					<li>HEARING</li>
+					<li>HT</li>
+					<li>IQ</li>
+					<li>PERCEPTION</li>
+					<li>ST</li>
+					<li>SWING</li>
+					<li>TASTE_SMELL</li>
+					<li>THRUST</li>
+					<li>TOUCH</li>
+					<li>VISION</li>
+					<li>WILL</li>
+				</ul>
+				<h3>HP and FP</h3>
+				<ul>
+					<li>BASIC_FP<br>(Maximum FP. For current FP, use <strong>FP</strong>)</li>
+					<li>BASIC_HP<br>(Maximum HP. For current HP, use <strong>HP</strong>)</li>
+					<li>DEAD</li>
+					<li>DEATH_CHECK_1</li>
+					<li>DEATH_CHECK_2</li>
+					<li>DEATH_CHECK_3</li>
+					<li>DEATH_CHECK_4</li>
+					<li>FP<br>(Current FP. For maximum FP, use <strong>BASIC_FP</strong>)</li>
+					<li>FP_COLLAPSE</li>
+					<li>HP<br>(Current HP. For maximum HP, use <strong>BASIC_HP</strong>)</li>
+					<li>HP_COLLAPSE</li>
+					<li>REELING</li>
+					<li>TIRED</li>
+					<li>UNCONSCIOUS</li>
+				</ul>
+				<h3>Encumbrance Loop</h3>
+				<ul>
+					<li>DODGE</li>
+					<li>ENCUMBRANCE_LOOP_END</li>
+					<li>ENCUMBRANCE_LOOP_START</li>
+					<li>LEVEL<br>(Level of encumbrance; None (0), Light (1), etc.)</li>
+					<li>MAX_LOAD</li>
+					<li>MOVE</li>
+				</ul>
+				<h3>Hit Location Loop</h3>
+				<ul>
+					<li>DR</li>
+					<li>PENALTY<br>(The penalty to attack this location deliberately)</li>
+					<li>ROLL<br>(Roll required to hit this location using random hit locations)</li>
+					<li>WHERE<br>(Name of the hit location)</li>
+				</ul>
+				<h3>Lifting &amp; Moving Things</h3>
+				<ul>
+					<li>BASIC_LIFT</li>
+					<li>CARRY_ON_BACK</li>
+					<li>ONE_HANDED_LIFT</li>
+					<li>RUNNING_SHOVE</li>
+					<li>SHIFT_SLIGHTLY</li>
+					<li>SHOVE</li>
+					<li>TWO_HANDED_LIFT</li>
+				</ul>
+				<h3>Advantages, Skills, and Spells Loops</h3>
+				<ul>
+					<li>ADVANTAGES_LOOP_END</li>
+					<li>ADVANTAGES_LOOP_START</li>
+					<li>CLASS<br>(Spell class)</li>
+					<li>COLLEGE</li>
+					<li>DESCRIPTION<br>(Produces output of the form below, excluding those sections not present)<br>
+						<div class="code">@DESCRIPTION_PRIMARY&lt;div class="note"&gt;@DESCRIPTION_MODIFIER_NOTES&lt;/div&gt;&lt;div class="note"&gt;@DESCRIPTION_NOTES&lt;/div&gt;</div></li>
+					<li>DESCRIPTION_MODIFIER_NOTES<br>(Outputs the notes generated by active modifiers. Can be appended with <strong>_PAREN</strong> to surround the output in parenthesis)</li>
+					<li>DESCRIPTION_NOTES<br>(Outputs the text in the Notes field of the item. Can be appended with <strong>_PAREN</strong> to surround the output in parenthesis)</li>
+					<li>DESCRIPTION_PRIMARY<br>(Outputs the name of the item)</li>
+					<li>DURATION</li>
+					<li>MANA_COST</li>
+					<li>MANA_MAINTAIN</li>
+					<li>POINTS</li>
+					<li>REF</li>
+					<li>RSL<br>(Relative skill level)</li>
+					<li>SL<br>(Skill level)</li>
+					<li>TIME_CAST</li>
+				</ul>
+				<h3>Melee Attacks Loop</h3>
+				<ul>
+					<li>BLOCK</li>
+					<li>DAMAGE</li>
+					<li>DESCRIPTION</li>
+					<li>LEVEL</li>
+					<li>MELEE_LOOP_END</li>
+					<li>MELEE_LOOP_START</li>
+					<li>PARRY</li>
+					<li>REACH</li>
+					<li>STRENGTH</li>
+					<li>USAGE</li>
+				</ul>
+				<h3>Ranged Attacks Loop</h3>
+				<ul>
+					<li>ACCURACY</li>
+					<li>BULK</li>
+					<li>DAMAGE</li>
+					<li>DESCRIPTION</li>
+					<li>LEVEL</li>
+					<li>RANGE</li>
+					<li>RANGED_LOOP_END</li>
+					<li>RANGED_LOOP_START</li>
+					<li>RECOIL</li>
+					<li>ROF</li>
+					<li>SHOTS</li>
+					<li>STRENGTH</li>
+					<li>USAGE</li>
+				</ul>
+				<h3>Equipment Loop</h3>
+				<ul>
+					<li>CARRIED_VALUE<br>(Includes preceding $)</li>
+					<li>CARRIED_WEIGHT</li>
+					<li>COST<br>(Does not include preceding $)</li>
+					<li>COST_SUMMARY<br>(Cost multiplied by qty)</li>
+					<li>DESCRIPTION</li>
+					<li>EQUIPMENT_LOOP_END</li>
+					<li>EQUIPMENT_LOOP_START</li>
+					<li>QTY</li>
+					<li>REF</li>
+					<li>STATE<br>(Whether the item is carried, equipped, or not carried)</li>
+					<li>WEIGHT</li>
+					<li>WEIGHT_SUMMARY<br>(Weight multiplied by qty)</li>
+				</ul>
+				<h3>Formatting</h3>
+				<ul>
+					<li>DEPTHx<br>(Outputs the current indention depth multiplied by the number appended to the key. For example, <strong>@DEPTHx12</strong> would output <strong>0</strong> for depth 0, <strong>12</strong> for depth 1, <strong>24</strong> for depth 2, etc.)</li>
+					<li>EVEN_ODD<br>(Alternates between outputting even or odd.)</li>
+					<li>STYLE_INDENT_WARNING<br>(Produces output of the form below if the current indentation depth is greater than 0, otherwise nothing)<br>
+						<div class="code">style="padding-left: @DEPTHx12px;</div></li>
+				</ul>
+			</div>
+		</div>
+		<?php include 'parts/footer.php'; ?>
+	</body>
+</html>
