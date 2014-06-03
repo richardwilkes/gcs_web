@@ -36,6 +36,7 @@ Sex: @GENDER
 Age: @AGE
 Size: @SIZE
 TL: @TL
+
 Unused Points: @EARNED_POINTS
 
 Attributes [@ATTRIBUTE_POINTS]
