@@ -28,7 +28,8 @@ p {
 }
 
 strong {
-	color: black;
+	font-weight: normal;
+	color: #505050;
 }
 
 a {
