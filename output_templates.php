@@ -24,7 +24,7 @@
 					Instructions on inserting character information and other functions are given to
 					GCS with <strong>keys</strong>, which are of the form, <strong>@KEY</strong>.
 					(Note that this turns <strong>@</strong> into a reserved character, and so you must
-					use <strong&amp;#64;</strong> if you wish the final character sheet to include one.)
+					use <strong>&amp;#64;</strong> if you wish the final character sheet to include one.)
 					Keys are case-sensitive and must be in all-caps. Incorrectly entered keys will
 					be replaced with <strong>Unidentified key!</strong> in the character sheet.</p>
 				<p>The following examples show the creation of a template that will output a plain
