@@ -6,6 +6,7 @@
 						<li><a href="in_progress_notes.php">&nbsp;&nbsp;... In Progress Notes</a></li>
 						<li><a href="faq.php">FAQ</a></li>
 						<li><a href="mailing_lists.php">Mailing Lists</a></li>
+						<li><a href="http://sourceforge.net/projects/gcs-java/reviews">Reviews</a></li>
 						<li><a href="http://sourceforge.net/p/gcs-java/bugs">Bug Reports</a></li>
 						<li><a href="http://sourceforge.net/p/gcs-java/feature-requests">Feature Requests</a></li>
 						<li><a href="development.php">Development Setup</a></li>
