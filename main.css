@@ -233,7 +233,11 @@ h3 {
 }
 
 #windows_download {
-	background-image: url('images/windows.png');
+	background-image: url('images/windows-64.png');
+}
+
+#windows32_download {
+	background-image: url('images/windows-32.png');
 }
 
 #linux_download {
