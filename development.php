@@ -39,7 +39,8 @@
 						<code>launcher</code> directory of the toolkit:</p>
 					<ul>
 						<li><a href="dev_artifacts/jre-mac.zip">JRE for Mac OS X</a></li>
-						<li><a href="dev_artifacts/jre-windows.zip">JRE for Windows</a></li>
+						<li><a href="dev_artifacts/jre-windows.zip">JRE for 64-bit Windows</a></li>
+						<li><a href="dev_artifacts/jre-windows-32.zip">JRE for 32-bit Windows</a></li>
 						<li><a href="dev_artifacts/jre-linux.zip">JRE for 64-bit Linux</a></li>
 						<li><a href="dev_artifacts/jre-linux-32.zip">JRE for 32-bit Linux</a></li>
 					</ul>
