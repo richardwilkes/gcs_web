@@ -15,7 +15,8 @@
 					<h3>Features Added</h3>
 					<ul>
 						<li>Partially localized for German, courtesy of Sebi. More to come in future releases.</li>
-						<li>Option/Alt-Right Arrow now expands the selected nodes and all of their children.</li>
+						<li>Option/Alt-Right Arrow now expands the selected nodes and all of their children in the Library
+							Explorer.</li>
 						<li>Added a button for the removal of attacks in the editor panel.</li>
 					</ul>
 					<h3>Bugs Fixed</h3>
