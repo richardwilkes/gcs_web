@@ -11,6 +11,34 @@
 			<div id="right_column">
 				<div id="release_notes">
 					<h1>Release Notes</h1>
+					<h2>Version <span class="version">4.0.1</span><span class="release_date">June 13, 2014</span></h2>
+					<h3>Features Added</h3>
+					<ul>
+						<li>Partially localized for German, courtesy of Sebi. More to come in future releases.</li>
+						<li>Option/Alt-Right Arrow now expands the selected nodes and all of their children.</li>
+						<li>Added a button for the removal of attacks in the editor panel.</li>
+					</ul>
+					<h3>Bugs Fixed</h3>
+					<ul>
+						<li>Fixed an issue that was causing odd behavior when a window other than the main GCS window
+							was focused and then the main GCS window was re-focused.</li>
+						<li>Fix for <a href="http://sourceforge.net/p/gcs-java/bugs/94">Bug #94</a>: Changed the prerequisites
+							in some data files to require the specialization of "Submachine Gun" and not "SMG", since that's
+							what the Guns skill uses.</li>
+					</ul>
+					<h3>Miscellaneous Changes</h3>
+					<ul>
+						<li>Revised the version checking so that older versions can now notice versions 4.0+ being available.</li>
+						<li>The height, weight and age fields no longer show anything when a zero is entered.</li>
+						<li>The Modifiers list in the item editor now uses the standard platform fonts rather than the fonts
+							set for the character sheet.</li>
+						<li>Switched the abbreviation for Metric Tons to just 't' (from 'mt').</li>
+						<li>Added 32-bit versions of GCS for Windows and Linux. (These were back-ported for 4.0 as well)</li>
+					</ul>
+					<h3>Data File Changes</h3>
+					<ul>
+						<li>Added some monsters/animals from the Basic Set and Magic. Contributed by Peter Th&#246;nell.</li>
+					</ul>
 					<h2>Version <span class="version">4.0</span><span class="release_date">May 29, 2014</span></h2>
 					<h3>Features Added</h3>
 					<ul>
