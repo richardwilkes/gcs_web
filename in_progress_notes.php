@@ -18,7 +18,8 @@
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
-						<li></li>
+						<li>Fixed resolution of skill levels from defaults to match what Sean Punch (aka Kromm) stated was the
+							intended resolution mechanism.</li>
 					</ul>
 					<h3>Miscellaneous Changes</h3>
 					<ul>
