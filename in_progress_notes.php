@@ -14,7 +14,7 @@
 					<h2>Version <span class="version">&lt;in development&gt;</span><span class="release_date">Not released yet</span></h2>
 					<h3>Features Added</h3>
 					<ul>
-						<li></li>
+						<li>Added a preference to allow the sheet to show total character points with or without the unspent points included.</li>
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
