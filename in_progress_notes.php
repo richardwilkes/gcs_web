@@ -27,6 +27,7 @@
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
+						<li>Fixed many misspellings in the data files, contributed by Valerio Crini.</li>
 						<li>Added the mutual exclusion that Combat Reflexes and Enhanced Time Sense have.</li>
 						<li>More complete version of Enhanced Time Sense, contributed by Travis Ellis.</li>
 					</ul>
