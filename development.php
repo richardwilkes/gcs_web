@@ -30,7 +30,6 @@
 					<div class="code">% cd apple_stubs
 % ant
 % cd ../toolkit
-% ant annotations
 % ant
 % cd ../gcs
 % ant</div>
