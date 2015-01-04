@@ -14,12 +14,11 @@
 					<h2>Version <span class="version">&lt;in development&gt;</span><span class="release_date">Not released yet</span></h2>
 					<h3>Features Added</h3>
 					<ul>
-						<li>Added a preference to allow the sheet to show total character points with or without the unspent points included.</li>
+						<li></li>
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
-						<li>Fixed resolution of skill levels from defaults to match what Sean Punch (aka Kromm) stated was the
-							intended resolution mechanism.</li>
+						<li></li>
 					</ul>
 					<h3>Miscellaneous Changes</h3>
 					<ul>
@@ -27,9 +26,7 @@
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
-						<li>Fixed many misspellings in the data files, contributed by Valerio Crini.</li>
-						<li>Added the mutual exclusion that Combat Reflexes and Enhanced Time Sense have.</li>
-						<li>More complete version of Enhanced Time Sense, contributed by Travis Ellis.</li>
+						<li></li>
 					</ul>
 				</div>
 			</div>

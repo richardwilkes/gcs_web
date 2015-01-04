@@ -1,3 +1,36 @@
+## Release Notes for Version 4.0.2 - January 4, 2015
+
+### Features Added
+
+- Updated localization: German.
+- New localization: Russian.
+- Added a preference to allow the use of the GURPS metric conversion rules from B9.
+  This is primarily for display purposes at this point. While data entry has been
+  allowed in varied units for quite some time now, it is still preferred that the
+  data be entered to exactly match the rulebooks (i.e. imperial units, not metric)
+  if you intend to share data files.
+- Added a preference to allow the sheet to show total character points with or
+  without the unspent points included.
+
+### Bugs Fixed
+
+- Fixed resolution of skill levels from defaults to match what Sean Punch
+  (aka Kromm) stated was the intended resolution mechanism.
+
+### Data File Changes
+
+- Removed TL from the Naturalist skill.
+- Fixed the defaults for Mechanic.
+- Additions to the data files from Horror, along with miscellaneous fixes in the existing Horror entries.
+- Fixed Ultra Tech Reflec and Monocrys armor.
+- Added additional varieties of suppressors from High Tech.
+- Fixed an incorrect cost for the Vague modifier that existed in some advantages.
+- Fixed a missing skill bonus for the Flexibility advantage.
+- Added some missing equipment from the Basic Set.
+- Fixed many misspellings in the data files.
+- Added the mutual exclusion that Combat Reflexes and Enhanced Time Sense have.
+- More complete version of Enhanced Time Sense.
+
 ## Release Notes for Version 4.0.1 - June 13, 2014
 
 ### Features Added

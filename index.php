@@ -17,13 +17,13 @@
 				<div class="box">
 					<img id="logo" src="images/logo.gif" title="GURPS Character Sheet" />
 					<div id="downloads">
-						<h2>Download<br>Version 4.0.1</h2>
-						<p><a href="http://sourceforge.net/projects/gcs-java/files/gcs-4.0.1-mac.zip/download" id="macintosh_download" title="Click to download the Macintosh version"></a>
-							<a href="http://sourceforge.net/projects/gcs-java/files/gcs-4.0.1-windows.zip/download" id="windows_download" title="Click to download the 64-bit Windows version"></a>
-							<a href="http://sourceforge.net/projects/gcs-java/files/gcs-4.0.1-windows-32.zip/download" id="windows32_download" title="Click to download the 32-bit Windows version"></a>
-							<a href="http://sourceforge.net/projects/gcs-java/files/gcs-4.0.1-linux.zip/download" id="linux_download" title="Click to download the 64-bit Linux version"></a>
-							<a href="http://sourceforge.net/projects/gcs-java/files/gcs-4.0.1-linux-32.zip/download" id="linux32_download" title="Click to download the 32-bit Linux version"></a>
-							<br>Released June 13, 2014</p>
+						<h2>Download<br>Version 4.0.2</h2>
+						<p><a href="http://sourceforge.net/projects/gcs-java/files/gcs-4.0.2-mac.zip/download" id="macintosh_download" title="Click to download the Macintosh version"></a>
+							<a href="http://sourceforge.net/projects/gcs-java/files/gcs-4.0.2-windows.zip/download" id="windows_download" title="Click to download the 64-bit Windows version"></a>
+							<a href="http://sourceforge.net/projects/gcs-java/files/gcs-4.0.2-windows-32.zip/download" id="windows32_download" title="Click to download the 32-bit Windows version"></a>
+							<a href="http://sourceforge.net/projects/gcs-java/files/gcs-4.0.2-linux.zip/download" id="linux_download" title="Click to download the 64-bit Linux version"></a>
+							<a href="http://sourceforge.net/projects/gcs-java/files/gcs-4.0.2-linux-32.zip/download" id="linux32_download" title="Click to download the 32-bit Linux version"></a>
+							<br>Released January 4, 2015</p>
 					</div>
 				</div>
 				<p>I am looking for volunteers to review the data files, find any mistakes or missing bits, make the necessary

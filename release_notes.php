@@ -11,6 +11,35 @@
 			<div id="right_column">
 				<div id="release_notes">
 					<h1>Release Notes</h1>
+					<h2>Version <span class="version">4.0.2</span><span class="release_date">January 4, 2015</span></h2>
+					<h3>Features Added</h3>
+					<ul>
+						<li>Updated localization: German.</li>
+						<li>New localization: Russian.</li>
+						<li>Added a preference to allow the use of the GURPS metric conversion rules from B9. This is primarily for display purposes at this point.
+							While data entry has been allowed in varied units for quite some time now, it is still preferred that the data be entered to exactly
+							match the rulebooks (i.e. imperial units, not metric) if you intend to share data files.</li>
+						<li>Added a preference to allow the sheet to show total character points with or without the unspent points included.</li>
+					</ul>
+					<h3>Bugs Fixed</h3>
+					<ul>
+						<li>Fixed resolution of skill levels from defaults to match what Sean Punch (aka Kromm) stated was the
+							intended resolution mechanism.</li>
+					</ul>
+					<h3>Data File Changes</h3>
+					<ul>
+						<li>Removed TL from the Naturalist skill.</li>
+						<li>Fixed the defaults for Mechanic.</li>
+						<li>Additions to the data files from Horror, along with miscellaneous fixes in the existing Horror entries.</li>
+						<li>Fixed Ultra Tech Reflec and Monocrys armor.</li>
+						<li>Added additional varieties of suppressors from High Tech.</li>
+						<li>Fixed an incorrect cost for the Vague modifier that existed in some advantages.</li>
+						<li>Fixed a missing skill bonus for the Flexibility advantage.</li>
+						<li>Added some missing equipment from the Basic Set.</li>
+						<li>Fixed many misspellings in the data files.</li>
+						<li>Added the mutual exclusion that Combat Reflexes and Enhanced Time Sense have.</li>
+						<li>More complete version of Enhanced Time Sense.</li>
+					</ul>
 					<h2>Version <span class="version">4.0.1</span><span class="release_date">June 13, 2014</span></h2>
 					<h3>Features Added</h3>
 					<ul>
