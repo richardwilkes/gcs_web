@@ -19,6 +19,7 @@
 					<h3>Bugs Fixed</h3>
 					<ul>
 						<li>Don't permit the metric rules preference to affect non-metric calculation and display of Basic Lift and Encumbrance.</li>
+						<li>Fixed saving of Technique difficulty, which was broken by an earlier update for localization.</li>
 					</ul>
 					<h3>Miscellaneous Changes</h3>
 					<ul>
@@ -26,7 +27,9 @@
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
-						<li></li>
+						<li>Fixed the prerequisites for Pharmacy/TL (Herbal).</li>
+						<li>Fixed the modifiers for Chronic Pain.</li>
+						<li>Added the Tough Skin modifier to Damage Resistance.</li>
 					</ul>
 				</div>
 			</div>
