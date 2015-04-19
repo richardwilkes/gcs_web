@@ -28,10 +28,10 @@
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
-						<li>Fixed the prerequisites for Pharmacy/TL (Herbal).</li>
-						<li>Fixed the modifiers for Chronic Pain.</li>
-						<li>Added the Tough Skin modifier to Damage Resistance.</li>
-						<li>Fix defaults for Public Speaking.</li>
+						<li>Fixed the prerequisites for the skill Pharmacy/TL (Herbal) and the spell Clean.</li>
+						<li>Fixed the modifiers for the disadvantage Chronic Pain.</li>
+						<li>Added the Tough Skin modifier to the advantage Damage Resistance.</li>
+						<li>Fixed defaults for the skill Public Speaking.</li>
 					</ul>
 				</div>
 			</div>
