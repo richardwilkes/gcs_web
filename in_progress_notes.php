@@ -18,7 +18,7 @@
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
-						<li></li>
+						<li>Don't permit the metric rules preference to affect non-metric calculation and display of Basic Lift and Encumbrance.</li>
 					</ul>
 					<h3>Miscellaneous Changes</h3>
 					<ul>
