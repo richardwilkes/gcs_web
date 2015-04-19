@@ -31,6 +31,7 @@
 						<li>Fixed the prerequisites for Pharmacy/TL (Herbal).</li>
 						<li>Fixed the modifiers for Chronic Pain.</li>
 						<li>Added the Tough Skin modifier to Damage Resistance.</li>
+						<li>Fix defaults for Public Speaking.</li>
 					</ul>
 				</div>
 			</div>
