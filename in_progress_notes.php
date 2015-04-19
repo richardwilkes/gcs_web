@@ -32,7 +32,7 @@
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
-						<li>Fixed the prerequisites for the skill Pharmacy/TL (Herbal) and the spells Clean and Copy.</li>
+						<li>Fixed the prerequisites for the skill Pharmacy/TL (Herbal) and the spells Geyser, Clean and Copy.</li>
 						<li>Fixed the modifiers for the disadvantage Chronic Pain.</li>
 						<li>Added the Tough Skin modifier to the advantage Damage Resistance.</li>
 						<li>Fixed defaults for the skill Public Speaking.</li>
