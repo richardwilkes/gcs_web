@@ -15,6 +15,10 @@
 					<h3>Features Added</h3>
 					<ul>
 						<li>New localization: Spanish.</li>
+						<li>The user can now force GCS to use a specific language in its user interface by setting an environment variable named <b>GCS_LANGUAGE</b> to an appropriate language code.
+							As of this point in time, GCS has translations for German (<b>GCS_LANGAUGE=de</b>), Russian (<b>GCS_LANGUAGE=ru</b>), and Spanish (<b>GCS_LANGUAGE=es</b>) in addition to
+							its native American English. Using a value that is unrecognized will result in American English being used. By default (i.e. if this environment variable is not set), GCS
+							attempts to use the default language for the system.</li>
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
