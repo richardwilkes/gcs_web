@@ -39,6 +39,7 @@
 						<li>Added the Tough Skin modifier to the advantage Damage Resistance.</li>
 						<li>Fixed defaults for the skill Public Speaking.</li>
 						<li>Marked the Reputation advantage as rounding down.</li>
+						<li>Shields now list their attack usage as 'Shield Bash' rather than being blank.</li>
 					</ul>
 				</div>
 			</div>
