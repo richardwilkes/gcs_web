@@ -1,3 +1,40 @@
+## Release Notes for Version 4.1.0 - April 19, 2015
+
+### Features Added
+
+- New localization: Spanish.
+- The user can now force GCS to use a specific language in its user interface by setting
+  an environment variable named **GCS_LANGUAGE** to an appropriate language code. As of
+  this point in time, GCS has translations for German (**GCS_LANGAUGE=de**), Russian
+  (**GCS_LANGUAGE=ru**), and Spanish (**GCS_LANGUAGE=es**) in addition to its native
+  American English. Using a value that is unrecognized will result in American English
+  being used. By default (i.e. if this environment variable is not set), GCS attempts to
+  use the default language for the system.
+- Added the ability to control which direction rounding occurs for the point cost of
+  advantages & disadvantages. The default is round up, which is the GURPS default for
+  most things. However, there are some things, like Reputation, which explicitly state
+  they should be rounded down. This new setting allows that.
+
+### Bugs Fixed
+
+- Don't permit the metric rules preference to affect non-metric calculation and display
+  of Basic Lift and Encumbrance.
+- Fixed saving of Technique difficulty, which was broken by an earlier update for localization.
+- If a character has multiple races, they are now added together for cost purposes, rather
+  than just using the cost for the last one listed.
+- Striking Strength is now properly accounted for when determining whether a penalty applies
+  for not meeting the minimum required strength for a weapon.
+
+### Data File Changes
+
+- Fixed the prerequisites for the skill Pharmacy/TL (Herbal) and the spells Geyser, Clean and
+  Copy.
+- Fixed the modifiers for the disadvantage Chronic Pain.
+- Added the Tough Skin modifier to the advantage Damage Resistance.
+- Fixed defaults for the skill Public Speaking.
+- Marked the Reputation advantage as rounding down.
+- Shields now list their attack usage as 'Shield Bash' rather than being blank.
+
 ## Release Notes for Version 4.0.2 - January 4, 2015
 
 ### Features Added
