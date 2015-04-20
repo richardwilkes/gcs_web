@@ -27,6 +27,7 @@
 						<li>Don't permit the metric rules preference to affect non-metric calculation and display of Basic Lift and Encumbrance.</li>
 						<li>Fixed saving of Technique difficulty, which was broken by an earlier update for localization.</li>
 						<li>If a character has multiple races, they are now added together for cost purposes, rather than just using the cost for the last one listed.</li>
+						<li>Striking Strength is now properly accounted for when determining whether a penalty applies for not meeting the minimum required strength for a weapon.</li>
 					</ul>
 					<h3>Miscellaneous Changes</h3>
 					<ul>
