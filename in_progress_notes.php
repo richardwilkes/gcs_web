@@ -29,10 +29,6 @@
 						<li>If a character has multiple races, they are now added together for cost purposes, rather than just using the cost for the last one listed.</li>
 						<li>Striking Strength is now properly accounted for when determining whether a penalty applies for not meeting the minimum required strength for a weapon.</li>
 					</ul>
-					<h3>Miscellaneous Changes</h3>
-					<ul>
-						<li></li>
-					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
 						<li>Fixed the prerequisites for the skill Pharmacy/TL (Herbal) and the spells Geyser, Clean and Copy.</li>
