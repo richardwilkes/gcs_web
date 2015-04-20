@@ -19,6 +19,8 @@
 							As of this point in time, GCS has translations for German (<b>GCS_LANGAUGE=de</b>), Russian (<b>GCS_LANGUAGE=ru</b>), and Spanish (<b>GCS_LANGUAGE=es</b>) in addition to
 							its native American English. Using a value that is unrecognized will result in American English being used. By default (i.e. if this environment variable is not set), GCS
 							attempts to use the default language for the system.</li>
+						<li>Added the ability to control which direction rounding occurs for the point cost of advantages & disadvantages. The default is round up, which is the GURPS default for
+							most things. However, there are some things, like Reputation, which explicitly state they should be rounded down. This new setting allows that.</li>
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
@@ -36,6 +38,7 @@
 						<li>Fixed the modifiers for the disadvantage Chronic Pain.</li>
 						<li>Added the Tough Skin modifier to the advantage Damage Resistance.</li>
 						<li>Fixed defaults for the skill Public Speaking.</li>
+						<li>Marked the Reputation advantage as rounding down.</li>
 					</ul>
 				</div>
 			</div>
