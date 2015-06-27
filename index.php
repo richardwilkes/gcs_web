@@ -18,11 +18,11 @@
 					<img id="logo" src="images/logo.gif" title="GURPS Character Sheet" />
 					<div id="downloads">
 						<h2>Download<br>Version 4.1.0</h2>
-						<p><a href="http://sourceforge.net/projects/gcs-java/files/gcs-4.1.0-mac.zip/download" id="macintosh_download" title="Click to download the Macintosh version"></a>
-							<a href="http://sourceforge.net/projects/gcs-java/files/gcs-4.1.0-windows.zip/download" id="windows_download" title="Click to download the 64-bit Windows version"></a>
-							<a href="http://sourceforge.net/projects/gcs-java/files/gcs-4.1.0-windows-32.zip/download" id="windows32_download" title="Click to download the 32-bit Windows version"></a>
-							<a href="http://sourceforge.net/projects/gcs-java/files/gcs-4.1.0-linux.zip/download" id="linux_download" title="Click to download the 64-bit Linux version"></a>
-							<a href="http://sourceforge.net/projects/gcs-java/files/gcs-4.1.0-linux-32.zip/download" id="linux32_download" title="Click to download the 32-bit Linux version"></a>
+						<p><a href="/downloads/gcs-4.1.0-mac.zip" id="macintosh_download" title="Click to download the Macintosh version"></a>
+							<a href="/downloads/gcs-4.1.0-windows.zip" id="windows_download" title="Click to download the 64-bit Windows version"></a>
+							<a href="/downloads/gcs-4.1.0-windows-32.zip" id="windows32_download" title="Click to download the 32-bit Windows version"></a>
+							<a href="/downloads/gcs-4.1.0-linux.zip" id="linux_download" title="Click to download the 64-bit Linux version"></a>
+							<a href="/downloads/gcs-4.1.0-linux-32.zip" id="linux32_download" title="Click to download the 32-bit Linux version"></a>
 							<br>Released April 19, 2015</p>
 					</div>
 				</div>
