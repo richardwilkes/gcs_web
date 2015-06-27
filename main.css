@@ -87,7 +87,7 @@ a:hover {
 
 #left_column {
 	position: relative;
-	width: 11em;
+	width: 12em;
 	float: left;
 	font-size: 0.9em;
 }
@@ -108,7 +108,7 @@ a:hover {
 #menu a {
 	display: block;
 	position: relative;
-	width: 10em;
+	width: 11em;
 	height: 1em;
 	padding: 0.5em;
 	margin-bottom: 1px;
