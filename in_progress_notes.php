@@ -22,7 +22,7 @@
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
-						<li></li>
+						<li>Fixed missing defaults in the Artist skills.</li>
 					</ul>
 				</div>
 			</div>
