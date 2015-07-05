@@ -11,6 +11,17 @@
 			<div id="right_column">
 				<div id="release_notes">
 					<h1>Release Notes</h1>
+					<h2>Version <span class="version">4.1.1</span><span class="release_date">July 4, 2015</span></h2>
+					<h3>Bugs Fixed</h3>
+					<ul>
+						<li>A crash on Ubuntu 15.04 caused by that OS setting an environment variable which was injecting bad code into all Java-based apps has been fixed by forcibly removing that particular environment variable if it is present.</li>
+						<li>Notes in templates now wrap at a reasonable width.</li>
+					</ul>
+					<h3>Data File Changes</h3>
+					<ul>
+						<li>Fixed missing defaults in the Artist skills.</li>
+						<li>Removed forced line wrapping in notes of various races.</li>
+					</ul>
 					<h2>Version <span class="version">4.1.0</span><span class="release_date">April 19, 2015</span></h2>
 					<h3>Features Added</h3>
 					<ul>

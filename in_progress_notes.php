@@ -18,12 +18,11 @@
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
-						<li>Notes in templates now wrap at a reasonable width.</li>
+						<li></li>
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
-						<li>Fixed missing defaults in the Artist skills.</li>
-						<li>Removed forced line wrapping in notes of various races.</li>
+						<li></li>
 					</ul>
 				</div>
 			</div>

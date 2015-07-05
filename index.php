@@ -17,13 +17,13 @@
 				<div class="box">
 					<img id="logo" src="images/logo.gif" title="GURPS Character Sheet" />
 					<div id="downloads">
-						<h2>Download<br>Version 4.1.0</h2>
-						<p><a href="/downloads/4.1.0/gcs-4.1.0-mac.zip" id="macintosh_download" title="Click to download the Macintosh version"></a>
-							<a href="/downloads/4.1.0/gcs-4.1.0-windows.zip" id="windows_download" title="Click to download the 64-bit Windows version"></a>
-							<a href="/downloads/4.1.0/gcs-4.1.0-windows-32.zip" id="windows32_download" title="Click to download the 32-bit Windows version"></a>
-							<a href="/downloads/4.1.0/gcs-4.1.0-linux.zip" id="linux_download" title="Click to download the 64-bit Linux version"></a>
-							<a href="/downloads/4.1.0/gcs-4.1.0-linux-32.zip" id="linux32_download" title="Click to download the 32-bit Linux version"></a>
-							<br>Released April 19, 2015</p>
+						<h2>Download<br>Version 4.1.1</h2>
+						<p><a href="/downloads/4.1.1/gcs-4.1.1-mac.zip" id="macintosh_download" title="Click to download the Macintosh version"></a>
+							<a href="/downloads/4.1.1/gcs-4.1.1-windows.zip" id="windows_download" title="Click to download the 64-bit Windows version"></a>
+							<a href="/downloads/4.1.1/gcs-4.1.1-windows-32.zip" id="windows32_download" title="Click to download the 32-bit Windows version"></a>
+							<a href="/downloads/4.1.1/gcs-4.1.1-linux.zip" id="linux_download" title="Click to download the 64-bit Linux version"></a>
+							<a href="/downloads/4.1.1/gcs-4.1.1-linux-32.zip" id="linux32_download" title="Click to download the 32-bit Linux version"></a>
+							<br>Released July 4, 2015</p>
 					</div>
 				</div>
 				<p>I am looking for volunteers to review the data files, find any mistakes or missing bits, make the necessary
