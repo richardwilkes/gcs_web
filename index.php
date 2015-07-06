@@ -27,7 +27,7 @@
 					</div>
 				</div>
 
-				<div class="note">
+				<div id="note">
 					<h1>Note!</h1>
 					<p>I've noticed that downloading the GCS zip file on Windows 7+ using Chrome (and possibly other browsers) now shows a message stating
 						the file "is not commonly downloaded and could be dangerous". Some research shows that this is due to the fact that I am now hosting the
