@@ -26,6 +26,20 @@
 							<br>Released July 4, 2015</p>
 					</div>
 				</div>
+
+				<h3>Note!</h3>
+				<ul>
+					<li>I've noticed that downloading the GCS zip file on Windows 7+ using Chrome (and possibly other browsers) now shows a message stating
+						the file "is not commonly downloaded and could be dangerous". Some research shows that this is due to the fact that I am now hosting the
+						software directly on my server rather than on a hosting service like SourceForge and also because I do not digitally sign the executable,
+						which costs money each year. If this bothers you, you are welcome to download the source and build it yourself.</li>
+					<li>A similar issue exists on Mac OS X where I also do not digitally sign the application, so you will need to either "allow apps downloaded
+						from anywhere" (inside the "Security &amp; Privacy" system preferences) &mdash; which I don't recommend &mdash; or right-click on the
+						application and select "Open", which seems to override the default behavior you get when double-clicking. If you do this latter step once,
+						it should remember and not bother you again. Just as with the Windows problem above, if this bothers you, you are welcome to download the
+						source and build it yourself.</li>
+				</ul>
+
 				<p>I am looking for volunteers to review the data files, find any mistakes or missing bits, make the necessary
 					updates, and send them to me for inclusion in the next update. If you'd like to help out,
 					<a href="mailto:rich@trollworks.com">contact me</a>.</p> 
