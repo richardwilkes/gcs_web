@@ -13,6 +13,10 @@
 				<p>GURPS Character Sheet (GCS) is a stand-alone, interactive, character sheet editor that allows you to build
 					characters for the <a href="http://www.sjgames.com/gurps">GURPS 4th Edition</a> roleplaying game system. This
 					site is the home for GCS, which was written by Richard A. Wilkes.</p>
+
+				<p>I am looking for volunteers to review the data files, find any mistakes or missing bits, make the necessary
+					updates, and send them to me for inclusion in the next update. If you'd like to help out,
+					<a href="mailto:rich@trollworks.com">contact me</a>.</p> 
 	
 				<div class="box">
 					<img id="logo" src="images/logo.gif" title="GURPS Character Sheet" />
@@ -39,10 +43,6 @@
 						it should remember and not bother you again. Just as with the Windows problem above, if this bothers you, you are welcome to download the
 						source and build it yourself.</p>
 				</div>
-
-				<p>I am looking for volunteers to review the data files, find any mistakes or missing bits, make the necessary
-					updates, and send them to me for inclusion in the next update. If you'd like to help out,
-					<a href="mailto:rich@trollworks.com">contact me</a>.</p> 
 			</div>
 		</div>
 		<?php include 'parts/footer.php'; ?>
