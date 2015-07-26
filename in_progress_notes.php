@@ -18,6 +18,7 @@
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
+						<li>Fix for <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-29">GCS-29</a>: Too much precision in randomized height & weight.</li>
 						<li>Updated the URLs for filing bug reports and feature requests to point to the new Jira server I'm using.</li>
 					</ul>
 					<h3>Data File Changes</h3>
