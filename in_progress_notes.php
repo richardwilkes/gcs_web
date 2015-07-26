@@ -23,6 +23,7 @@
 					<h3>Data File Changes</h3>
 					<ul>
 						<li>Added equipment from Low Tech. Contributed by William Morris.</li>
+						<li>Fixes for various incorrect entries in Dungeon Fantasy equipment. Contributed by William Morris.</li>
 					</ul>
 				</div>
 			</div>
