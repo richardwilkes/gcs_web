@@ -22,8 +22,11 @@
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
+						<li>Fix for <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-43">GCS-43</a>: Decreased Basic Speed missing from Basic Advantages. Contributed by William Morris.</li>
+						<li>Fix for <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-42">GCS-42</a>: Weapon Bond missing from Dungeon Fantasy Advantages. Contributed by William Morris.</li>
 						<li>Added equipment from Low Tech. Contributed by William Morris.</li>
-						<li>Fixes for various incorrect entries in Dungeon Fantasy equipment. Contributed by William Morris.</li>
+						<li>Fix for <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-30">GCS-30</a>: Dungeon fantasy containers don't have the correct weight limits for what they can hold.
+							Additional fixes were made for various other incorrect entries as well. Contributed by William Morris.</li>
 						<li>Added advantages and spells from GURPS Magic - Plant Spells. Contributed by Klara.</li>
 						<li>Added a template to simulate the background of having gone through the German public school system. Contributed by Christian.</li>
 					</ul>
