@@ -24,6 +24,7 @@
 					<ul>
 						<li>Added equipment from Low Tech. Contributed by William Morris.</li>
 						<li>Fixes for various incorrect entries in Dungeon Fantasy equipment. Contributed by William Morris.</li>
+						<li>Added advantages and spells from GURPS Magic - Plant Spells. Contributed by Klara.</li>
 					</ul>
 				</div>
 			</div>
