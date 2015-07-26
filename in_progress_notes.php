@@ -22,7 +22,7 @@
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
-						<li></li>
+						<li>Added equipment from Low Tech. Contributed by William Morris.</li>
 					</ul>
 				</div>
 			</div>
