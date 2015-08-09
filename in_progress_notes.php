@@ -14,10 +14,11 @@
 					<h2>Version <span class="version">&lt;in development&gt;</span><span class="release_date">Not released yet</span></h2>
 					<h3>Features Added</h3>
 					<ul>
-						<li></li>
+						<li>Implemented <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-15">GCS-15</a>: Add option to display skill default used.</li>
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
+						<li>Fix for <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-51">GCS-51</a>: Skill editor drops skill points to 0 when a language that uses '.' for a numeric grouping separator is used.</li>
 						<li>Fix for <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-29">GCS-29</a>: Too much precision in randomized height & weight.</li>
 						<li>Updated the URLs for filing bug reports and feature requests to point to the new Jira server I'm using.</li>
 					</ul>
