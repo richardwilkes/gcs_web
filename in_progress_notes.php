@@ -15,6 +15,7 @@
 					<h3>Features Added</h3>
 					<ul>
 						<li>Implemented <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-15">GCS-15</a>: Add option to display skill default used.</li>
+						<li>Implemented <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-50">GCS-50</a>: Support manual switching of defaults as per B173. Contributed by Sebástien Wilhelmi.</li>
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
