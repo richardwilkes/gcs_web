@@ -33,6 +33,7 @@
 							Additional fixes were made for various other incorrect entries as well. Contributed by William Morris.</li>
 						<li>Added advantages and spells from GURPS Magic - Plant Spells. Contributed by Klara.</li>
 						<li>Added a template to simulate the background of having gone through the German public school system. Contributed by Christian.</li>
+						<li>Added a compilation of Low Tech equipment. Contributed by James B. Byrne.</li>
 					</ul>
 				</div>
 			</div>
