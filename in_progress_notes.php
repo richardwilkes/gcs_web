@@ -25,6 +25,7 @@
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
+						<li>Added data files for Reign of Steel: Will to Live. Contributed by Иван Абдулин.</li
 						<li>Added <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-41">GCS-41</a>: GURPS Instant Armor. Contributed by William Morris.</li>
 						<li>Fix for <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-43">GCS-43</a>: Decreased Basic Speed missing from Basic Advantages. Contributed by William Morris.</li>
 						<li>Fix for <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-42">GCS-42</a>: Weapon Bond missing from Dungeon Fantasy Advantages. Contributed by William Morris.</li>
