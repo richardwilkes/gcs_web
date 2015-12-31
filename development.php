@@ -35,7 +35,7 @@
 % ant</div>
 					<p>If you want to build a distribution package, you'll also need to:</p>
 					<p>3. Download one (or all) of the JRE packages I've already prepared for use and place them into the
-						<code>launcher</code> directory of the toolkit:</p>
+						<code>launcher</code> directory of the <code>toolkit</code>:</p>
 					<ul>
 						<li><a href="dev_artifacts/jre-mac.zip">JRE for Mac OS X</a></li>
 						<li><a href="dev_artifacts/jre-windows.zip">JRE for 64-bit Windows</a></li>

@@ -48,7 +48,7 @@
 						<li>Fixed missing defaults in the Artist skills.</li>
 						<li>Removed forced line wrapping in notes of various races.</li>
 					</ul>
-					<h2>Version <span class="version">4.1.0</span><span class="release_date">April 19, 2015</span></h2>
+					<h2>Version <span class="version">4.1</span><span class="release_date">April 19, 2015</span></h2>
 					<h3>Features Added</h3>
 					<ul>
 						<li>New localization: Spanish.</li>
