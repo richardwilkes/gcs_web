@@ -11,7 +11,9 @@
 			<div id="right_column">
 				<h2>Ancient Releases</h2>
 				<p>For those of you with very old Macs, I've kept around some ancient versions of GCS that you can try.
-					These versions were written for the 3rd Edition GURPS rules.</p>
+					These versions were written for the <a href="http://www.sjgames.com/gurps">GURPS 3rd Edition</a>
+					roleplaying game system.</p>
+				<p></p>
 				<ul>
 					<li><a href="/downloads/ancient/gcs-2.2.3.sit">Version 2.2.3</a>: Supports PowerPC processors running Mac OS 8.5+</li>
 					<li><a href="/downloads/ancient/gcs-1.0.5.sit">Version 1.0.5</a>: Supports 68K and PowerPC processors</li>
