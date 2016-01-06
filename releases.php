@@ -37,8 +37,8 @@
 					<li><a href="/downloads/4.1.0/gcs-4.1.0-linux.zip">64-bit Linux</a></li>
 					<li><a href="/downloads/4.1.0/gcs-4.1.0-linux-32.zip">32-bit Linux</a></li>
 				</ul>
-				<p></p>
-				<p></p>
+				<br>
+				<br>
 				<h1>Ancient Releases</h2>
 				<p>For those of you with very old Macs, I've kept around some ancient versions of GCS that you can try.
 					These versions were written for the <a href="http://www.sjgames.com/gurps">GURPS 3rd Edition</a>
