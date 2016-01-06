@@ -16,10 +16,9 @@
 
 				<p>I am looking for volunteers to review the data files, find any mistakes or missing bits, make the necessary
 					updates, and send them to me for inclusion in the next update. If you'd like to help out,
-					<a href="mailto:rich@trollworks.com">contact me</a>.</p>
-
-				<p><b>Bruce Stephenson</b> has volunteered to review and be the main point of contact for the <b>Basic Set</b> data files.</p>
-				<p><b>Ryan Sanden</b> has volunteered to review and be the main point of contact for the <b>Fantasy</b> and <b>Dungeon Fantasy</b> data files.</p>
+					<a href="mailto:rich@trollworks.com">contact me</a>. <b>Bruce Stephenson</b> has volunteered to review and
+					be the main point of contact for the <b>Basic Set</b> data files. <b>Ryan Sanden</b> has volunteered to
+					review and be the main point of contact for the <b>Fantasy</b> and <b>Dungeon Fantasy</b> data files.</p>
 	
 				<div class="box">
 					<img id="logo" src="images/logo.gif" title="GURPS Character Sheet" />
