@@ -194,13 +194,12 @@ h3 {
 
 .box {
 	margin: 1em;
-	margin-left: auto;
-	margin-right: auto;
 	padding: 1em;
 	border: dashed 1px #dadada;
 	background-color: #ffffcc;
 	background: linear-gradient(#ffffcc, #ffffee);
 	text-align: center;
+	width: 900px;
 }
 
 #logo {
