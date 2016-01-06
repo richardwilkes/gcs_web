@@ -11,6 +11,7 @@
 						<li><a href="https://gurpscharactersheet.atlassian.net/issues/?filter=10000">Feature Requests</a></li>
 						<li><a href="/development.php">Development Setup</a></li>
 						<li><a href="/output_templates.php">Output Templates</a></li>
+						<li><a href="/ancient.php">Ancient Releases</a></li>
 						<li><a href="mailto:rich@trollworks.com">Contact Me</a></li>
 						<li><a href="http://sourceforge.net/project/project_donations.php?group_id=185516">Donate</a></li>
 					</ul>
