@@ -25,6 +25,7 @@
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
+						<li>Sanitized the page references throughout the data files. Many thanks to <b>Ryan Sanden</b> for all the work necessary to make this happen.</li>
 						<li>Minor cleanup.</li>
 					</ul>
 				</div>
