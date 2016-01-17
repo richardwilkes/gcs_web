@@ -21,7 +21,7 @@
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
-						<li></li>
+						<li>Fixed a focus issue where text fields that had been changed but not moved out of (by tabbing or otherwise explicitly focusing another component) would not commit their contents.</li>
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
