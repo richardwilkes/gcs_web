@@ -17,7 +17,8 @@
 					library for it and send the resulting file. If, on the other hand, you're modifying
 					one of the existing data files, please be sure to update to the latest version from the
 					git repository first, make your changes, then submit a patch file of the differences.
-					In either case, please create a <a href="https://gurpscharactersheet.atlassian.net">request</a>
+					In either case, please create a
+					<a href="https://gurpscharactersheet.atlassian.net/secure/CreateIssue!default.jspa">request</a>
 					for the work and attach the new file or patch file to that.</p>
 
 				<h3>What page reference abbreviations are being used in the data files?</h3>
