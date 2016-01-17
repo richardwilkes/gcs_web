@@ -20,7 +20,6 @@
 					<h3>Interesting Stuff</h3>
 					<ul>
 						<li><a href="http://sjgames.com">Steve Jackson Games</a></li>
-						<li><a href="http://www.sjgames.com/gurps/abbrevs.html">GURPS Abbreviations</a></li>
 						<li><a href="http://gamingballistic.blogspot.com">Gaming Ballistic</a></li>
 						<li><a href="http://dungeonfantastic.blogspot.com">Dungeon Fantastic</a></li>
 						<li><a href="http://www.gamesdiner.com/gurps-diner">GURPS Diner</a></li>
