@@ -11,6 +11,24 @@
 			<div id="right_column">
 				<div id="release_notes">
 					<h1>Release Notes</h1>
+					<h2>Version <span class="version">4.3</span><span class="release_date">January 22, 2016</span></h2>
+					<h3>Features Added</h3>
+					<ul>
+						<li>Implemented <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-26">GCS-26</a>: Add link to PDFs.
+							As part of this change, GCS now supports opening PDF files. Also as part of this change, the various export
+							menu options have been removed. Instead, choose Save As... and then select the file type you'd like to use
+							when saving the file.</li>
+					</ul>
+					<h3>Bugs Fixed</h3>
+					<ul>
+						<li>Fixed a focus issue where text fields that had been changed but not moved out of (by tabbing or otherwise explicitly focusing another component) would not commit their contents.</li>
+						<li>Lots of minor tweaks.</li>
+					</ul>
+					<h3>Data File Changes</h3>
+					<ul>
+						<li>Sanitized the page references throughout the data files. Many thanks to <b>Ryan Sanden</b> for all the work necessary to make this happen.</li>
+						<li>Minor cleanup.</li>
+					</ul>
 					<h2>Version <span class="version">4.2</span><span class="release_date">December 29, 2015</span></h2>
 					<h3>Features Added</h3>
 					<ul>
