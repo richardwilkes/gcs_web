@@ -18,7 +18,7 @@
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
-						<li></li>
+						<li>Fix for <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-78">GCS-78</a>: When navigating windows, selected entries are greyed out.</li>
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
