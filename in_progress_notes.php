@@ -22,7 +22,7 @@
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
-						<li></li>
+						<li>Added Dungeon Fantasy 2 monsters. Contributed by <a href="mailto:ryan@ryansanden.com">Ryan Sanden</a>.</li>
 					</ul>
 				</div>
 			</div>
