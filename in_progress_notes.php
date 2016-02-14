@@ -23,6 +23,7 @@
 					<h3>Data File Changes</h3>
 					<ul>
 						<li>Added Dungeon Fantasy 2 monsters. Contributed by <a href="mailto:ryan@ryansanden.com">Ryan Sanden</a>.</li>
+						<li>Added spells from Bio-Tech contributed in <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-84">GCS-84</a>.</li>
 					</ul>
 				</div>
 			</div>
