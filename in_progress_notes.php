@@ -18,13 +18,14 @@
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
-						<li>Fix for <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-73">GCS-73</a>: Fails to detect prerequiste skills when there are mutliple of different TLs.</li>
+						<li>Fix for <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-73">GCS-73</a>: Fails to detect prerequisite skills when there are multiple of different TLs.</li>
 						<li>Fix for <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-77">GCS-77</a>: GCS self-sets as default program for .PDFs with no user input.
 							GCS no longer registers itself as the owner for PDF documents.</li>
 						<li>Fix for <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-78">GCS-78</a>: When navigating windows, selected entries are greyed out.</li>
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
+						<li>Added data files for GURPS Mysteries. Contributed by <a href="mailto:shnickell@gmail.com">Scott Nickell</a>.</li>
 						<li>Added Dungeon Fantasy 2 monsters. Contributed by <a href="mailto:ryan@ryansanden.com">Ryan Sanden</a>.</li>
 						<li>Added spells from Bio-Tech contributed in <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-84">GCS-84</a>.</li>
 					</ul>
