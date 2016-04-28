@@ -30,6 +30,10 @@
 						<li>Added spells from Bio-Tech contributed in <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-84">GCS-84</a>.</li>
 						<li>Updated the Power Ups advantages file to include missing perks, quirks and talents, along with a few fixes. Contributed by <a href="mailto:enkeli.metsa@gmail.com">Angel Forest</a>.</li>
 					</ul>
+					<h3>Miscellaneous Changes</h3>
+					<ul>
+						<li>Added xsd files for the various data files. Contributed by <a href="chris@langsenkamp.com">Chris Langsenkamp</a>.</li>
+					</ul>
 				</div>
 			</div>
 		</div>
