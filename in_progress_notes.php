@@ -28,6 +28,7 @@
 						<li>Added data files for GURPS Mysteries. Contributed by <a href="mailto:shnickell@gmail.com">Scott Nickell</a>.</li>
 						<li>Added Dungeon Fantasy 2 monsters. Contributed by <a href="mailto:ryan@ryansanden.com">Ryan Sanden</a>.</li>
 						<li>Added spells from Bio-Tech contributed in <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-84">GCS-84</a>.</li>
+						<li>Updated the Power Ups advantages file to include missing perks, quirks and talents, along with a few fixes. Contributed by <a href="mailto:enkeli.metsa@gmail.com">Angel Forest</a>.</li>
 					</ul>
 				</div>
 			</div>
