@@ -11,6 +11,11 @@
 			<div id="right_column">
 				<div id="release_notes">
 					<h1>Release Notes</h1>
+					<h2>Version <span class="version">4.4.1</span><span class="release_date">May 12, 2016</span></h2>
+					<h3>Bugs Fixed</h3>
+					<ul>
+						<li>Fixed incorrect dialog title that stated an error occurred even after a successful push to the GURPS Calculator.</li>
+					</ul>
 					<h2>Version <span class="version">4.4</span><span class="release_date">May 12, 2016</span></h2>
 					<h3>Features Added</h3>
 					<ul>

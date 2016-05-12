@@ -10,6 +10,15 @@
 			<?php include 'parts/menu.php'; ?>
 			<div id="right_column">
 				<h1>Releases</h1>
+				<h2>Version <span class="version">4.4.1</span><span class="release_date">May 12, 2016</span></h2>
+				<p></p>
+				<ul>
+					<li><a href="/downloads/4.4.1/gcs-4.4.1-mac.zip">Macintosh</a></li>
+					<li><a href="/downloads/4.4.1/gcs-4.4.1-windows.zip">64-bit Windows</a></li>
+					<li><a href="/downloads/4.4.1/gcs-4.4.1-windows-32.zip">32-bit Windows</a></li>
+					<li><a href="/downloads/4.4.1/gcs-4.4.1-linux.zip">64-bit Linux</a></li>
+					<li><a href="/downloads/4.4.1/gcs-4.4.1-linux-32.zip">32-bit Linux</a></li>
+				</ul>
 				<h2>Version <span class="version">4.4.0</span><span class="release_date">May 12, 2016</span></h2>
 				<p></p>
 				<ul>
