@@ -14,6 +14,11 @@
 					<h2>Version <span class="version">&lt;in development&gt;</span><span class="release_date">Not released yet</span></h2>
 					<h3>Features Added</h3>
 					<ul>
+						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-20">GCS-20</a>: A piece of equipment can now have a feature added to it that reduces the effective weight
+							of its contained items by either an absolute quantity or a percentage. To make this work properly, a small change to the way the extended weight field is calculated and
+							displayed was made. In the past, it would always show the weight of the container itself plus all of its contents. Now, it only shows the weight of its contents if those
+							contents are actually being carried/equipped. This change allows something like the Pathfinder Bag of Holding Type I to be created by specifying a weight reduction of
+							250 lbs as a feature and a maximum contained weight of 0 lbs (so that the Bag of Holding entry will turn red if the player places too much inside it).</li>
 						<li>By default, GCS looks for its library of data files next to itself in its installation directory.
 							You can now alter this behavior by setting the environment variable GCS_LIBRARY to point to some
 							other location on disk instead.</li>
