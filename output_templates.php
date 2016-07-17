@@ -111,7 +111,13 @@ Spells [@SPELL_POINTS]
 Equipment (@CARRIED_VALUE, @CARRIED_WEIGHT)
 @EQUIPMENT_LOOP_START
 @DESCRIPTION_PRIMARY, $@COST, @WEIGHT, x@QTY
-@EQUIPMENT_LOOP_END</div>
+@EQUIPMENT_LOOP_END
+
+Notes
+@NOTES_LOOP_START
+@NOTE
+@NOTES_LOOP_END
+</div>
 				<p>Adding <strong>@NOTES</strong> to the end finishes this template.</p>
 				<h2>Available Keys</h2>
 				<h3>Description</h3>
@@ -272,6 +278,14 @@ Equipment (@CARRIED_VALUE, @CARRIED_WEIGHT)
 					<li>STATE<br>(Whether the item is carried, equipped, or not carried)</li>
 					<li>WEIGHT</li>
 					<li>WEIGHT_SUMMARY<br>(Weight multiplied by qty)</li>
+				</ul>
+				<h3>Notes Loop</h3>
+				<ul>
+					<li>NOTE</li>
+				</ul>
+				<h3>Notes all combined into one text block</h3>
+				<ul>
+					<li>NOTES</li>
 				</ul>
 				<h3>Formatting</h3>
 				<ul>
