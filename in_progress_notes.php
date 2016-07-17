@@ -17,6 +17,7 @@
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-1">GCS-1</a>: Non-humanoid body type support. You can now choose what body type your character has and
 							the hit location table will update appropriately. Standard armor doesn't necessarily make sense for many of the other body types, so custom armor will need to be
 							created for them.</li>
+						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-14">GCS-14</a>: Changed the single note field at the end of the character sheet into a list of notes.</li>
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-20">GCS-20</a>: A piece of equipment can now have a feature added to it that reduces the effective weight
 							of its contained items by either an absolute quantity or a percentage. To make this work properly, a small change to the way the extended weight field is calculated and
 							displayed was made. In the past, it would always show the weight of the container itself plus all of its contents. Now, it only shows the weight of its contents if those
