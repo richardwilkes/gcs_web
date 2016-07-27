@@ -37,6 +37,7 @@
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-102">GCS-103</a>: Fixed misspelling of 'spacecraft'.</li>
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-103">GCS-103</a>: Fixed cost and penalties associated with the Shyness disadvantage.</li>
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-104">GCS-104</a>: Changed the prerequisite for Essential Food to include 6 Food spells rather than 5.</li>
+						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-110">GCS-110</a>: Some data files had a defective copy of Magery 0.</li>
 					</ul>
 				</div>
 			</div>
