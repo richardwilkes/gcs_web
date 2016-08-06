@@ -38,6 +38,8 @@
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-103">GCS-103</a>: Fixed cost and penalties associated with the Shyness disadvantage.</li>
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-104">GCS-104</a>: Changed the prerequisite for Essential Food to include 6 Food spells rather than 5.</li>
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-110">GCS-110</a>: Some data files had a defective copy of Magery 0.</li>
+						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-111">GCS-111</a>: Fixed feature for Born War Leader and added it to Power Ups.</li>
+						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-112">GCS-112</a>: Fixed prerequisites for Herb Lore.</li>
 					</ul>
 				</div>
 			</div>
