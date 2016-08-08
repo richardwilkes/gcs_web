@@ -60,7 +60,6 @@
 				<ul>
 					<li><a href="/downloads/4.1.0/gcs-4.1.0-mac.zip">Macintosh</a></li>
 					<li><a href="/downloads/4.1.0/gcs-4.1.0-windows.zip">64-bit Windows</a></li>
-					<li><a href="/downloads/4.1.0/gcs-4.1.0-windows-32.zip">32-bit Windows</a></li>
 					<li><a href="/downloads/4.1.0/gcs-4.1.0-linux.zip">64-bit Linux</a></li>
 					<li><a href="/downloads/4.1.0/gcs-4.1.0-linux-32.zip">32-bit Linux</a></li>
 				</ul>
