@@ -8,8 +8,7 @@
 						<li><a href="/faq.php">FAQ</a></li>
 						<li><a href="/mailing_lists.php">Mailing Lists</a></li>
 						<li><a href="http://sourceforge.net/projects/gcs-java/reviews">Reviews</a></li>
-						<li><a href="https://gurpscharactersheet.atlassian.net/issues/?filter=10001">Bug Reports</a></li>
-						<li><a href="https://gurpscharactersheet.atlassian.net/issues/?filter=10000">Feature Requests</a></li>
+						<li><a href="https://gurpscharactersheet.atlassian.net">Jira</a></li>
 						<li><a href="https://github.com/richardwilkes/gcs/blob/master/README.md">Development Setup</a></li>
 						<li><a href="/output_templates.php">Output Templates</a></li>
 						<li><a href="mailto:rich@trollworks.com">Contact Me</a></li>
