@@ -26,7 +26,8 @@
 						<li>By default, GCS looks for its library of data files next to itself in its installation directory.
 							You can now alter this behavior by setting the environment variable GCS_LIBRARY to point to some
 							other location on disk instead.</li>
-						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-113">GCS-113</a>: GCS now initializes new character sheets with the last used page settings.</li>
+						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-113">GCS-113</a>: Initialize new character sheets with the last used page settings.</li>
+						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-114">GCS-114</a>: Spells can now have the attribute they are based upon set (was fixed as IQ previously).</li>
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
