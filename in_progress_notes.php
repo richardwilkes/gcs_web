@@ -33,6 +33,8 @@
 					<ul>
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-92">GCS-92</a>: No longer mark library files as changed when all that was modified was the sort order.</li>
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-97">GCS-97</a>: Fixed auto-resizing of table cells when fonts are changed.</li>
+						<li>Altering the Size field now causes the point total to recalculate to accommodate the reduction in cost that Size gives to ST. It was performing the calculation before,
+							but you would only see the result if something else caused the point total to update.</li>
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
