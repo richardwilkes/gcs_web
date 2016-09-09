@@ -47,6 +47,7 @@
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-110">GCS-110</a>: Some data files had a defective copy of Magery 0.</li>
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-111">GCS-111</a>: Fixed feature for Born War Leader and added it to Power Ups.</li>
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-112">GCS-112</a>: Fixed prerequisites for Herb Lore.</li>
+						<li>Modified bows to use fixed ST ratings, per B270.</li>
 					</ul>
 				</div>
 			</div>
