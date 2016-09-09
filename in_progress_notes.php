@@ -28,6 +28,7 @@
 							other location on disk instead.</li>
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-113">GCS-113</a>: Initialize new character sheets with the last used page settings.</li>
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-114">GCS-114</a>: Spells can now have the attribute they are based upon set (was fixed as IQ previously).</li>
+						<li>The Rule of 20 from B344 is now enforced.</li>
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
