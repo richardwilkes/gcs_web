@@ -36,6 +36,7 @@
 						<li>Altering the Size field now causes the point total to recalculate to accommodate the reduction in cost that Size gives to ST. It was performing the calculation before,
 							but you would only see the result if something else caused the point total to update.</li>
 						<li>Fixed an issue with layout that was partially cutting off some rows of data.</li>
+						<li>If a (dis)advantage isn't leveled, per-level feature adjustments now provide no modifier rather than causing a negative modifier.</li>
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
