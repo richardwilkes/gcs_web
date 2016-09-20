@@ -29,6 +29,8 @@
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-113">GCS-113</a>: Initialize new character sheets with the last used page settings.</li>
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-114">GCS-114</a>: Spells can now have the attribute they are based upon set (was fixed as IQ previously).</li>
 						<li>The Rule of 20 from B344 is now enforced.</li>
+						<li>The Quantity and Carried State columns for equipment are now displayed before the Description column.</li>
+						<li>The current encumbrance background gets a reddish tint when overloaded.</li>
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
