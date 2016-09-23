@@ -65,13 +65,13 @@
 				</table></p>
 
 				<h3>What development environment was used?</h3>
-				<p>I am currently using Eclipse 4.4 for Java development. As new versions of Eclipse come out,
+				<p>I am currently using Eclipse 4.6 for Java development. As new versions of Eclipse come out,
 					I generally upgrade to them. Should you check out the source code, you'll find that the
 					project settings have already been configured to what I prefer. I do all development on
 					a MacBook Pro, using Parallels Desktop or VMWare when I need to run Linux or Windows. I
 					also have actual Linux and Windows boxes available to me, but have found them to be
-					unneeded. The <a href="development.php">Development Setup</a> page describes how to setup
-					the development environment for GCS.</p>
+					unneeded. The <a href="https://github.com/richardwilkes/gcs/blob/master/README.md">Development Setup</a>
+					page describes how to setup the development environment for GCS.</p>
 		
 				<h3>Do you require any particular formatting to be used?</h3>
 				<p>Yes. As mentioned here, I've already pre-configured the settings I use within Eclipse.
