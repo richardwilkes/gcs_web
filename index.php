@@ -45,7 +45,8 @@
 						it should remember and not bother you again. Just as with the Windows problem above, if this bothers you, you are welcome to download the
 						source and build it yourself. Another issue related to this has come up where some people are launching GCS to find no library files being
 						shown. This is due to Apple's app translocation process being applied to the GCS executable when it shouldn't be. To disable this, you will
-						need to use the terminal to execute this: <code>xattr -d com.apple.quarantine &lt;full path to GURPS Character Sheet.app&gt;</code></p>
+						need to use the terminal to execute this: <code>xattr -d com.apple.quarantine &lt;full path to GURPS Character Sheet.app&gt;</code>. I've
+						only had one report of this problem so far, so hopefully this step isn't needed for most people.</p>
 				</div>
 			</div>
 		</div>
