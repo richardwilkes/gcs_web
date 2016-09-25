@@ -16,7 +16,6 @@
 					<ul>
 						<li>Fix the calculation for total weight and value of equipment, which ended up broken as part of the change for <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-20">GCS-20</a>.</li>
 					</ul>
-					<h1>Release Notes</h1>
 					<h2>Version <span class="version">4.5</span><span class="release_date">September 23, 2016</span></h2>
 					<h3>Features Added</h3>
 					<ul>
