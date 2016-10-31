@@ -23,7 +23,7 @@
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
-						<li></li>
+						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-128">GCS-128</a>: Perks from Thaumatology - Magical Styles, contributed by R. William Morris.</li>
 					</ul>
 				</div>
 			</div>

@@ -60,6 +60,7 @@
 					<tr><td><b>PU3:</b></td><td>Power-Ups 3: Talents</td></tr>
 					<tr><td><b>RSWL</b></td><td>Reign of Steel: Will to Live</td></tr>
 					<tr><td><b>SU</b></td><td>Supers</td></tr>
+					<tr><td><b>TMS</b></td><td>Thaumatology - Magical Styles</td></tr>
 					<tr><td><b>UT</b></td><td>Ultra-Tech</td></tr>
 					<tr><td><b>VOR</b></td><td>Vorkosigan Saga</td></tr>
 				</table></p>
