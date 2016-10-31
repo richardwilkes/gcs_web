@@ -18,6 +18,8 @@
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
+						<li>HTML export now writes out individual top-level notes using the @NOTES_LOOP_START/@NOTES_LOOP_END notation rather than the old @NOTES key.</li>
+						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-123">GCS-123</a>: Wrap top-level notes in the HTML export.</li>
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-124">GCS-124</a>: Incorrect difficulties for some Martial Arts Techniques.</li>
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-126">GCS-126</a>: Don't allow leveled advantages to be reduced below 0.</li>
 					</ul>
@@ -31,3 +33,4 @@
 		<?php include 'parts/footer.php'; ?>
 	</body>
 </html>
+Fix for GCS-123 and start using the notes loop rather than the old way
