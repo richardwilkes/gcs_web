@@ -14,7 +14,7 @@
 					<h2>Version <span class="version">&lt;in development&gt;</span><span class="release_date">Not released yet</span></h2>
 					<h3>Features Added</h3>
 					<ul>
-						<li>When using the filter to search, skills now look at the contents of the specialization field as well as the name.</li>
+						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-23">GCS-23</a>: When using the filter to search, skills now look at the contents of the specialization field as well as the name.</li>
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
