@@ -18,7 +18,7 @@
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
-						<li></li>
+						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-126">GCS-126</a>: Don't allow leveled advantages to be reduced below 0.</li>
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
