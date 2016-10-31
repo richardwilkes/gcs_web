@@ -14,6 +14,7 @@
 					<h2>Version <span class="version">&lt;in development&gt;</span><span class="release_date">Not released yet</span></h2>
 					<h3>Features Added</h3>
 					<ul>
+						<li>Advantages (and disadvantages, quirks, perks, etc.) can now be toggled back and forth between an enabled and disabled state. When disabled, that advantage (and anything it contains) is treated as if it was not actually on the character sheet.</li>
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-23">GCS-23</a>: When using the filter to search, skills now look at the contents of the specialization field as well as the name.</li>
 					</ul>
 					<h3>Bugs Fixed</h3>
@@ -34,4 +35,3 @@
 		<?php include 'parts/footer.php'; ?>
 	</body>
 </html>
-Fix for GCS-123 and start using the notes loop rather than the old way
