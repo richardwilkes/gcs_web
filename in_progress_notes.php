@@ -15,7 +15,7 @@
 					<h3>Features Added</h3>
 					<ul>
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-23">GCS-23</a>: When using the filter to search, skills now look at the contents of the specialization field as well as the name.</li>
-						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-107">GCS-107</a>: The sheet and templates can now be scaled while viewing them. I've only added a few discrete scales:
+						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-107">GCS-107</a>: The sheet, templates and lists can now be scaled while viewing them. I've only added a few discrete scales:
 							100%, 150%, and 200%, which I think should be adequate. The rest of the UI does not scale (for example, the editor dialogs).</li>
 						<li>Advantages (and disadvantages, quirks, perks, etc.) can now be toggled back and forth between an enabled and disabled state. When disabled, that advantage (and anything it contains) is
 							treated as if it was not actually on the character sheet.</li>
