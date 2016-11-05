@@ -19,6 +19,7 @@
 							100%, 150%, and 200%, which I think should be adequate. The rest of the UI does not scale (for example, the editor dialogs).</li>
 						<li>Advantages (and disadvantages, quirks, perks, etc.) can now be toggled back and forth between an enabled and disabled state. When disabled, that advantage (and anything it contains) is
 							treated as if it was not actually on the character sheet.</li>
+						<li>Added support for incrementing and decrementing the tech level of selected items.</li>
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
