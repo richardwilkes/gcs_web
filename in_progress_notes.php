@@ -33,6 +33,7 @@
 					<ul>
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-121">GCS-121</a>: Transhuman Space templates updated to 4th Edition, contributed by Johan Winqvist.</li>
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-128">GCS-128</a>: Perks from Thaumatology - Magical Styles, contributed by R. William Morris.</li>
+						<li>Added all classes and races from the <a href="https://drive.google.com/drive/folders/0BwDjN2HwBhv4V1NJVWJtWUNWcUU?usp=sharing">User Content</a> shared drive.</li>
 					</ul>
 				</div>
 			</div>
