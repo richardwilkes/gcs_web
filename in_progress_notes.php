@@ -22,7 +22,7 @@
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
-						<li></li>
+						<li><a href="https://github.com/richardwilkes/gcs/pull/2">Pull request #2</a>: Wizardry Refined from Pyramid 3/60, plus some small Magic prereq fixes.</li>
 					</ul>
 				</div>
 			</div>
