@@ -14,16 +14,15 @@
 					<h2>Version <span class="version">&lt;in development&gt;</span><span class="release_date">Not released yet</span></h2>
 					<h3>Features Added</h3>
 					<ul>
-						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-131">GCS-131</a>: User interface language settable from the user interface.</li>
+						<li></li>
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
-						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-134">GCS-134</a>: Templates won't open on Linux.</li>
+						<li></li>
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
-						<li><a href="https://github.com/richardwilkes/gcs/pull/2">Pull request #2</a>: Wizardry Refined from Pyramid 3/60, plus some small Magic prereq fixes.</li>
-						<li>Added all new content from the <a href="https://drive.google.com/drive/folders/0BwDjN2HwBhv4V1NJVWJtWUNWcUU?usp=sharing">User Content</a> shared drive.</li>
+						<li></li>
 					</ul>
 				</div>
 			</div>
