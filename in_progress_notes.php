@@ -14,7 +14,7 @@
 					<h2>Version <span class="version">&lt;in development&gt;</span><span class="release_date">Not released yet</span></h2>
 					<h3>Features Added</h3>
 					<ul>
-						<li></li>
+						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-131">GCS-131</a>: User interface language settable from the user interface.</li>
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
