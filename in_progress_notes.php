@@ -14,7 +14,8 @@
 					<h2>Version <span class="version">&lt;in development&gt;</span><span class="release_date">Not released yet</span></h2>
 					<h3>Features Added</h3>
 					<ul>
-						<li></li>
+						<li>GCS now tries to auto-detect when macOS has performed App Translocation on it and inform the user what steps need to be taken to prevent this behavior.
+							The real answer here is to pay for whatever is necessary to sign GCS, but I'm currently unwilling to pay for that yearly expense.</li>
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
