@@ -19,7 +19,7 @@
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
-						<li></li>
+						<li>Changed Basic Lift calculation for KYOS rules to match table values</li>
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
