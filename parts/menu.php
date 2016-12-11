@@ -20,6 +20,7 @@
 					<h3>Interesting Stuff</h3>
 					<ul>
 						<li><a href="http://sjgames.com">Steve Jackson Games</a></li>
+						<li><a href="https://discord.gg/Sv4Svce">GURPS Discord</a></li>
 						<li><a href="http://gamingballistic.blogspot.com">Gaming Ballistic</a></li>
 						<li><a href="http://dungeonfantastic.blogspot.com">Dungeon Fantastic</a></li>
 						<li><a href="http://www.gamesdiner.com/gurps-diner">GURPS Diner</a></li>
