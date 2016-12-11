@@ -37,10 +37,10 @@
 						from anywhere" (inside the "Security &amp; Privacy" system preferences) &mdash; which I don't recommend &mdash; or right-click on the
 						application and select "Open", which seems to override the default behavior you get when double-clicking. If you do this latter step once,
 						it should remember and not bother you again. Just as with the Windows problem above, if this bothers you, you are welcome to download the
-						source and build it yourself. Another issue related to this has come up where some people are launching GCS to find no library files being
-						shown. This is due to Apple's app translocation process being applied to the GCS executable when it shouldn't be. To disable this, you will
-						need to use the terminal to execute this: <code>xattr -d com.apple.quarantine &lt;full path to GURPS Character Sheet.app&gt;</code>. I've
-						only had one report of this problem so far, so hopefully this step isn't needed for most people.</p>
+						source and build it yourself. <b>Another</b> issue related to this has come up where some people are launching GCS to find no library files
+						being shown. This is due to Apple's app translocation process being applied to the GCS executable when it shouldn't be. To disable this, you
+						will need to use the terminal to execute this: <code>xattr -d com.apple.quarantine "/full/path/to/GURPS Character Sheet.app"</code> (note
+						that you must use the path to GCS on your Mac, not the one I have here).</p>
 				</div>
 			</div>
 		</div>
