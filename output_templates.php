@@ -10,23 +10,24 @@
 			<?php include 'parts/menu.php'; ?>
 			<div id="right_column">
 				<h1>Output Templates</h1>
-				<p>When GCS exports a character sheet to .html, it uses a modifiable template to create
-					the resulting file. This template is itself a .html file, and can be customized in
-					any way desired. An example can be found in
-					<strong>Library/Output Templates/template.html</strong>, the default HTML export
-					template. To change the HTML template used when exporting, check the
-					<strong>HTML Template Override</strong> box in the <strong>Sheet</strong> tab of
-					the <strong>Preferences</strong> window, and select the desired template file. If
-					you've selected an image for your character and the template you're using displays
-					it, a copy of the image will be saved with the character sheet.</p>
+				<p>When GCS exports a character sheet to text, it uses a modifiable template to create
+					the resulting file. This template is itself is plain text and can be customized in
+					any way desired. The default text template produces an HTML file and can be found
+					in <strong>Library/Output Templates/html_template.html</strong>. To change the
+					template used when exporting, check the <strong>Text Export Template</strong> box
+					in the <strong>Output</strong> tab of the <strong>Preferences</strong> window, and
+					select the desired template file. If you've selected an image for your character
+					and the template you're using displays it, a copy of the image will be saved with
+					the character sheet.</p>
 				<h2>Creating New Templates</h2>
-				<p>Templates are .html files, and can contain any standard HTML, XHTML, XML, and CSS.
-					Instructions on inserting character information and other functions are given to
-					GCS with <strong>keys</strong>, which are of the form, <strong>@KEY</strong>.
-					(Note that this turns <strong>@</strong> into a reserved character, and so you must
-					use <strong>&amp;#64;</strong> if you wish the final character sheet to include one.)
-					Keys are case-sensitive and must be in all-caps. Incorrectly entered keys will
-					be replaced with <strong>Unidentified key!</strong> in the character sheet.</p>
+				<p>Templates are text files. The extension of the template file is used when creating
+					a newly exported sheet from a template. Instructions on inserting character
+					information and other functions are given to GCS with <strong>keys</strong>, which
+					are of the form, <strong>@KEY</strong>. (Note that this turns <strong>@</strong>
+					into a reserved character, and so you must use <strong>&amp;#64;</strong> if you
+					wish the final HTML character sheet to include one.) Keys are case-sensitive and
+					must be in all-caps. Incorrectly entered keys will be replaced with
+					<strong>Unidentified key!</strong> in the character sheet.</p>
 				<p>The following examples show the creation of a template that will output a plain
 					text list of the sort generally used to post characters on Internet forums. The
 					most basic keys are simply markers for a find-and-replace operation. The template...</p>
@@ -78,17 +79,17 @@ Basic Move: 5</div>
 				<p>Lists of traits are generated with loop keys. When GCS encounters a loop, it
 					applies the template within the loop once for each item on the list. If one adds...</p>
 				<div class="code">@ADVANTAGES_LOOP_START
-@DESCRIPTION_PRIMARY @DESCRIPTION_MODIFIER_NOTES_PAREN [@POINTS]
+@DESCRIPTION_PRIMARY@DESCRIPTION_MODIFIER_NOTES_PAREN [@POINTS]
 @ADVANTAGES_LOOP_END</div>
 				<p>...GCS will output...</p>
 				<div class="code">Advantages  [15]
-Fit  [5]
-High Pain Threshold  [10]
-Language: English  (Native, -6; Spoken (Native), +3; Written (Native), +3.) [0]
-Disadvantages  [-25]
-Bad Temper  (CR: 15 (Almost All The Time).) [-5]
-Charitable  (CR: 12 (Quite Often).) [-15]
-Skinny  [-5]</div>
+Fit [5]
+High Pain Threshold [10]
+Language: English (Native, -6; Spoken (Native), +3; Written (Native), +3.) [0]
+Disadvantages [-25]
+Bad Temper (CR: 15 (Almost All The Time).) [-5]
+Charitable (CR: 12 (Quite Often).) [-15]
+Skinny [-5]</div>
 				<p>There are several different forms of the <strong>@DESCRIPTION</strong> keys.
 					<strong>_PRIMARY</strong> outputs the name only, <strong>_MODIFIER_NOTES</strong>
 					outputs those notes due to modifers, and <strong>_NOTES</strong> outputs the text
@@ -145,14 +146,26 @@ Notes
 				</ul>
 				<h3>Point Cost</h3>
 				<ul>
+					
 					<li>ADVANTAGE_POINTS</li>
+					<li>ATTRIBUTE_POINTS</li>
+					<li>BASIC_MOVE_POINTS</li>
+					<li>BASIC_SPEED_POINTS</li>
 					<li>DISADVANTAGE_POINTS</li>
+					<li>DX_POINTS</li>
 					<li>EARNED_POINTS</li>
+					<li>FP_POINTS</li>
+					<li>HP_POINTS</li>
+					<li>HT_POINTS</li>
+					<li>IQ_POINTS</li>
+					<li>PERCEPTION_POINTS</li>
 					<li>QUIRK_POINTS</li>
 					<li>RACE_POINTS</li>
 					<li>SKILL_POINTS</li>
 					<li>SPELL_POINTS</li>
+					<li>ST_POINTS</li>
 					<li>TOTAL_POINTS</li>
+					<li>WILL_POINTS</li>
 				</ul>
 				<h3>Attributes</h3>
 				<ul>
@@ -289,10 +302,16 @@ Notes
 				</ul>
 				<h3>Formatting</h3>
 				<ul>
-					<li>DEPTHx<br>(Outputs the current indention depth multiplied by the number appended to the key. For example, <strong>@DEPTHx12</strong> would output <strong>0</strong> for depth 0, <strong>12</strong> for depth 1, <strong>24</strong> for depth 2, etc.)</li>
-					<li>EVEN_ODD<br>(Alternates between outputting even or odd.)</li>
-					<li>STYLE_INDENT_WARNING<br>(Produces output of the form below if the current indentation depth is greater than 0, otherwise nothing)<br>
-						<div class="code">style="padding-left: @DEPTHx12px;</div></li>
+					<li>ENCODING_OFF<br>If present, all text field encoding from that point on will be disabled.
+						Normally, text field output is encoded so that it will display properly as HTML.</li>
+					<li>DEPTHx<br>(Outputs the current indention depth multiplied by the number appended to the
+						key. For example, <strong>@DEPTHx12</strong> would output <strong>0</strong> for depth 0,
+						<strong>12</strong> for depth 1, <strong>24</strong> for depth 2, etc.)</li>
+					<li>STYLE_INDENT_WARNING<br>(Produces output of the form below if the current indentation
+						depth is greater than 0, otherwise nothing)<br>
+						<div class="code">style="padding-left: @DEPTHx12px;"</div> or
+						<div class="code">style="padding-left: @DEPTHx12px; color: red;"</div> if the item
+						has unsatisfied requirements.</li>
 				</ul>
 			</div>
 		</div>
