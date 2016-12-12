@@ -16,6 +16,7 @@
 					<ul>
 						<li>GCS now tries to auto-detect when macOS has performed App Translocation on it and inform the user what steps need to be taken to prevent this behavior.
 							The real answer here is to pay for whatever is necessary to sign GCS, but I'm currently unwilling to pay for that yearly expense.</li>
+						<li>Improved template support for non-HTML uses and adjusted the UI to reflect that it is actually text export and not just HTML export.</li>
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
