@@ -259,6 +259,7 @@ Notes
 					<li>PARRY</li>
 					<li>REACH</li>
 					<li>STRENGTH</li>
+					<li>UNMODIFIED_DAMAGE</li>
 					<li>USAGE</li>
 				</ul>
 				<h3>Ranged Attacks Loop</h3>
@@ -275,6 +276,7 @@ Notes
 					<li>ROF</li>
 					<li>SHOTS</li>
 					<li>STRENGTH</li>
+					<li>UNMODIFIED_DAMAGE</li>
 					<li>USAGE</li>
 				</ul>
 				<h3>Equipment Loop</h3>
