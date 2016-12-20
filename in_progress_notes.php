@@ -24,7 +24,7 @@
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
-						<li></li>
+						<li>Added the Necromancer template, and equipment, advantages, and spells to accommodate it.</li>
 					</ul>
 				</div>
 			</div>
