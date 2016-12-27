@@ -16,7 +16,7 @@
 					</ul>
 				</div>
 				<div id="links">
-					<a href="https://paypal.me/GURPSCharacterSheet"><img src="/images/donate.gif"></a>
+					<a class="btn" href="https://paypal.me/GURPSCharacterSheet">Donate</a>
 					<h3>Interesting Stuff</h3>
 					<ul>
 						<li><a href="http://sjgames.com">Steve Jackson Games</a></li>
