@@ -11,6 +11,8 @@
 						<li><a href="https://gurpscharactersheet.atlassian.net/issues/?filter=10001">Bug Reports</a>
 						<li><a href="https://gurpscharactersheet.atlassian.net/issues/?filter=10000">Feature Requests</a>
 						<li><a href="https://github.com/richardwilkes/gcs/blob/master/README.md">Development Setup</a></li>
+						<li><a href="https://github.com/richardwilkes/gcs">GitHub GCS</a></li>
+						<li><a href="https://github.com/richardwilkes/gcs_library">GitHub GCS Library</a></li>
 						<li><a href="/output_templates.php">Output Templates</a></li>
 						<li><a href="https://drive.google.com/drive/folders/0BwDjN2HwBhv4V1NJVWJtWUNWcUU?usp=sharing">User Content</a></li>
 						<li><a href="mailto:wilkes@me.com">Contact Me</a></li>
