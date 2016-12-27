@@ -13,6 +13,7 @@
 						<li><a href="/output_templates.php">Output Templates</a></li>
 						<li><a href="https://drive.google.com/drive/folders/0BwDjN2HwBhv4V1NJVWJtWUNWcUU?usp=sharing">User Content</a></li>
 						<li><a href="mailto:rich@trollworks.com">Contact Me</a></li>
+						<li><a href="https://paypal.me/GURPSCharacterSheet">Donate</a>
 					</ul>
 				</div>
 				<div id="links">
