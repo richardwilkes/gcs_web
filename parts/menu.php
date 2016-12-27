@@ -13,10 +13,15 @@
 						<li><a href="/output_templates.php">Output Templates</a></li>
 						<li><a href="https://drive.google.com/drive/folders/0BwDjN2HwBhv4V1NJVWJtWUNWcUU?usp=sharing">User Content</a></li>
 						<li><a href="mailto:rich@trollworks.com">Contact Me</a></li>
-						<li><a href="http://sourceforge.net/project/project_donations.php?group_id=185516">Donate</a></li>
 					</ul>
 				</div>
 				<div id="links">
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+						<input type="hidden" name="cmd" value="_s-xclick" />
+						<input type="hidden" name="hosted_button_id" value="KK97B69UBFYQL" />
+						<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate" />
+						<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+					</form>
 					<h3>Interesting Stuff</h3>
 					<ul>
 						<li><a href="http://sjgames.com">Steve Jackson Games</a></li>
