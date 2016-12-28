@@ -31,6 +31,7 @@
 					<ul>
 						<li>Added the Necromancer template, and equipment, advantages, and spells to accommodate it.</li>
 						<li>Added the missing skill penalties for Disturbing Voice.</li>
+						<li>Added metal college spells from Pyramid issue 91.</li>
 					</ul>
 				</div>
 			</div>
