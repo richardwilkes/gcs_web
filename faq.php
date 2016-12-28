@@ -58,7 +58,7 @@
 					<tr><td><b>PU1:</b></td><td>Power-Ups 1: Imbuements</td></tr>
 					<tr><td><b>PU2:</b></td><td>Power-Ups 2: Perks</td></tr>
 					<tr><td><b>PU3:</b></td><td>Power-Ups 3: Talents</td></tr>
-					<tr><td><b>PY#:</b></td><td>Pyramid issues (replace # with the issue number)</td></tr>
+					<tr><td><b>PY#:</b></td><td>Pyramid issues (replace # with the issue number, but leave out the leading "3-")</td></tr>
 					<tr><td><b>RSWL</b></td><td>Reign of Steel: Will to Live</td></tr>
 					<tr><td><b>SU</b></td><td>Supers</td></tr>
 					<tr><td><b>TMS</b></td><td>Thaumatology - Magical Styles</td></tr>
