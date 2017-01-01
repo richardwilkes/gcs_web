@@ -23,7 +23,6 @@
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
-						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-134">GCS-134</a>: Templates won't open on Linux.</li>
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-136">GCS-136</a>: Changed Basic Lift calculation for KYOS rules to match table values.</li>
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-142">GCS-142</a>: Fix saving of techniques when a language other than English is in use.</li>
 					</ul>
