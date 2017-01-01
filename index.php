@@ -17,13 +17,13 @@
 				<div class="box">
 					<img id="logo" src="images/logo.gif" title="GURPS Character Sheet" />
 					<div id="downloads">
-						<h2>Download<br>Version 4.7</h2>
-						<p><a href="/downloads/4.7.0/gcs-4.7.0-mac.zip" id="macintosh_download" title="Click to download the Macintosh version"></a>
-							<a href="/downloads/4.7.0/gcs-4.7.0-windows.zip" id="windows_download" title="Click to download the 64-bit Windows version"></a>
-							<a href="/downloads/4.7.0/gcs-4.7.0-windows-32.zip" id="windows32_download" title="Click to download the 32-bit Windows version"></a>
-							<a href="/downloads/4.7.0/gcs-4.7.0-linux.zip" id="linux_download" title="Click to download the 64-bit Linux version"></a>
-							<a href="/downloads/4.7.0/gcs-4.7.0-linux-32.zip" id="linux32_download" title="Click to download the 32-bit Linux version"></a>
-							<br>Released December 3, 2016</p>
+						<h2>Download<br>Version 4.8</h2>
+						<p><a href="/downloads/4.8.0/gcs-4.8.0-mac.zip" id="macintosh_download" title="Click to download the Macintosh version"></a>
+							<a href="/downloads/4.8.0/gcs-4.8.0-windows.zip" id="windows_download" title="Click to download the 64-bit Windows version"></a>
+							<a href="/downloads/4.8.0/gcs-4.8.0-windows-32.zip" id="windows32_download" title="Click to download the 32-bit Windows version"></a>
+							<a href="/downloads/4.8.0/gcs-4.8.0-linux.zip" id="linux_download" title="Click to download the 64-bit Linux version"></a>
+							<a href="/downloads/4.8.0/gcs-4.8.0-linux-32.zip" id="linux32_download" title="Click to download the 32-bit Linux version"></a>
+							<br>Released January 1, 2017</p>
 					</div>
 				</div>
 
