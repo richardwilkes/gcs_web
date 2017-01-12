@@ -14,7 +14,7 @@
 					<h2>Version <span class="version">&lt;in development&gt;</span><span class="release_date">Not released yet</span></h2>
 					<h3>Features Added</h3>
 					<ul>
-						<li></li>
+						<li>Partial implementation of <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-25">GCS-25</a>: Skills &amp; spells can now be based off of 10 rather than a stat.</li>
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
@@ -22,7 +22,8 @@
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
-						<li></li>
+						<li>Added the Gray Necromancer from Pyramid 3-50.</li>
+						<li>Added spells from Pyramid 3-50.</li>
 					</ul>
 				</div>
 			</div>
