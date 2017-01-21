@@ -18,7 +18,7 @@
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
-						<li></li>
+						<li>Unidentified keys will now have the key name emitted as part of the error message when exporting a text template. Previously, most cases would emit a "%s" instead.</li>
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
