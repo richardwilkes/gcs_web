@@ -16,6 +16,7 @@
 					<ul>
 						<li>Partial implementation of <a href="https://gurpscharactersheet.atlassian.net/browse/GCS-25">GCS-25</a>: Skills &amp; spells can now be based off of 10 rather than a stat.</li>
 						<li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-151">GCS-151</a>: Add self-control roll option of N/A.</li>
+						<li>Skill and spell containers now sum the points spent on items they contain.</li>
 					</ul>
 					<h3>Bugs Fixed</h3>
 					<ul>
