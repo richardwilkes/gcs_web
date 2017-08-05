@@ -63,6 +63,10 @@
                         <li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-173">GCS-173</a>:
                             The calculation of CR adjustments was broken by the change that introduced a self-control roll
                             of "N/A".</li>
+                        <li>Skill containers no longer count as a default. A previous change allowed skill containers to
+                            display the sum of the points spent on the things they contained. Unfortunately, if the
+                            container was named such that it matched a skill name, those points would be considered as
+                            spent on the skill, giving incorrect values for defaults.</li>
 					</ul>
 					<h3>Data File Changes</h3>
 					<ul>
