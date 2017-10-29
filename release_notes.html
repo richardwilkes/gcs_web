@@ -6,8 +6,8 @@
 		<meta name="keywords" content="GURPS Character Sheet roleplaying games"/>
 		<meta name="description" content="GURPS Character Sheet"/>
 		<meta name="norton-safeweb-site-verification" content="fnn0dveu85-ceabrbo2s7k1kw54q88sqmlvbun2sg86r82l9l01bxz6qlbq6ptnqojpmwzqs8v2viv1jkxhi3jo5ndv931j15xz3j49uup5blqxahylgkqquk-hg5uf9" />
-		<link rel="stylesheet" type="text/css" href="/main.css"/>
-		<link rel="shortcut icon" href="/images/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="main.css"/>
+		<link rel="shortcut icon" href="images/favicon.ico"/>
 	</head>
 	<body>
 		<div id="header">
@@ -18,20 +18,20 @@
 			<div id="left_column">
 				<div id="menu">
 					<ul>
-						<li><a href="/index.html">Home</a></li>
-						<li><a href="/releases.html">Releases</a></li>
-						<li><a href="/release_notes.html">Release Notes</a></li>
-						<li><a href="/in_progress_notes.html">&nbsp;&nbsp;... In Progress Notes</a></li>
-						<li><a href="/faq.html">FAQ</a></li>
-						<li><a href="/mailing_lists.html">Mailing Lists</a></li>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="releases.html">Releases</a></li>
+						<li><a href="release_notes.html">Release Notes</a></li>
+						<li><a href="in_progress_notes.html">&nbsp;&nbsp;... In Progress Notes</a></li>
+						<li><a href="faq.html">FAQ</a></li>
+						<li><a href="mailing_lists.html">Mailing Lists</a></li>
 						<li><a href="http://sourceforge.net/projects/gcs-java/reviews">Reviews</a></li>
 						<li><a href="https://gurpscharactersheet.atlassian.net/issues/?filter=10001">Bug Reports</a>
 						<li><a href="https://gurpscharactersheet.atlassian.net/issues/?filter=10000">Feature Requests</a>
 						<li><a href="https://github.com/richardwilkes/gcs/blob/master/README.md">Development Setup</a></li>
 						<li><a href="https://github.com/richardwilkes/gcs">GitHub GCS</a></li>
 						<li><a href="https://github.com/richardwilkes/gcs_library">GitHub GCS Library</a></li>
-						<li><a href="/page_references.html">Page References</a></li>
-						<li><a href="/output_templates.html">Output Templates</a></li>
+						<li><a href="page_references.html">Page References</a></li>
+						<li><a href="output_templates.html">Output Templates</a></li>
 						<li><a href="https://drive.google.com/drive/folders/0BwDjN2HwBhv4V1NJVWJtWUNWcUU?usp=sharing">User Content</a></li>
 						<li><a href="mailto:wilkes@me.com">Contact Me</a></li>
 					</ul>
@@ -51,7 +51,29 @@
 			</div>
 			<div id="right_column">
 				<div id="release_notes">
-					<h1>Release Notes</h1>
+                    <h1>Release Notes</h1>
+                    <h2>Version <span class="version">4.10</span> <span class="release_date">October 28, 2017</span></h2>
+                    <h3>Features Added</h3>
+                    <ul>
+                        <li>Added optional support for <a href="http://noschoolgrognard.blogspot.com/2013/04/adjusting-swing-damage-in-dungeon.html">Adjusting Swing Damage in Dungeon Fantasy</a></li>
+                    </ul>
+                    <h3>Bugs Fixed</h3>
+                    <ul>
+                        <li><a href="https://gurpscharactersheet.atlassian.net/browse/GCS-173">GCS-173</a>:
+                            The calculation of CR adjustments was broken by the change that introduced a self-control roll
+                            of "N/A".</li>
+                        <li>Skill containers no longer count as a default. A previous change allowed skill containers to
+                            display the sum of the points spent on the things they contained. Unfortunately, if the
+                            container was named such that it matched a skill name, those points would be considered as
+                            spent on the skill, giving incorrect values for defaults.</li>
+                        <li><a href="https://github.com/richardwilkes/gcs/issues/12">GitHub issue #12</a>: Skill defaults
+                            not correctly accounting for talents.</li>
+                    </ul>
+                    <h3>Data File Changes</h3>
+                    <ul>
+                        <li>Dungeon Fantasy RPG data files were added, courtesy of Ben Gauronskas.</li>
+                        <li>Revised the HTML output template to use HTML 5 and grid layouts.</li>
+                    </ul>
 					<h2>Version <span class="version">4.9</span><span class="release_date">April 15, 2017</span></h2>
 					<h3>Features Added</h3>
 					<ul>
@@ -447,7 +469,7 @@
 		</div>
 		<div id="footer">
 			Copyright &copy;1998-2017 by Richard A. Wilkes. All rights reserved worldwide.<br>
-			GURPS Character Sheet is licensed under the <a href="/license.html">Mozilla Public License, version 2.0</a>.
+			GURPS Character Sheet is licensed under the <a href="license.html">Mozilla Public License, version 2.0</a>.
 		</div>
 	</body>
 </html>
