@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/richardwilkes
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://gurpscharactersheet.com
+  * I am richardwilkes (https://keybase.io/richardwilkes) on keybase.
+  * I have a public key ASDSz1apH6SubZ3A3E_8n7ZHu_8YC1PWznE3uZ0j286e-wo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120d2cf56a91fa4ae6d9dc0dc4ffc9fb647bbff180b53d6ce7137b99d23dbce9efb0a",
+      "host": "keybase.io",
+      "kid": "0120d2cf56a91fa4ae6d9dc0dc4ffc9fb647bbff180b53d6ce7137b99d23dbce9efb0a",
+      "uid": "04f9546bcf598766f44bcb918c98f619",
+      "username": "richardwilkes"
+    },
+    "merkle_root": {
+      "ctime": 1510360467,
+      "hash": "4bb942e84ae11cc37852211bbc01c11f1fc847e172a973eb4c4364c8c2d41c6737448fbfacb3927119c84b6aad3e43b148cee3db50b2a53b4a965c5dd35a64ed",
+      "hash_meta": "85410ea2ef6363420dc970bf4a2c61c51c87dce576ee12b74d4183b271b66deb",
+      "seqno": 1692243
+    },
+    "service": {
+      "hostname": "gurpscharactersheet.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.34"
+  },
+  "ctime": 1510360583,
+  "expire_in": 504576000,
+  "prev": "dfea7ecf58e7a922deb06f97a1979abe2c95afa85e930b68884f96f6ea531553",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg0s9WqR+krm2dwNxP/J+2R7v/GAtT1s5xN7mdI9vOnvsKp3BheWxvYWTFA1N7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZDJjZjU2YTkxZmE0YWU2ZDlkYzBkYzRmZmM5ZmI2NDdiYmZmMTgwYjUzZDZjZTcxMzdiOTlkMjNkYmNlOWVmYjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZDJjZjU2YTkxZmE0YWU2ZDlkYzBkYzRmZmM5ZmI2NDdiYmZmMTgwYjUzZDZjZTcxMzdiOTlkMjNkYmNlOWVmYjBhIiwidWlkIjoiMDRmOTU0NmJjZjU5ODc2NmY0NGJjYjkxOGM5OGY2MTkiLCJ1c2VybmFtZSI6InJpY2hhcmR3aWxrZXMifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MTAzNjA0NjcsImhhc2giOiI0YmI5NDJlODRhZTExY2MzNzg1MjIxMWJiYzAxYzExZjFmYzg0N2UxNzJhOTczZWI0YzQzNjRjOGMyZDQxYzY3Mzc0NDhmYmZhY2IzOTI3MTE5Yzg0YjZhYWQzZTQzYjE0OGNlZTNkYjUwYjJhNTNiNGE5NjVjNWRkMzVhNjRlZCIsImhhc2hfbWV0YSI6Ijg1NDEwZWEyZWY2MzYzNDIwZGM5NzBiZjRhMmM2MWM1MWM4N2RjZTU3NmVlMTJiNzRkNDE4M2IyNzFiNjZkZWIiLCJzZXFubyI6MTY5MjI0M30sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJndXJwc2NoYXJhY3RlcnNoZWV0LmNvbSIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMzQifSwiY3RpbWUiOjE1MTAzNjA1ODMsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiZGZlYTdlY2Y1OGU3YTkyMmRlYjA2Zjk3YTE5NzlhYmUyYzk1YWZhODVlOTMwYjY4ODg0Zjk2ZjZlYTUzMTU1MyIsInNlcW5vIjo1LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQKiswgq4AqR70k4E8zREAP2XedKmVf+MNN02jGFKQqn3zX4o9qipj32PSRT/RFIuOXDZ87WV9J6iXNoOa8+ZAA6oc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCAwz/lmgWlkLzoX72QTzUZWTU0/hjc+teju/X7kzPcpo6N0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/richardwilkes
+
+==================================================================
