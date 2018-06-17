@@ -87,7 +87,7 @@ a:hover {
 
 #left_column {
 	position: relative;
-	width: 12em;
+	width: 13em;
 	float: left;
 	font-size: 0.9em;
 }
@@ -228,36 +228,13 @@ h3 {
 	color: #6C7425;
 }
 
-#macintosh_download {
-	background-image: url('images/macintosh.png');
-}
-
-#windows_download {
-	background-image: url('images/windows-64.png');
-}
-
-#windows32_download {
-	background-image: url('images/windows-32.png');
-}
-
-#linux_download {
-	background-image: url('images/linux-64.png');
-}
-
-#linux32_download {
-	background-image: url('images/linux-32.png');
-}
-
-#downloads a {
-	display: inline-block;
+#downloads a img {
 	width: 42px;
 	height: 57px;
-	border: 1px solid black;
-	background-color: white;
 }
 
 #downloads a:hover {
-	background-color: #b4d2e1;
+	background: none;
 }
 
 .footnote {
