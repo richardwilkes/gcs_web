@@ -50,34 +50,118 @@
                 </ul>
             </div>
         </div>
-        <div id="right_column">
-            <h1>Output Templates</h1>
-            <p>When GCS exports a character sheet to text, it uses a modifiable template to create the resulting file. This template is itself is plain text and can be customized in any way desired. The default text template produces an HTML file and can
-                be found in <strong>Library/Output Templates/html_template.html</strong>. To change the template used when exporting, check the <strong>Text Export Template</strong> box in the <strong>Output</strong> tab of the <strong>Preferences</strong>                window, and select the desired template file. If you've selected an image for your character and the template you're using displays it, a copy of the image will be saved with the character sheet.</p>
-            <h2>Creating New Templates</h2>
-            <p>Templates are text files. The extension of the template file is used when creating a newly exported sheet from a template. Instructions on inserting character information and other functions are given to GCS with <strong>keys</strong>, which
-                are of the form, <strong>@KEY</strong>. (Note that this turns <strong>@</strong> into a reserved character, and so you must use <strong>&amp;#64;</strong> if you wish the final HTML character sheet to include one.) Keys are case-sensitive
-                and must be in all-caps. Incorrectly entered keys will be replaced with
-                <strong>Unidentified key!</strong> in the character sheet.</p>
-            <p>The following examples show the creation of a template that will output a plain text list of the sort generally used to post characters on Internet forums. The most basic keys are simply markers for a find-and-replace operation. The template...</p>
-            <div class="code">@NAME [@TOTAL_POINTS] Race: @RACE Sex: @GENDER Age: @AGE Size: @SIZE L: @TL Unused Points: @EARNED_POINTS Attributes [@ATTRIBUTE_POINTS] ST @ST DX @DX IQ @IQ HT @HT HP @BASIC_HP FP @BASIC_FP PR @PERCEPTION WL @WILL Basic Speed: @BASIC_SPEED
-                Basic Move: @BASIC_MOVE</div>
-            <p>...will output...</p>
-            <div class="code">Jack Jackson [120] Race: Human Sex: Male Age: 38 Size: +0 L: 4 Unused Points: 0 Attributes [50] ST 12 DX 10 IQ 10 HT 12 HP 12 FP 12 PER 12 WILL 10 Basic Speed: 5.5 Basic Move: 5</div>
-            <p>Lists of traits are generated with loop keys. When GCS encounters a loop, it applies the template within the loop once for each item on the list. If one adds...</p>
-            <div class="code">@ADVANTAGES_LOOP_START @DESCRIPTION_PRIMARY@DESCRIPTION_MODIFIER_NOTES_PAREN [@POINTS] @ADVANTAGES_LOOP_END
-            </div>
-            <p>...GCS will output...</p>
-            <div class="code">Advantages [15] Fit [5] High Pain Threshold [10] Language: English (Native, -6; Spoken (Native), +3; Written (Native), +3.) [0] Disadvantages [-25] Bad Temper (CR: 15 (Almost All The Time).) [-5] Charitable (CR: 12 (Quite Often).) [-15] Skinny
-                [-5]</div>
-            <p>There are several different forms of the <strong>@DESCRIPTION</strong> keys.
-                <strong>_PRIMARY</strong> outputs the name only, <strong>_MODIFIER_NOTES</strong> outputs those notes due to modifers, and <strong>_NOTES</strong> outputs the text in the Notes field of the advantage, skill, or equipment. The latter two
-                can also have <strong>_PAREN</strong> appended to them to surround the output, if any, in parenthesis. <strong>@DESCRIPTION_NOTES</strong> is omitted here because notes on advantages are rules summaries, which, while useful on character
-                sheets meant for use in play, are not desirable in this template. Notes are, however, meaningful on skills, equipment, and spells, and so are included in those loops:</p>
-            <div class="code">Skills [@SKILL_POINTS] @SKILLS_LOOP_START @DESCRIPTION_PRIMARY @DESCRIPTION_NOTES_PAREN @SL (@RSL) [@POINTS] @SKILLS_LOOP_END Spells [@SPELL_POINTS] @SPELLS_LOOP_START @DESCRIPTION_PRIMARY @DESCRIPTION_NOTES_PAREN @SL (@RSL) [@POINTS] @SPELLS_LOOP_END
-                Equipment (@CARRIED_VALUE, @CARRIED_WEIGHT) @EQUIPMENT_LOOP_START @DESCRIPTION_PRIMARY, $@COST, @WEIGHT, x@QTY @EQUIPMENT_LOOP_END Notes @NOTES_LOOP_START @NOTE @NOTES_LOOP_END
-            </div>
-            <p>Adding <strong>@NOTES</strong> to the end finishes this template.</p>
+      <div id="right_column">
+        <h1>Output Templates</h1>
+        <p>When GCS exports a character sheet to text, it uses a modifiable template to create
+          the resulting file. This template is itself is plain text and can be customized in
+          any way desired. The default text template produces an HTML file and can be found
+          in <strong>Library/Output Templates/html_template.html</strong>. To change the
+          template used when exporting, check the <strong>Text Export Template</strong> box
+          in the <strong>Output</strong> tab of the <strong>Preferences</strong> window, and
+          select the desired template file. If you've selected an image for your character
+          and the template you're using displays it, a copy of the image will be saved with
+          the character sheet.</p>
+        <h2>Creating New Templates</h2>
+        <p>Templates are text files. The extension of the template file is used when creating
+          a newly exported sheet from a template. Instructions on inserting character
+          information and other functions are given to GCS with <strong>keys</strong>, which
+          are of the form, <strong>@KEY</strong>. (Note that this turns <strong>@</strong>
+          into a reserved character, and so you must use <strong>&amp;#64;</strong> if you
+          wish the final HTML character sheet to include one.) Keys are case-sensitive and
+          must be in all-caps. Incorrectly entered keys will be replaced with
+          <strong>Unidentified key!</strong> in the character sheet.</p>
+        <p>The following examples show the creation of a template that will output a plain
+          text list of the sort generally used to post characters on Internet forums. The
+          most basic keys are simply markers for a find-and-replace operation. The template...</p>
+        <div class="code">@NAME [@TOTAL_POINTS]
+Race: @RACE
+Sex: @GENDER
+Age: @AGE
+Size: @SIZE
+TL: @TL
+
+Unused Points: @EARNED_POINTS
+
+Attributes [@ATTRIBUTE_POINTS]
+ST @ST
+DX @DX
+IQ @IQ
+HT @HT
+
+HP @BASIC_HP
+FP @BASIC_FP
+PR @PERCEPTION
+WL @WILL
+
+Basic Speed: @BASIC_SPEED
+Basic Move: @BASIC_MOVE</div>
+        <p>...will output...</p>
+        <div class="code">Jack Jackson [120]
+Race: Human
+Sex: Male
+Age: 38
+Size: +0
+TL: 4
+
+Unused Points: 0
+
+Attributes [50]
+ST 12
+DX 10
+IQ 10
+HT 12
+
+HP 12
+FP 12
+PER 12
+WILL 10
+
+Basic Speed: 5.5
+Basic Move: 5</div>
+        <p>Lists of traits are generated with loop keys. When GCS encounters a loop, it
+          applies the template within the loop once for each item on the list. If one adds...</p>
+        <div class="code">@ADVANTAGES_LOOP_START
+@DESCRIPTION_PRIMARY@DESCRIPTION_MODIFIER_NOTES_PAREN [@POINTS]
+@ADVANTAGES_LOOP_END</div>
+        <p>...GCS will output...</p>
+        <div class="code">Advantages  [15]
+Fit [5]
+High Pain Threshold [10]
+Language: English (Native, -6; Spoken (Native), +3; Written (Native), +3.) [0]
+Disadvantages [-25]
+Bad Temper (CR: 15 (Almost All The Time).) [-5]
+Charitable (CR: 12 (Quite Often).) [-15]
+Skinny [-5]</div>
+        <p>There are several different forms of the <strong>@DESCRIPTION</strong> keys.
+          <strong>_PRIMARY</strong> outputs the name only, <strong>_MODIFIER_NOTES</strong>
+          outputs those notes due to modifers, and <strong>_NOTES</strong> outputs the text
+          in the Notes field of the advantage, skill, or equipment. The latter two can also
+          have <strong>_PAREN</strong> appended to them to surround the output, if any, in
+          parenthesis. <strong>@DESCRIPTION_NOTES</strong> is omitted here because notes on
+          advantages are rules summaries, which, while useful on character sheets meant for
+          use in play, are not desirable in this template. Notes are, however, meaningful
+          on skills, equipment, and spells, and so are included in those loops:</p>
+        <div class="code">Skills [@SKILL_POINTS]
+@SKILLS_LOOP_START
+@DESCRIPTION_PRIMARY @DESCRIPTION_NOTES_PAREN @SL (@RSL) [@POINTS]
+@SKILLS_LOOP_END
+
+Spells [@SPELL_POINTS]
+@SPELLS_LOOP_START
+@DESCRIPTION_PRIMARY @DESCRIPTION_NOTES_PAREN @SL (@RSL) [@POINTS]
+@SPELLS_LOOP_END
+
+Equipment (@CARRIED_VALUE, @CARRIED_WEIGHT)
+@EQUIPMENT_LOOP_START
+@DESCRIPTION_PRIMARY, $@COST, @WEIGHT, x@QTY
+@EQUIPMENT_LOOP_END
+
+Notes
+@NOTES_LOOP_START
+@NOTE
+@NOTES_LOOP_END
+</div>
+        <p>Adding <strong>@NOTES</strong> to the end finishes this template.</p>
             <h2>Available Keys</h2>
             <h3>Description</h3>
             <ul>
