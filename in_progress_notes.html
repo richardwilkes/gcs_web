@@ -53,6 +53,9 @@
           <h2>Version <span class="version">&lt;in development&gt;</span> <span class="release_date">Not released yet</span></h2>
           <h3>Features Added</h3>
           <ul>
+            <li>Separated the damage field into its constituent parts so that they can be more easily and
+                accurately manipulated. <b>NOTE:</b> This means that data files saved with this version or newer
+                will not be compatible with older data files.</li>
             <li><a href="https://github.com/richardwilkes/gcs/pull/103">#103</a>: Fantasy Grounds text/xml export.</li>
             <li><a href="https://github.com/richardwilkes/gcs/pull/112">#112</a>: Tooltips for skill level calculation.</li>
             <li><a href="https://github.com/richardwilkes/gcs/pull/113">#113</a>: Tooltips for spell level and weapon damage calculation.</li>
@@ -78,6 +81,7 @@
             <li>Fixed <a href="https://github.com/richardwilkes/gcs/issues/100">#100:</a> Knowing Your Own Strength HP pricing.</li>
             <li>Fixed <a href="https://github.com/richardwilkes/gcs/issues/122">#122:</a> Defaults from very high skills could result in incorrect skill levels.</li>
             <li>Fixed an issue where the drag insert location was not in the correct location.</li>
+            <li>Fixed an issue that would prevent quit from responding correctly if a tooltip was being displayed.</li>
           </ul>
           <h3>Data File Changes</h3>
           <ul>
