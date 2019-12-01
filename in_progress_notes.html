@@ -54,7 +54,7 @@
           <h3>Features Added</h3>
           <ul>
             <li><a href="https://github.com/richardwilkes/gcs/pull/103">#103</a>: Fantasy Grounds text/xml export.</li>
-            <li><a href="https://github.com/richardwilkes/gcs/issues/107">#107:</a> Add support for additional dice
+            <li><a href="https://github.com/richardwilkes/gcs/issues/107">#107</a>: Support for additional dice
                 of damage in damage expressions. Separated the damage field into its constituent parts so that they
                 can be more easily and accurately manipulated. <b>NOTE:</b> This means that data files saved with
                 this version or newer will not be compatible with older data files.</li>
@@ -65,13 +65,17 @@
             <li><a href="https://github.com/richardwilkes/gcs/pull/118">#118</a>: Feature by category for spells.</li>
             <li><a href="https://github.com/richardwilkes/gcs/pull/119">#119</a>: Feature by category for weapons.</li>
             <li><a href="https://github.com/richardwilkes/gcs/pull/124">#124</a>: Preference for alternate damage scheme: thr = sw - 2.</li>
-            <li><a href="https://github.com/richardwilkes/gcs/pull/127">#127</a>: User description tooltips.</li>
+            <li><a href="https://github.com/richardwilkes/gcs/pull/127">#127</a>: User description tooltips. This is
+                an additional text area on some data types that only shows up in a tooltip. Useful for adding longer,
+                more detailed descriptions without cluttering the sheet up. Note that this field does not get saved
+                into libraries, only character sheets, to avoid having large chunks of copyrighted material suddenly
+                introduced into the libraries.</li>
             <li>Implemented a new localization system that relies on external files rather than being in the code.
                 As part of this change, I've removed the existing translations as they were woefully out of date.
                 If you'd like to provide a translation for a language you're fluent in, copy the "template.i18n"
-                file in the "i18n" directory next to the application and name it for your language (e.g. "de.i18n"
-                for German), then edit its contents, updating the "v:" values to have the translation for the "k:"
-                values. If you have questions, feel free to contact me about this.</li>
+                file in the "i18n" directory and name it for your language (e.g. "de.i18n" for German), then edit
+                its contents, updating the "v:" values to have the translation for the "k:" values. If you have
+                questions, feel free to contact me about this.</li>
             <li>Added a contextual menu to the lists.</li>
           </ul>
           <h3>Bugs Fixed</h3>
@@ -83,16 +87,17 @@
             <li>Fixed <a href="https://github.com/richardwilkes/gcs/issues/122">#122:</a> Defaults from very high skills could result in incorrect skill levels.</li>
             <li>Fixed an issue where the drag insert location was not in the correct location.</li>
             <li>Fixed an issue that would prevent quit from responding correctly if a tooltip was being displayed.</li>
+            <li>Fixed a number of issues on Windows with text truncation, particularly in tooltips.</li>
           </ul>
           <h3>Data File Changes</h3>
           <ul>
             <li>Updated equipment with 'AmmoType:' and 'UsesAmmoType:' categories to support the Fantasy Ground export.</li>
-            <li><a href="https://github.com/richardwilkes/gcs_library/pull/66">#66</a>: Added libraries for Tactical Shooting, Thaumatology - Ritual Path Magic, and meta-traits from Ultra Tech.</li>
+            <li><a href="https://github.com/richardwilkes/gcs_library/pull/66">#66</a>: Libraries for Tactical Shooting, Thaumatology - Ritual Path Magic, and meta-traits from Ultra Tech.</li>
             <li><a href="https://github.com/richardwilkes/gcs_library/pull/68">#68</a>: Corrections to the High Tech library.</li>
-            <li><a href="https://github.com/richardwilkes/gcs_library/pull/70">#70</a>: Added main Infinity Unlimited templates and loadouts.</li>
-            <li><a href="https://github.com/richardwilkes/gcs_library/pull/71">#71</a>: Added Low Tech shields.</li>
-            <li><a href="https://github.com/richardwilkes/gcs_library/pull/74">#74</a>: Added NPC card template for HTML output.</li>
-            <li><a href="https://github.com/richardwilkes/gcs_library/pull/83">#83</a>: Adding missing monster hunters templates.</li>
+            <li><a href="https://github.com/richardwilkes/gcs_library/pull/70">#70</a>: Main Infinity Unlimited templates and loadouts.</li>
+            <li><a href="https://github.com/richardwilkes/gcs_library/pull/71">#71</a>: Low Tech shields.</li>
+            <li><a href="https://github.com/richardwilkes/gcs_library/pull/74">#74</a>: NPC card template for HTML output.</li>
+            <li><a href="https://github.com/richardwilkes/gcs_library/pull/83">#83</a>: Missing monster hunters templates.</li>
             <li>... and many more small changes to correct existing data</li>
           </ul>
         </div>
