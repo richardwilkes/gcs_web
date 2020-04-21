@@ -1,324 +1,316 @@
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, font, img, strong, ol, ul, li, :focus {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 body {
-	line-height: 100%;
-	background-color: white;
-	color: #9f9f9f;
-	font-family: "trebuchet ms", helvetica, sans-serif;
+  line-height: 100%;
+  background-color: white;
+  color: #9f9f9f;
+  font-family: "trebuchet ms", helvetica, sans-serif;
 }
 
 ol, ul {
-	list-style: square;
-	list-style-position: outside;
-	margin-left: 2.2em;
+  list-style: square outside;
+  margin-left: 2.2em;
 }
 
 p {
-	margin-top: 0.5em;
-	font-size: 1em;
-	line-height: 1.3em;
+  margin-top: 0.5em;
+  font-size: 1em;
+  line-height: 1.3em;
 }
 
 strong {
-	font-weight: normal;
-	color: #505050;
+  font-weight: normal;
+  color: #505050;
 }
 
 a {
-	text-decoration: underline;
-	color: #93b300;
+  text-decoration: underline;
+  color: #93b300;
 }
 
 a:hover {
-	text-decoration: none;
-	color: white;
-	background: #93b300;
+  text-decoration: none;
+  color: white;
+  background: #93b300;
 }
 
 #header {
-	width: 100%;
-	height: 3.5em;
-	background-color: #4d4d4d;
-	background: linear-gradient(#5d5d5d, black 3em, white);
-	color: white;
+  width: 100%;
+  height: 3.5em;
+  background: #4d4d4d linear-gradient(#5d5d5d, black 3em, white);
+  color: white;
 }
 
 #header h1 {
-	position: absolute;
-	left: 0.5em;
-	top: 0.5em;
-	font-size: 2em;
-	font-weight: normal;
-	color: white;
+  position: absolute;
+  left: 0.5em;
+  top: 0.5em;
+  font-size: 2em;
+  font-weight: normal;
+  color: white;
 }
 
 #slogan {
-	position: absolute;
-	right: 1em;
-	top: 1.5em;
-	font-size: 0.8em;
-	color: #dadada;
+  position: absolute;
+  right: 1em;
+  top: 1.5em;
+  font-size: 0.8em;
+  color: #dadada;
 }
 
 #footer {
-	clear: both;
-	width: 100%;
-	margin-bottom: 0.5em;
-	text-align: center;
-	font-size: 60%;
-	background: linear-gradient(#eeeeee, white 1em);
-	border-top: 1px solid #eeeeee;
-	padding-top: 0.75em;
-	line-height: 1.2em;
+  clear: both;
+  width: 100%;
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-size: 60%;
+  background: linear-gradient(#eee, white 1em);
+  border-top: 1px solid #eee;
+  padding-top: 0.75em;
+  line-height: 1.2em;
 }
 
 #main {
-	position: relative;
-	margin: 0.5em;
+  position: relative;
+  margin: 0.5em;
 }
 
 #left_column {
-	position: relative;
-	width: 13em;
-	float: left;
-	font-size: 0.9em;
+  position: relative;
+  width: 13em;
+  float: left;
+  font-size: 0.9em;
 }
 
 #menu {
-	margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 #menu ul {
-	list-style: none;
-	margin-left: 0;
+  list-style: none;
+  margin-left: 0;
 }
 
 #menu li {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 #menu a {
-	display: block;
-	position: relative;
-	width: 11em;
-	height: 1em;
-	padding: 0.5em;
-	margin-bottom: 1px;
-	text-decoration: none;
-	background-color: #dddddd;
-	background: linear-gradient(#dddddd, #aaaaaa);
-	color: #505050;
-	font-size: 1em;
+  display: block;
+  position: relative;
+  width: 11em;
+  height: 1em;
+  padding: 0.5em;
+  margin-bottom: 1px;
+  text-decoration: none;
+  background: #ddd linear-gradient(#ddd, #aaa);
+  color: #505050;
+  font-size: 1em;
 }
 
 #menu a:hover {
-	background-color: #c6e600;
-	background: linear-gradient(#c6e600, #93B300);
+  background: #c6e600 linear-gradient(#c6e600, #93b300);
 }
 
 h1, h2, h3 {
-	color: #6C7425;
+  color: #6c7425;
 }
 
 h1 {
-	font-size: 1.8em;
+  font-size: 1.8em;
 }
 
 h2 {
-	margin-top: 1em;
-	font-size: 1.2em;
-	line-height: 1.7em;
-	background: linear-gradient(white, white 1.2em, #eeeeee 1.2em, white);
+  margin-top: 1em;
+  font-size: 1.2em;
+  line-height: 1.7em;
+  background: linear-gradient(white, white 1.2em, #eee 1.2em, white);
 }
 
 h3 {
-	margin-top: 1em;
-	font-size: 1em;
-	line-height: 1.5em;
-	background: linear-gradient(white, white 1.1em, #eeeeee 1.1em, white);
+  margin-top: 1em;
+  font-size: 1em;
+  line-height: 1.5em;
+  background: linear-gradient(white, white 1.1em, #eee 1.1em, white);
+}
+
+h4 {
+  font-size: 0.9em;
+  line-height: 1.1em;
 }
 
 #links {
-	margin: 0.75em;
+  margin: 0.75em;
 }
 
 #links ul {
-	margin-left: 1.1em;
+  margin-left: 1.1em;
 }
 
 #links li {
-	font-size: 0.8em;
-	line-height: 2em;
+  font-size: 0.8em;
+  line-height: 2em;
 }
 
 #right_column {
-	position: relative;
-	padding-top: 0.5em;
-	margin-left: 13em;
-	font-size: 0.9em;
+  position: relative;
+  padding-top: 0.5em;
+  margin-left: 13em;
+  font-size: 0.9em;
 }
 
 .version {
-	color: #93B300;
+  color: #93b300;
 }
 
 .release_date {
-	float: right;
-	font-size: 0.75em;
+  float: right;
+  font-size: 0.75em;
 }
 
 .first {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 .vgap {
-	margin-top: 2em;
+  margin-top: 2em;
 }
 
 #release_notes h3 {
-	margin-left: 1em;
+  margin-left: 1em;
+}
+
+#release_notes h4 {
+  margin-left: 2.25em;
 }
 
 #release_notes li {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .box {
-	margin: 1em;
-	padding: 1em;
-	border: dashed 1px #dadada;
-	background-color: #ffffcc;
-	background: linear-gradient(#ffffcc, #ffffee);
-	text-align: center;
+  margin: 1em;
+  padding: 1em;
+  border: dashed 1px #dadada;
+  background: #ffc linear-gradient(#ffc, #ffe);
+  text-align: center;
 }
 
 #logo {
-	width: 200px;
-	height: 133px;
-	display: inline-block;
-	vertical-align: top;
+  width: 200px;
+  height: 133px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 #downloads {
-	display: inline-block;
-	margin-left: 1em;
-	margin-right: 1em;
-	vertical-align: top;
+  display: inline-block;
+  margin-left: 1em;
+  margin-right: 1em;
+  vertical-align: top;
 }
 
 #downloads h2 {
-	margin: 0;
-	margin-bottom: 0.5em;
-	text-align: center;
-	line-height: 1.2em;
-	background: none;
+  margin: 0 0 0.5em;
+  text-align: center;
+  line-height: 1.2em;
+  background: none;
 }
 
 #downloads p {
-	margin: 0;
-	color: #6C7425;
+  margin: 0;
+  color: #6c7425;
 }
 
 #downloads a img {
-	width: 42px;
-	height: 57px;
+  width: 42px;
+  height: 57px;
 }
 
 #downloads a:hover {
-	background: none;
+  background: none;
 }
 
 .footnote {
-	color: #6C7425;
-	text-align: center;
-	font-size: 1em;
-	font-style: italic;
-	margin-top: 1.5em;
+  color: #6c7425;
+  text-align: center;
+  font-size: 1em;
+  font-style: italic;
+  margin-top: 1.5em;
 }
 
 .code_header {
-	margin-top: 1em;
-	margin-bottom: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
 .code {
-	border: dashed 1px #8cacbb;
-	color: black;
-	background-color: #f7f9fa;
-	padding: 0.5em;
-	font-size: 1em;
-	font-family: monospace;
-	line-height: 1.2em;
-	display: block;
-	white-space: pre;
-	margin-top: 0.5em;
-	margin-bottom: 1em;
-	margin-left: 2em;
-	margin-right: 2em;
+  border: dashed 1px #8cacbb;
+  color: black;
+  background-color: #f7f9fa;
+  padding: 0.5em;
+  font-size: 1em;
+  font-family: monospace;
+  line-height: 1.2em;
+  display: block;
+  white-space: pre;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 #dev_setup ul {
-	margin-left: 2.5em;
+  margin-left: 2.5em;
 }
 
 #note {
-	border: dashed 1px #8cacbb;
-	color: black;
-	background-color: #f7f9fa;
-	padding: 0.5em;
-	font-size: 1em;
-	font-style: italic;
-	line-height: 1.2em;
-	display: block;
-	margin: 2em;
+  border: dashed 1px #8cacbb;
+  color: black;
+  background-color: #f7f9fa;
+  padding: 0.5em;
+  font-size: 1em;
+  font-style: italic;
+  line-height: 1.2em;
+  display: block;
+  margin: 2em;
 }
 
 #note h1 {
-	font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .btn_wrap {
-	text-align: center;
-	margin-top: 3em;
-	margin-bottom: 3em;
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 
 .btn {
-  background: #3498db;
-  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-color: #3498db;
   background-image: linear-gradient(to bottom, #3498db, #2980b9);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
   border-radius: 28px;
   font-family: Arial;
-  color: #ffffff;
+  color: #fff;
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 }
 
 .btn:hover {
-  background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  background: #3cb0fd linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
 }
 
 #menu a.double_height {
-    height: 2.1em;
+  height: 2.1em;
 }
