@@ -66,14 +66,16 @@
           </ul>
           <h3>Bugs Fixed</h3>
           <ul>
+            <li><a href="https://github.com/richardwilkes/gcs/issues/178">#178</a>: Trying to open GCS files from the
+              Windows Explorer would fail if the path had spaces in it.</li>
+            <li><a href="https://github.com/richardwilkes/gcs/issues/189">#189</a>: Adjust "tired" and "reeling"
+              effects to reflect rules errata.</li>
             <li>Revised the Master Library updating code to move the existing Master Library out of the way before
               downloading the new data. Once the new data has been downloaded and extracted, the old data will be
               removed. If a failure occurs during download or extraction, then the old data will be restored to its
               original place. This still isn't fool-proof, as OS-level errors can still cause failures that can't
               be guarded against, but it should result in few or no cases of leaving the library in a bad state.</li>
             <li>Adjusting HT now updates FP appropriately.</li>
-            <li><a href="https://github.com/richardwilkes/gcs/issues/189">#189</a>: Adjust "tired" and "reeling"
-              effects to reflect rules errata.</li>
           </ul>
         </div>
       </div>
