@@ -56,12 +56,19 @@
           <ul>
             <li>Added per-sheet settings.</li>
             <li>#186: Added TL to equipment modifiers.</li>
-            <li>Added feature support for adding a weapon damage bonus and a weapon skill bonus to "this weapon", i.e. limiting the
-              effect to the data it is attached to.</li>
-            <li>Layout and presentation of the character sheet has been adjusted to give more information at a glance. The default fonts
-              were adjusted as part of this, so if you had custom font choices, you'll need to re-apply them.</li>
+            <li>A weapon damage and/or skill bonus can now be added to "this weapon" or to "a weapon whose name...". This permits
+              targeting the bonus to specific weapons rather than to all those that use a given skill. As part of this change, the
+              3 natural weapon menu items that turned on/off the inclusion of punches and kicks on the sheet's weapon list have
+              been removed. Appropriate advantages will be added to the Basic Set Advantages file and the Basic Set Equipment file
+              will have the boots adjusted to automatically give the expected +1 damage bonus to kicks if boots are worn. To get
+              the proper effect, you will need to use the new advantages and equipment.</li>
+            <li>Layout and presentation of the character sheet has been adjusted to give more information at a glance. The default
+              fonts were adjusted as part of this, so if you had custom font choices, you'll need to re-apply them.</li>
             <li>When FP falls into the Tired, Collapse, or Unconscious range, the appropriate state is now highlighted.</li>
             <li>When HP falls into the Reeling, Collapse, Check 1-4, or Dead range, the appropriate state is now highlighted.</li>
+            <li>On Windows, a log file will be created at %LOCALAPPDATA%\GCS\error.log by default unless overridden by the GCS_LOG
+              environment variable. Other platforms still default to logging to the console unless overridden by the GCS_LOG
+              environment variable.</li>
           </ul>
           <h3>Bugs Fixed</h3>
           <ul>
