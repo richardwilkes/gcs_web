@@ -56,11 +56,18 @@
           <ul>
             <li>When notifying about a new release of GCS, the release notes are now shown as part of the dialog.</li>
             <li>Improved the ability to drag images to the portrait box, adding more source types.</li>
-            <li>Switched preference storage to use json rather than xml. Old preference settings will be lost due to this change.</li>
           </ul>
           <h3>Bugs Fixed</h3>
           <ul>
             <li>Fixed an issue on Windows where line endings were causing the block layout per-sheet settings to be unconfigurable.</li>
+          </ul>
+          <h3>Other Changes</h3>
+          <ul>
+            <li>Switched preference storage to use json rather than xml. NOTE: Old preference settings will be lost due to this change.</li>
+            <li>Changed logging defaults again. The environment variable GCS_LOG still takes precedence over everything. If not
+              set and this isn't a development version, then a platform-specific log file will be used rather than the console.
+              On macOS, this is ~/Library/Logs/gcs.log. On Windows, this is %LOCALAPPDATA%\logs\gcs.log. On Linux, this is
+              ~/.local/logs/gcs.log. If the destination file can't be created, then it will fall back to the console.</li>
           </ul>
         </div>
       </div>
