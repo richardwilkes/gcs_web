@@ -72,8 +72,6 @@ a:hover {
   margin-bottom: 0.5em;
   text-align: center;
   font-size: 60%;
-  background: linear-gradient(#eee, white 1em);
-  border-top: 1px solid #eee;
   padding-top: 0.75em;
   line-height: 1.2em;
 }
@@ -200,7 +198,8 @@ h4 {
 .box {
   margin: 1em;
   padding: 1em;
-  border: dashed 1px #dadada;
+  border: solid 1px #dadada;
+  border-radius: 1em;
   background: #ffc linear-gradient(#ffc, #ffe);
   text-align: center;
 }
@@ -313,4 +312,9 @@ h4 {
 
 #menu a.double_height {
   height: 2.1em;
+}
+
+.sponsor {
+  margin-top: 2em;
+  text-align: center;
 }
