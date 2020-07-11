@@ -36,6 +36,7 @@
     </div>
     <div id="right_column">
       <h1>Frequently Asked Questions</h1>
+
       <h3>Can I submit new/revised data files?</h3>
       <p>Absolutely! Almost all of the current data content of GCS was provided by helpful
          individuals other than me. If you have completely new content, please create a new
@@ -46,18 +47,63 @@
          <a href="https://github.com/richardwilkes/gcs_master_library/pulls">Pull Request</a> or an
          <a href="https://github.com/richardwilkes/gcs_master_library/issues">Issue</a> for the work
          and attach the new file or patch file to that.</p>
+
       <h3>What page reference abbreviations are being used in the data files?</h3>
       <p>The current list of page reference abbreviations can be found here:
          <a href="page_references.html">https://gurpscharactersheet.com/page_references</a></p>
+
       <h3>How do I get GCS to use a high DPI display without pixelation/blurring when run on Windows?</h3>
-        <p>In the Windows Explorer:</p>
-        <ol>
-          <li>Right-click the GCS app icon and choose "Properties"</li>
-          <li>Select the "Compatibility" tab</li>
-          <li>Click the "Change high DPI settings" button</li>
-          <li>Check the checkbox at the bottom labeled "Override high DPI scaling behavior"</li>
-          <li>Change the combo to say "Application" if it doesn't already</li>
-        </ol>
+      <p>In the Windows Explorer:</p>
+      <ol>
+        <li>Right-click the GCS app icon and choose "Properties"</li>
+        <li>Select the "Compatibility" tab</li>
+        <li>Click the "Change high DPI settings" button</li>
+        <li>Check the checkbox at the bottom labeled "Override high DPI scaling behavior"</li>
+        <li>Change the combo to say "Application" if it doesn't already</li>
+      </ol>
+
+      <h3>Is there a version of GCS localized for my language?</h3>
+      <p>The short answer is no. However, if you'd like to provide a translation for a language
+        you're fluent in, copy the <span class="notable">template.i18n</span> file in the
+        <span class="notable">i18n</span> directory and name it for your language (e.g.
+        <span class="notable">de.i18n</span> for German), then edit its contents, updating the
+        <span class="notable">v:</span> values to have the translation for the
+        <span class="notable">k:</span> values. If you have questions, feel free to contact me
+        about this.</p>
+
+      <h3>Where can I find the global preferences file?</h3>
+      <p>Its location is dependent upon your specific platform. You can find the preference file
+        here:
+      </p>
+      <br>
+      <ol>
+        <li>macOS: <span class="notable">~/Library/Preferences/gcs.json</span></li>
+        <li>Windows: <span class="notable">%LOCALAPPDATA%\gcs.json</span></li>
+        <li>Linux: <span class="notable">~/.config/gcs.json</span></li>
+      </ol>
+
+      <h3>Does GCS produce a log file?</h3>
+      <p>Yes. Its location is dependent upon your specific platform and some environment variables
+        (see the next question about environment variables). By default, you can find the log file
+        here:
+      </p>
+      <br>
+      <ol>
+        <li>macOS: <span class="notable">~/Library/Logs/gcs.log</span></li>
+        <li>Windows: <span class="notable">%LOCALAPPDATA%\logs\gcs.log</span></li>
+        <li>Linux: <span class="notable">~/.local/logs/gcs.log</span></li>
+      </ol>
+
+      <h3>Are there any environment variables for controlling GCS's behavior? If so, what are they?</h3>
+      <p>As of the v4.20 release, there is only one (not counting standard system ones, such as
+        <span class="notable">HOME</span> on macOS and Linux and
+        <span class="notable">LOCALAPPDATA</span> on Windows:</p>
+      <br>
+      <ol>
+        <li><span class="notable">GCS_LOG</span>: Sets the file that GCS will log problems to. This
+          file is overwritten with each launch. See "Does GCS produce a log file" above for details
+          on where the log file gets written if this environment variable is not set.</li>
+      </ol>
     </div>
   </div>
   <div id="footer">

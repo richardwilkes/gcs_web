@@ -262,10 +262,16 @@ h4 {
   line-height: 1.2em;
   display: block;
   white-space: pre;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-  margin-left: 2em;
-  margin-right: 2em;
+  margin: 0.5em 2em 1em;
+}
+
+.notable {
+  background-color: #d5fffc;
+  font-weight: bold;
+  font-family: monospace;
+  line-height: 1.2em;
+  padding-inline-start: 0.5em;
+  padding-inline-end: 0.5em;
 }
 
 #dev_setup ul {
