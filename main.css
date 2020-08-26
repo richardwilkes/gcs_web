@@ -196,12 +196,13 @@ h4 {
 }
 
 .box {
-  margin: 1em;
+  margin: 1em auto;
   padding: 1em;
   border: solid 1px #dadada;
   border-radius: 1em;
-  background: #ffc linear-gradient(#ffc, #ffe);
+  background-color: #f7f9fa;
   text-align: center;
+  width: fit-content;
 }
 
 #logo {
@@ -233,6 +234,8 @@ h4 {
 #downloads a img {
   width: 42px;
   height: 57px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 #downloads a:hover {
@@ -279,41 +282,20 @@ h4 {
 }
 
 #note {
-  border: dashed 1px #8cacbb;
+  border: solid 1px #f00;
+  border-radius: 1em;
   color: black;
-  background-color: #f7f9fa;
+  background: #ffe0cc;
   padding: 0.5em;
   font-size: 1em;
   font-style: italic;
   line-height: 1.2em;
   display: block;
-  margin: 2em;
+  margin: 1em;
 }
 
 #note h1 {
   font-size: 1.2em;
-}
-
-.btn_wrap {
-  text-align: center;
-  margin-top: 3em;
-  margin-bottom: 3em;
-}
-
-.btn {
-  background-color: #3498db;
-  background-image: linear-gradient(to bottom, #3498db, #2980b9);
-  border-radius: 28px;
-  font-family: Arial;
-  color: #fff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: #3cb0fd linear-gradient(to bottom, #3cb0fd, #3498db);
-  text-decoration: none;
 }
 
 #menu a.double_height {
