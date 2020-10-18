@@ -197,13 +197,19 @@ h4 {
 
 .box {
   margin: 1em auto;
+  width: fit-content;
   padding: 1em;
   border: solid 1px #dadada;
   border-radius: 1em;
   background-color: #f7f9fa;
   text-align: center;
-  width: fit-content;
 }
+
+.note_color {
+  background-color: #fcd5be;
+  border-color: darkred;
+}
+
 
 #logo {
   width: 200px;
@@ -212,33 +218,33 @@ h4 {
   vertical-align: top;
 }
 
-#downloads {
+#downloads, #downloads_json_updater {
   display: inline-block;
   margin-left: 1em;
   margin-right: 1em;
   vertical-align: top;
 }
 
-#downloads h2 {
+#downloads h2, #downloads_json_updater h2 {
   margin: 0 0 0.5em;
   text-align: center;
   line-height: 1.2em;
   background: none;
 }
 
-#downloads p {
+#downloads p, #downloads_json_updater p {
   margin: 0;
   color: #6c7425;
 }
 
-#downloads a img {
+#downloads a img, #downloads_json_updater a img {
   width: 42px;
   height: 57px;
   padding-left: 8px;
   padding-right: 8px;
 }
 
-#downloads a:hover {
+#downloads a:hover, #downloads_json_updater a:hover {
   background: none;
 }
 
@@ -291,7 +297,8 @@ h4 {
   font-style: italic;
   line-height: 1.2em;
   display: block;
-  margin: 1em;
+  margin: 1em auto;
+  width: 440px;
 }
 
 #note h1 {
