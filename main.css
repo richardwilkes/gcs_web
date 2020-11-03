@@ -205,12 +205,6 @@ h4 {
   text-align: center;
 }
 
-.note_color {
-  background-color: #fcd5be;
-  border-color: darkred;
-}
-
-
 #logo {
   width: 200px;
   height: 133px;
@@ -288,17 +282,19 @@ h4 {
 }
 
 #note {
-  border: solid 1px #f00;
-  border-radius: 1em;
   color: black;
-  background: #ffebdc;
   padding: 0.5em;
   font-size: 1em;
   font-style: italic;
   line-height: 1.2em;
   display: block;
-  margin: 1em auto;
+  margin: 1em auto 1em;
   width: 440px;
+}
+
+.note_color {
+  background-color: #f8f0ed;
+  border-color: #8b0000;
 }
 
 #note h1 {
@@ -312,4 +308,21 @@ h4 {
 .sponsor {
   margin-top: 2em;
   text-align: center;
+  width: 600px;
+}
+
+.sponsor p {
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sponsor iframe {
+  width: 600px;
+  border: none;
+}
+
+.blog_list {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
