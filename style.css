@@ -375,11 +375,12 @@ body > section {
     --content-link-visited: #809fff;
     --content-link-hover: #809fff;
     --content-link-active: #5d7ee3;
+    --non-content-fg: #eee;
     --non-content-bg: slategrey;
-    --non-content-link: #1c2f64;
-    --non-content-link-visited: #1c2f64;
-    --non-content-link-hover: #1c2f64;
-    --non-content-link-active: #4061bc;
+    --non-content-link: #bbcdff;
+    --non-content-link-visited: #bbcdff;
+    --non-content-link-hover: #bbcdff;
+    --non-content-link-active: blue;
   }
 
   .notable {
