@@ -310,22 +310,6 @@ Notes
                 <li>CULTURAL_FAMILIARITIES_LOOP_START</li>
                 <li>CULTURAL_FAMILIARITIES_LOOP_END</li>
             </ul>
-            <h3>Reactions Loop</h3>
-            <ul>
-                <li>REACTION_LOOP_END</li>
-                <li>REACTION_LOOP_START</li>
-                <li>MODIFIER</li>
-                <li>SITUATION</li>
-                <li>ID</li>
-            </ul>
-            <h3>Conditional Modifiers Loop</h3>
-            <ul>
-                <li>CONDITIONAL_MODIFIERS_LOOP_END</li>
-                <li>CONDITIONAL_MODIFIERS_LOOP_START</li>
-                <li>MODIFIER</li>
-                <li>SITUATION</li>
-                <li>ID</li>
-            </ul>
             <h3>Keys that can be used in any of the above Advantage/Disadvantage loops</h3>
             <ul>
                 <li>DESCRIPTION<br>(Produces output of the form below, excluding those sections not present)<br>
@@ -347,6 +331,7 @@ Notes
                     category "Power".
                 </li>
                 <li>ID</li>
+                <li>PARENT_ID</li>
                 <li>MODIFIER_NOTES_FOR_&lt;NAME&gt;<br>Display the notes for the modifier named "&lt;NAME&gt;",
                     case insensitive.
                 </li>
@@ -357,6 +342,22 @@ Notes
                 <li>POINTS</li>
                 <li>REF</li>
                 <li>TYPE</li>
+            </ul>
+            <h3>Reactions Loop</h3>
+            <ul>
+                <li>REACTION_LOOP_END</li>
+                <li>REACTION_LOOP_START</li>
+                <li>MODIFIER</li>
+                <li>SITUATION</li>
+                <li>ID</li>
+            </ul>
+            <h3>Conditional Modifiers Loop</h3>
+            <ul>
+                <li>CONDITIONAL_MODIFIERS_LOOP_END</li>
+                <li>CONDITIONAL_MODIFIERS_LOOP_START</li>
+                <li>MODIFIER</li>
+                <li>SITUATION</li>
+                <li>ID</li>
             </ul>
             <h3>Skills Loop</h3>
             <ul>
@@ -380,6 +381,7 @@ Notes
                 <li>POINTS</li>
                 <li>REF</li>
                 <li>ID</li>
+                <li>PARENT_ID</li>
                 <li>RSL<br>(Relative skill level)</li>
                 <li>SL<br>(Skill level)</li>
             </ul>
@@ -410,6 +412,7 @@ Notes
                 <li>POINTS</li>
                 <li>REF</li>
                 <li>ID</li>
+                <li>PARENT_ID</li>
                 <li>RSL<br>(Relative skill level)</li>
                 <li>SL<br>(Skill level)</li>
                 <li>TIME_CAST</li>
@@ -541,6 +544,7 @@ Notes
                 <li>EQUIPPED<br>Checkmark if equipped</li>
                 <li>EQUIPPED_NUM<br>1 if equipped, 0 if not equipped</li>
                 <li>ID</li>
+                <li>PARENT_ID</li>
                 <li>QTY</li>
                 <li>REF</li>
                 <li>STATE<br>(Whether the item is carried ("C"), equipped ("E") or not carried ("-"))</li>
@@ -554,6 +558,7 @@ Notes
                 <li>NOTE</li>
                 <li>REF</li>
                 <li>ID</li>
+                <li>PARENT_ID</li>
             </ul>
             <h3>Notes all combined into one text block</h3>
             <ul>
