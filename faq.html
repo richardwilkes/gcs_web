@@ -107,6 +107,53 @@
                 </li>
             </ul>
         </article>
+        <article>
+            <h2>Can I define my own standard hit location tables and have them show up in the combo for selection?</h2>
+            <p>Yes. Make sure to give the table a unique ID, then export it and place it in a directory named
+                "Hit Locations" at the top level of one of your GCS Library directories.</p>
+        </article>
+        <article>
+            <h2>What operators and functions are available for use in attribute expressions?</h2>
+            <p>Operators:</p>
+            <ul>
+                <li>open paren: <code class="ic">(</code></li>
+                <li>close paren: <code class="ic">)</code></li>
+                <li>add: <code class="ic">+</code></li>
+                <li>subtract: <code class="ic">-</code></li>
+                <li>power: <code class="ic">^</code></li>
+                <li>multiply: <code class="ic">*</code></li>
+                <li>divide: <code class="ic">/</code></li>
+                <li>equal to: <code class="ic">==</code></li>
+                <li>not equal to: <code class="ic">!=</code></li>
+                <li>less than or equal to: <code class="ic">&lt;=</code></li>
+                <li>less than: <code class="ic">&lt;</code></li>
+                <li>greater than or equal to: <code class="ic">&gt;=</code></li>
+                <li>greater than: <code class="ic">&gt;</code></li>
+                <li>logical and: <code class="ic">&amp;&amp;</code></li>
+                <li>logical or: <code class="ic">||</code></li>
+                <li>logical not: <code class="ic">!</code></li>
+                <li>modulo: <code class="ic">%</code></li>
+            </ul>
+            <p>Functions:</p>
+            <ul>
+                <li><code class="ic">abs(arg)</code> returns the absolute value of the arg</li>
+                <li><code class="ic">cbrt(arg)</code> returns the cube root of the arg</li>
+                <li><code class="ic">ceil(arg)</code> returns the smallest (closest to negative infinity) value that is greater than or equal to the arg and is equal to a mathematical integer</li>
+                <li><code class="ic">exp(arg)</code> returns Euler's number e raised to the power of the arg</li>
+                <li><code class="ic">floor(arg)</code> returns the largest (closest to positive infinity) value that is less than or equal to the arg and is equal to a mathematical integer</li>
+                <li><code class="ic">if(arg1, arg2, arg3)</code> returns arg3 if arg1 resolves to 0 or an empty string, otherwise returns arg2</li>
+                <li><code class="ic">log(arg)</code> returns the natural logarithm (base e) of the arg</li>
+                <li><code class="ic">log1p(arg)</code> returns the natural logarithm of the sum of the arg and 1</li>
+                <li><code class="ic">log10(arg)</code> returns the base 10 logarithm of the arg</li>
+                <li><code class="ic">max(arg1, arg2)</code> returns the greater of the two args</li>
+                <li><code class="ic">min(arg1, arg2)</code> returns the lesser of the two args</li>
+                <li><code class="ic">pow(arg1, arg2)</code> returns the value of arg1 raised to the power of arg2</li>
+                <li><code class="ic">roll(arg)</code> returns the result of rolling dice (arg uses standard dice notation)</li>
+                <li><code class="ic">round(arg)</code> returns the closest long to the arg, with ties rounding to positive infinity</li>
+                <li><code class="ic">signed(arg)</code> returns the arg with a leading '+' if it is positive</li>
+                <li><code class="ic">sqrt(arg)</code> returns the positive square root of arg</li>
+            </ul>
+        </article>
     </main>
     <div id="aside">
         <div>

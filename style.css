@@ -202,8 +202,6 @@ article p {
 
 code {
   border: dashed 1px var(--dotted-line);
-  /*color: black;*/
-  /*background-color: #f7f9fa;*/
   padding: 0.5em;
   font-size: 1em;
   font-family: monospace;
@@ -211,6 +209,11 @@ code {
   display: block;
   white-space: pre;
   margin: 0.5em 2em 1em;
+}
+
+.ic {
+  display: inline-block;
+  margin: 0;
 }
 
 footer {
