@@ -43,6 +43,23 @@
                 the new file or patch file to that.</p>
         </article>
         <article>
+            <h2>GCS won't start on my platform or it is behaving oddly. What is wrong?</h2>
+            <p>Many things could be going wrong, but the most common cause of failures to launch correctly or odd
+                behavior is having extensions installed that override basic Java behavior or setting environment
+                variables that alter default behavior. To avoid this, make sure these environment variables are
+                <b>NOT</b> set:</p>
+            <ul>
+                <li><span class="notable">JAVA_TOOL_OPTIONS</span></li>
+                <li><span class="notable">_JAVA_OPTIONS</span></li>
+            </ul>
+            <p>and make sure these extension directories are empty or non-existent (listed per-platform):</p>
+            <ul>
+                <li>macOS: <span class="notable">/Library/Java/Extensions</span></li>
+                <li>Windows: <span class="notable">%SystemRoot%\Sun\Java\lib\ext</span></li>
+                <li>Linux: <span class="notable">/usr/java/packages/lib/ext</span></li>
+            </ul>
+        </article>
+        <article>
             <h2>What page reference abbreviations are being used in the data files?</h2>
             <p>The current list of page reference abbreviations can be found here:
                 <a href="page_references.html">https://gurpscharactersheet.com/page_references</a></p>
