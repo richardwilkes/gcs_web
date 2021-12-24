@@ -157,6 +157,14 @@
                 <li><code class="ic">advantage_level(arg)</code> looks for an advantage with the name given in arg and returns its level or -1 if it can't be found; available in v4.31+</li>
                 <li><code class="ic">cbrt(arg)</code> returns the cube root of the arg</li>
                 <li><code class="ic">ceil(arg)</code> returns the smallest (closest to negative infinity) value that is greater than or equal to the arg and is equal to a mathematical integer</li>
+                <li><code class="ic">dice(arg1,arg2,arg3,arg4)</code> returns a string suitable for passing to <code class="ic nb">roll()</code>. This function can take from 1 to 4 arguments:
+                    <ol>
+                        <li>sides: <code class="ic nb">dice(4)</code> would return <code class="ic nb">1d4</code></li>
+                        <li>count, sides: <code class="ic nb">dice(2,4)</code> would return <code class="ic nb">2d4</code></li>
+                        <li>count, sides, modifier: <code class="ic nb">dice(2,4,-1)</code> would return <code class="ic nb">2d4-1</code></li>
+                        <li>count, sides, modifier, multiplier: <code class="ic nb">dice(2,4,-1,2)</code> would return <code class="ic nb">2d4-1x2</code></li>
+                    </ol>
+                </li>
                 <li><code class="ic">exp(arg)</code> returns Euler's number e raised to the power of the arg</li>
                 <li><code class="ic">floor(arg)</code> returns the largest (closest to positive infinity) value that is less than or equal to the arg and is equal to a mathematical integer</li>
                 <li><code class="ic">if(arg1, arg2, arg3)</code> returns arg3 if arg1 resolves to 0 or an empty string, otherwise returns arg2</li>
