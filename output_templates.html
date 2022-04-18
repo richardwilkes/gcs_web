@@ -216,10 +216,48 @@ Notes
                 <li>TIRED</li>
                 <li>UNCONSCIOUS</li>
             </ul>
+            <h3>Primary Attributes Loop</h3>
+            <ul>
+                <li>PRIMARY_ATTRIBUTE_LOOP_END</li>
+                <li>PRIMARY_ATTRIBUTE_LOOP_START</li>
+                <li>PRIMARY_ATTRIBUTE_LOOP_COUNT (emits the total number of items in the loop)</li>
+                <li>ID</li>
+                <li>NAME</li>
+                <li>FULL_NAME</li>
+                <li>COMBINED_NAME</li>
+                <li>VALUE</li>
+                <li>POINTS</li>
+            </ul>
+            <h3>Secondary Attributes Loop</h3>
+            <ul>
+                <li>SECONDARY_ATTRIBUTE_LOOP_END</li>
+                <li>SECONDARY_ATTRIBUTE_LOOP_START</li>
+                <li>SECONDARY_ATTRIBUTE_LOOP_COUNT (emits the total number of items in the loop)</li>
+                <li>ID</li>
+                <li>NAME</li>
+                <li>FULL_NAME</li>
+                <li>COMBINED_NAME</li>
+                <li>VALUE</li>
+                <li>POINTS</li>
+            </ul>
+            <h3>Point Pools Loop</h3>
+            <ul>
+                <li>POINT_POOL_LOOP_END</li>
+                <li>POINT_POOL_LOOP_START</li>
+                <li>POINT_POOL_LOOP_COUNT (emits the total number of items in the loop)</li>
+                <li>ID</li>
+                <li>NAME</li>
+                <li>FULL_NAME</li>
+                <li>COMBINED_NAME</li>
+                <li>CURRENT</li>
+                <li>MAXIMUM</li>
+                <li>POINTS</li>
+            </ul>
             <h3>Encumbrance Loop</h3>
             <ul>
                 <li>ENCUMBRANCE_LOOP_START</li>
                 <li>ENCUMBRANCE_LOOP_END</li>
+                <li>ENCUMBRANCE_LOOP_COUNT (emits the total number of items in the loop)</li>
                 <li>DODGE</li>
                 <li>LEVEL<br>(Level of encumbrance; None (0), Light (1), etc.)</li>
                 <li>LEVEL_ONLY<br>(Level of encumbrance; 0, 1, etc.)</li>
@@ -234,6 +272,7 @@ Notes
             <ul>
                 <li>HIT_LOCATION_LOOP_START</li>
                 <li>HIT_LOCATION_LOOP_END</li>
+                <li>HIT_LOCATION_LOOP_COUNT (emits the total number of items in the loop)</li>
                 <li>DR</li>
                 <li>EQUIPMENT<br>(Show the name(s) of the equipment providing the DR bonus on a single line)</li>
                 <li>EQUIPMENT_FORMATTED<br>(Show the name(s) of the equipment providing the DR bonus, each on a separate
@@ -265,46 +304,55 @@ Notes
             <ul>
                 <li>ADVANTAGES_LOOP_START</li>
                 <li>ADVANTAGES_LOOP_END</li>
+                <li>ADVANTAGES_LOOP_COUNT (emits the total number of items in the loop)</li>
             </ul>
             <h3>Advantages Only Loop (only advantages costing 2 points or more)</h3>
             <ul>
                 <li>ADVANTAGES_ONLY_LOOP_START</li>
                 <li>ADVANTAGES_ONLY_LOOP_END</li>
+                <li>ADVANTAGES_ONLY_LOOP_COUNT (emits the total number of items in the loop)</li>
             </ul>
             <h3>All Advantages Only Loop (only advantages, any cost)</h3>
             <ul>
                 <li>ADVANTAGES_ALL_LOOP_START</li>
                 <li>ADVANTAGES_ALL_LOOP_END</li>
+                <li>ADVANTAGES_ALL_COUNT (emits the total number of items in the loop)</li>
             </ul>
             <h3>Disadvantages Loop (only disadvantages costing -2 points or less)</h3>
             <ul>
                 <li>DISADVANTAGES_LOOP_START</li>
                 <li>DISADVANTAGES_LOOP_END</li>
+                <li>DISADVANTAGES_LOOP_COUNT (emits the total number of items in the loop)</li>
             </ul>
             <h3>All Disadvantages Loop (only disadvantages, any cost)</h3>
             <ul>
                 <li>DISADVANTAGES_ALL_LOOP_END</li>
                 <li>DISADVANTAGES_ALL_LOOP_START</li>
+                <li>DISADVANTAGES_ALL_LOOP_COUNT (emits the total number of items in the loop)</li>
             </ul>
             <h3>Quirks Loop (only disadvantages costing -1 point)</h3>
             <ul>
                 <li>QUIRKS_LOOP_START</li>
                 <li>QUIRKS_LOOP_END</li>
+                <li>QUIRKS_LOOP_COUNT (emits the total number of items in the loop)</li>
             </ul>
             <h3>Perks Loop (only advantages costing 1 point)</h3>
             <ul>
                 <li>PERKS_LOOP_START</li>
                 <li>PERKS_LOOP_END</li>
+                <li>PERKS_LOOP_COUNT (emits the total number of items in the loop)</li>
             </ul>
             <h3>Languages Loop (only Advantages that contain the Category "Language")</h3>
             <ul>
                 <li>LANGUAGES_LOOP_START</li>
                 <li>LANGUAGES_LOOP_END</li>
+                <li>LANGUAGES_LOOP_COUNT (emits the total number of items in the loop)</li>
             </ul>
             <h3>Cultural Familiarities Loop (only Advantages that start with "Cultural Familiarity")</h3>
             <ul>
                 <li>CULTURAL_FAMILIARITIES_LOOP_START</li>
                 <li>CULTURAL_FAMILIARITIES_LOOP_END</li>
+                <li>CULTURAL_FAMILIARITIES_LOOP_COUNT (emits the total number of items in the loop)</li>
             </ul>
             <h3>Keys that can be used in any of the above Advantage/Disadvantage loops</h3>
             <ul>
@@ -343,6 +391,7 @@ Notes
             <ul>
                 <li>REACTION_LOOP_END</li>
                 <li>REACTION_LOOP_START</li>
+                <li>REACTION_LOOP_COUNT (emits the total number of items in the loop)</li>
                 <li>MODIFIER</li>
                 <li>SITUATION</li>
                 <li>ID</li>
@@ -351,6 +400,7 @@ Notes
             <ul>
                 <li>CONDITIONAL_MODIFIERS_LOOP_END</li>
                 <li>CONDITIONAL_MODIFIERS_LOOP_START</li>
+                <li>CONDITIONAL_MODIFIERS_LOOP_COUNT (emits the total number of items in the loop)</li>
                 <li>MODIFIER</li>
                 <li>SITUATION</li>
                 <li>ID</li>
@@ -359,6 +409,7 @@ Notes
             <ul>
                 <li>SKILLS_LOOP_START</li>
                 <li>SKILLS_LOOP_END</li>
+                <li>SKILLS_LOOP_COUNT (emits the total number of items in the loop)</li>
                 <li>DESCRIPTION<br>(Produces output of the form below, excluding those sections not present)<br>
                     <code>@DESCRIPTION_PRIMARY&lt;div class="note"&gt;@DESCRIPTION_MODIFIER_NOTES&lt;/div&gt;&lt;div class="note"&gt;@DESCRIPTION_NOTES&lt;/div&gt;</code>
                 </li>
@@ -385,6 +436,7 @@ Notes
             <ul>
                 <li>SPELLS_LOOP_START</li>
                 <li>SPELLS_LOOP_END</li>
+                <li>SPELLS_LOOP_COUNT (emits the total number of items in the loop)</li>
                 <li>CLASS</li>
                 <li>COLLEGE</li>
                 <li>DESCRIPTION<br>(Produces output of the form below, excluding those sections not present)<br>
@@ -417,6 +469,7 @@ Notes
             <ul>
                 <li>MELEE_LOOP_START</li>
                 <li>MELEE_LOOP_END</li>
+                <li>MELEE_LOOP_COUNT (emits the total number of items in the loop)</li>
             </ul>
             <h3>Hierarchical Melee Attacks Loop (one line for each weapon, and then one line for each mode of attack)</h3>
             <ul>
@@ -427,6 +480,7 @@ Notes
                     </ul>
                 </li>
                 <li>HIERARCHICAL_MELEE_LOOP_END</li>
+                <li>HIERARCHICAL_MELEE_LOOP_COUNT (emits the total number of items in the loop)</li>
             </ul>
             <h3>Keys that can be used in any of the above Melee loops</h3>
             <ul>
@@ -460,6 +514,7 @@ Notes
             <ul>
                 <li>RANGED_LOOP_END</li>
                 <li>RANGED_LOOP_START</li>
+                <li>RANGED_LOOP_COUNT (emits the total number of items in the loop)</li>
             </ul>
             <h3>Hierarchical Ranged Attack Loop (one line for each weapon, and then one line for each mode of
                 attack)</h3>
@@ -471,6 +526,7 @@ Notes
                     </ul>
                 </li>
                 <li>HIERARCHICAL_RANGED_LOOP_END</li>
+                <li>HIERARCHICAL_RANGED_LOOP_COUNT (emits the total number of items in the loop)</li>
             </ul>
             <h3>Keys that can be used in any of the above Ranged loops</h3>
             <ul>
@@ -515,11 +571,13 @@ Notes
             <ul>
                 <li>EQUIPMENT_LOOP_START</li>
                 <li>EQUIPMENT_LOOP_END</li>
+                <li>EQUIPMENT_LOOP_COUNT (emits the total number of items in the loop)</li>
             </ul>
             <h3>Other Equipment Loop (non-carried equipment)</h3>
             <ul>
                 <li>OTHER_EQUIPMENT_LOOP_START</li>
                 <li>OTHER_EQUIPMENT_LOOP_END</li>
+                <li>OTHER_EQUIPMENT_LOOP_COUNT (emits the total number of items in the loop)</li>
             </ul>
             <h3>Keys that can be used in both Equipment loops</h3>
             <ul>
@@ -553,6 +611,7 @@ Notes
             <ul>
                 <li>NOTES_LOOP_END</li>
                 <li>NOTES_LOOP_START</li>
+                <li>NOTES_LOOP_COUNT (emits the total number of items in the loop)</li>
                 <li>NOTE</li>
                 <li>REF</li>
                 <li>ID</li>
