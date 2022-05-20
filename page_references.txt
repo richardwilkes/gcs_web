@@ -9,8 +9,8 @@ ACT6:	Action 6: Tricked-Out Rides
 ACT7:	Action 7: Mercenaries
 ACT9:	Action 9: The City
 AD	Adaptations
-AE1:	After the End 1: Wastelanders
-AE2:	After the End 2: The New World
+ATE1:	After the End 1: Wastelanders
+ATE2:	After the End 2: The New World
 AS	Aliens: Sparrials
 B	Basic Set: Characters OR the combined Basic Set: Characters and Campaigns
 BC	Boardroom and Curia
