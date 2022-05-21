@@ -74,6 +74,7 @@ DFT1:	Dungeon Fantasy Treasures 1: Glittering Prizes
 DFT2:	Dungeon Fantasy Treasures 2: Epic Treasures
 DFT3:	Dungeon Fantasy Treasures 3: Artifacts of Felltower
 DFT4:	Dungeon Fantasy Treasures 4: Mixed Blessings
+DFX	Dungeon Fantasy RPG: Exploits
 DH	Disasters: Hurricane
 DMF	Disasters: Meltdown and Fallout
 DR	Dragons
