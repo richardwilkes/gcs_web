@@ -230,7 +230,16 @@ footer {
   clear: both;
   text-align: center;
   padding: 1em;
+}
+
+.license, #disclaimer {
+  margin-top: 0.5em;
+}
+
+#disclaimer {
   font-size: 80%;
+  text-align: left;
+  margin-right: 2em;
 }
 
 header a:link, footer a:link, #aside a:link {
