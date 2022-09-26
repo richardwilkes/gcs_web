@@ -43,43 +43,9 @@
                 the new file or patch file to that.</p>
         </article>
         <article>
-            <h2>GCS won't start on my platform or it is behaving oddly. What is wrong?</h2>
-            <p>Many things could be going wrong, but the most common cause of failures to launch correctly or odd
-                behavior is having extensions installed that override basic Java behavior or setting environment
-                variables that alter default behavior. To avoid this, make sure these environment variables are
-                <b>NOT</b> set:</p>
-            <ul>
-                <li><span class="notable">JAVA_TOOL_OPTIONS</span></li>
-                <li><span class="notable">_JAVA_OPTIONS</span></li>
-            </ul>
-            <p>and make sure these extension directories are empty or non-existent (listed per-platform):</p>
-            <ul>
-                <li>macOS: <span class="notable">/Library/Java/Extensions</span></li>
-                <li>Windows: <span class="notable">%SystemRoot%\Sun\Java\lib\ext</span></li>
-                <li>Linux: <span class="notable">/usr/java/packages/lib/ext</span></li>
-            </ul>
-        </article>
-        <article>
             <h2>What page reference abbreviations are being used in the data files?</h2>
             <p>The current list of page reference abbreviations can be found here:
                 <a href="page_references.html">https://gurpscharactersheet.com/page_references</a></p>
-        </article>
-        <article>
-            <h2>How do I get GCS to use a high DPI display without pixelation/blurring when run on Windows?</h2>
-            <p>In the Windows Explorer:</p>
-            <ul>
-                <li>Right-click the GCS app icon and choose "Properties"</li>
-                <li>Select the "Compatibility" tab</li>
-                <li>Click the "Change high DPI settings" button</li>
-                <li>Check the checkbox at the bottom labeled "Override high DPI scaling behavior"</li>
-                <li>Change the combo to say "Application" if it doesn't already</li>
-            </ul>
-        </article>
-        <article>
-            <h2>I've chosen a dark theme on Linux and it is making GCS unusable. How do I fix this?</h2>
-            <p>This is discussed here:
-                <a href="https://askubuntu.com/questions/1298350/changing-environment-variables-for-a-specific-program-ubuntu-20-04-gurps-gcs-us/1298380">https://askubuntu.com/questions/1298350/changing-environment-variables-for-a-specific-program-ubuntu-20-04-gurps-gcs-us/1298380</a>
-            </p>
         </article>
         <article>
             <h2>Is there a version of GCS localized for my language?</h2>
@@ -87,39 +53,12 @@
                 one.</p>
         </article>
         <article>
-            <h2>Where can I find the global preferences file?</h2>
-            <p>Its location is dependent upon your specific platform. You can find the preference file here:</p>
-            <ul>
-                <li>macOS: <span class="notable">~/Library/Preferences/gcs.json</span></li>
-                <li>Windows: <span class="notable">%LOCALAPPDATA%\gcs.json</span></li>
-                <li>Linux: <span class="notable">~/.config/gcs.json</span></li>
-            </ul>
-        </article>
-        <article>
-            <h2>Does GCS produce a log file?</h2>
-            <p>Yes. Its location is dependent upon your specific platform and some environment variables (see the next
-                question about environment variables). By default, you can find the log file here:</p>
-            <ul>
-                <li>macOS: <span class="notable">~/Library/Logs/gcs.log</span></li>
-                <li>Windows: <span class="notable">%LOCALAPPDATA%\logs\gcs.log</span></li>
-                <li>Linux: <span class="notable">~/.local/logs/gcs.log</span></li>
-            </ul>
-        </article>
-        <article>
-            <h2>Are there any environment variables for controlling GCS's behavior? If so, what are they?</h2>
-            <p>As of the v4.21 release, there are only two (not counting standard system ones, such as
-                <span class="notable">HOME</span> on macOS and Linux and <span class="notable">LOCALAPPDATA</span> on
-                Windows:</p>
-            <ul>
-                <li><span class="notable">GCS_LOG</span>: Sets the file that GCS will log problems to. This file is
-                    overwritten with each launch. See "Does GCS produce a log file" above for details on where the log
-                    file gets written if this environment variable is not set.
-                </li>
-                <li><span class="notable">GCS_TRANSLATIONS</span>: Sets the directory that GCS will load
-                    language translations from. By default, the <span class="notable">i18n</span> directory
-                    inside the application package is used.
-                </li>
-            </ul>
+            <h2>Where can I find the global settings file?</h2>
+            <p>Its location is dependent upon your specific platform. You can find the location of the settings file by
+                running passing <code>--help</code> on the command line. The output will have the path to the settings
+                file, among other things.</p>
+            <p>For those of you on macOS, you will need to open a terminal and (assuming you have GCS in the top-level
+                Applications folder on your system, type: <code>/Applications/GCS.app/Contents/MacOS/gcs -h</code></p>
         </article>
         <article>
             <h2>Can I define my own standard hit location tables and have them show up in the combo for selection?</h2>
