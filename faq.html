@@ -61,6 +61,39 @@
                 Applications folder on your system, type: <code>/Applications/GCS.app/Contents/MacOS/gcs -h</code></p>
         </article>
         <article>
+            <h2>How do I convert my all of my User Library data files to the current file format?</h2>
+            <p>If you don't want to manually load and then save each data file to convert it to the current file format,
+                you can use the command line to update every data file at once. How this works depends on your
+                computer's operating system.</p>
+            <p>Warning: Misusing the command line can seriously damage your operating system. Unless you know what
+                you're doing, proceed carefully and don't deviate from the instructions below.</p>
+            <ol>
+                <li>Backup your User Library.</li>
+                <li>Open a terminal (macOS and Linux) or the command prompt (Windows). On Windows, you can do this by
+                    typing "Command Prompt" in the Windows search bar and clicking on the first result.</li>
+                <li>Issue the convert command by typing:
+                    <code>"PATH_TO_GCS" --convert "PATH_TO_USER_LIBRARY"</code>
+                    substituting the full paths to GCS and the User Library as appropriate. Note that you should make
+                    sure the paths have quotes around them as shown above, in case they contain spaces.<br><br>
+                    On Windows, the path to GCS might look like this:
+                    <code>C:\Program Files\GCS\gcs.exe</code>
+                    On macOS, the path to GCS might look like this:
+                    <code>/Applications/GCS.app/Contents/MacOS/gcs</code>
+                    On Linux, the path to GCS might look like this:
+                    <code>/usr/local/bin/gcs</code>
+                    The path to the User Library can be found by opening GCS, right-clicking on the User Library folder,
+                    selecting Configure, then copying everything in the Path field in the settings tab that comes up.
+                </li>
+                <li>When the command is run, it will start listing the files it is converting. Once it finishes, you can
+                    close the terminal. If the command gives you an error instead of listing your files, go back to step
+                    3 and try again, double checking that your file paths are correct and that you're typing everything
+                    correctly, spaces included. Note that files that are too old to be opened by the current version may
+                    need you to install an older version of GCS to do a conversion to bring them up to a version that
+                    the current version can process.</li>
+                <li>Open GCS and verify that you can open your data files.</li>
+            </ol>
+        </article>
+        <article>
             <h2>Can I define my own standard hit location tables and have them show up in the combo for selection?</h2>
             <p>Yes. Make sure to give the table a unique ID, then export it and place it in a directory named
                 "Hit Locations" at the top level of one of your GCS Library directories.</p>
