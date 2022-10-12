@@ -60,10 +60,10 @@
         <article>
             <h2>Where can I find the global settings file?</h2>
             <p>Its location is dependent upon your specific platform. You can find the location of the settings file by
-                running passing <code>--help</code> on the command line. The output will have the path to the settings
-                file, among other things.</p>
+                running passing <code class="ic">gcs --help</code> on the command line. The output will have the path to
+                the settings file, among other things.</p>
             <p>For those of you on macOS, you will need to open a terminal and (assuming you have GCS in the top-level
-                Applications folder on your system, type: <code>/Applications/GCS.app/Contents/MacOS/gcs -h</code></p>
+                Applications folder on your system, type: <code class="ic">/Applications/GCS.app/Contents/MacOS/gcs --help</code></p>
         </article>
         <article>
             <h2>How do I convert my all of my User Library data files to the current file format?</h2>
@@ -77,16 +77,16 @@
                 <li>Open a terminal (macOS and Linux) or the command prompt (Windows). On Windows, you can do this by
                     typing "Command Prompt" in the Windows search bar and clicking on the first result.</li>
                 <li>Issue the convert command by typing:
-                    <code>"PATH_TO_GCS" --convert "PATH_TO_USER_LIBRARY"</code>
+                    <code class="ic">"PATH_TO_GCS" --convert "PATH_TO_USER_LIBRARY"</code>
                     substituting the full paths to GCS and the User Library as appropriate. Note that you should make
-                    sure the paths have quotes around them as shown above, in case they contain spaces.<br><br>
-                    On Windows, the path to GCS might look like this:
-                    <code>C:\Program Files\GCS\gcs.exe</code>
-                    On macOS, the path to GCS might look like this:
-                    <code>/Applications/GCS.app/Contents/MacOS/gcs</code>
-                    On Linux, the path to GCS might look like this:
-                    <code>/usr/local/bin/gcs</code>
-                    The path to the User Library can be found by opening GCS, right-clicking on the User Library folder,
+                    sure the paths have quotes around them as shown above, in case they contain spaces.
+                    <br>On Windows, the path to GCS might look like this:
+                    <code class="ic">C:\Program Files\GCS\gcs.exe</code>
+                    <br>On macOS, the path to GCS might look like this:
+                    <code class="ic">/Applications/GCS.app/Contents/MacOS/gcs</code>
+                    <br>On Linux, the path to GCS might look like this:
+                    <code class="ic">/usr/local/bin/gcs</code>
+                    <br>The path to the User Library can be found by opening GCS, right-clicking on the User Library folder,
                     selecting Configure, then copying everything in the Path field in the settings tab that comes up.
                 </li>
                 <li>When the command is run, it will start listing the files it is converting. Once it finishes, you can
@@ -128,7 +128,6 @@
             <p>Functions:</p>
             <ul>
                 <li><code class="ic">abs(arg)</code> returns the absolute value of the arg</li>
-                <li><code class="ic">advantage_level(arg)</code> looks for an advantage with the name given in arg and returns its level or -1 if it can't be found; available in v4.31+</li>
                 <li><code class="ic">cbrt(arg)</code> returns the cube root of the arg</li>
                 <li><code class="ic">ceil(arg)</code> returns the smallest (closest to negative infinity) value that is greater than or equal to the arg and is equal to a mathematical integer</li>
                 <li><code class="ic">dice(arg1,arg2,arg3,arg4)</code> returns a string suitable for passing to <code class="ic nb">roll()</code>. This function can take from 1 to 4 arguments:
@@ -139,6 +138,9 @@
                         <li>count, sides, modifier, multiplier: <code class="ic nb">dice(2,4,-1,2)</code> would return <code class="ic nb">2d4-1x2</code></li>
                     </ol>
                 </li>
+                <li><code class="ic">enc(forSkills)</code> returns the current encumbrance modifier (a value from 0 to 4).
+                    'forSkills' should be true to have it return the modifier for the purposes of skill adjustments and
+                    false for the actual modifier. Not available prior to v5.3</li>
                 <li><code class="ic">exp(arg)</code> returns Euler's number e raised to the power of the arg</li>
                 <li><code class="ic">floor(arg)</code> returns the largest (closest to positive infinity) value that is less than or equal to the arg and is equal to a mathematical integer</li>
                 <li><code class="ic">if(arg1, arg2, arg3)</code> returns arg3 if arg1 resolves to 0 or an empty string, otherwise returns arg2</li>
@@ -152,6 +154,13 @@
                 <li><code class="ic">round(arg)</code> returns the closest long to the arg, with ties rounding to positive infinity</li>
                 <li><code class="ic">signed(arg)</code> returns the arg with a leading '+' if it is positive</li>
                 <li><code class="ic">sqrt(arg)</code> returns the positive square root of arg</li>
+                <li><code class="ic">ssrt(length, units, flag)</code> returns a value from the Size and Speed/Range Table on B550.
+                    'length' should be a number. 'units' should be one of "in", "ft", "yd", "mi", "cm", "km", or "m".
+                    'flag' should be true to have it return the size modifier or false to return the speed/range modifier.
+                    Not available prior to v4.32</li>
+                <li><code class="ic">ssrt_to_yards(arg)</code> returns the number of yards for the given size modifier from the Size and Speed/Range Table on B550.
+                    Not available prior to v4.32</li>
+                <li><code class="ic">trait_level(arg)</code> looks for a trait with the name given in arg and returns its level or -1 if it can't be found. Not available prior to v4.31. Available in v4.31-4.37.1 as "advantage_level" instead</li>
             </ul>
         </article>
     </main>
