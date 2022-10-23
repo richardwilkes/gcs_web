@@ -32,9 +32,15 @@
 <section id="pageContent">
     <main role="main">
         <article>
-            <h2>Why doesn't ctrl-click work to create a discontiguous selection?</h2>
-            <p>Use the option key (named alt on some platforms) instead of the ctrl key for this. Since some platforms
-                use the ctrl key for other purposes, GCS doesn't use it for selection modification.</p>
+            <h2>How can I convert old GCS files to the current format?</h2>
+            <p>This depends greatly on just how old the file is. Files made prior to the v4.20 release need to be
+                converted using the program found here:
+                <a href="https://github.com/richardwilkes/gcs_json_updater/releases">GCS JSON Updater</a>. This will
+                convert them to the v4.20 format.</p>
+            <p>Files created before v4.30 need to be converted using the v4.37.1 release. Either open and save each
+                file with GCS v4.37.1 or you can use the command line option to convert a bunch of files at once.</p>
+            <p>Once GCS v5.x.x can open the file, you can save it from GCS v5.x.x to have it stored in the current
+                format.</p>
         </article>
         <article>
             <h2>Can I submit new/revised data files?</h2>
