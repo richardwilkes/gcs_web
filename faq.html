@@ -111,63 +111,143 @@
         </article>
         <article>
             <h2>What operators and functions are available for use in attribute expressions?</h2>
-            <p>Operators:</p>
-            <ul>
-                <li>open paren: <code class="ic">(</code></li>
-                <li>close paren: <code class="ic">)</code></li>
-                <li>add: <code class="ic">+</code></li>
-                <li>subtract: <code class="ic">-</code></li>
-                <li>power: <code class="ic">^</code></li>
-                <li>multiply: <code class="ic">*</code></li>
-                <li>divide: <code class="ic">/</code></li>
-                <li>equal to: <code class="ic">==</code></li>
-                <li>not equal to: <code class="ic">!=</code></li>
-                <li>less than or equal to: <code class="ic">&lt;=</code></li>
-                <li>less than: <code class="ic">&lt;</code></li>
-                <li>greater than or equal to: <code class="ic">&gt;=</code></li>
-                <li>greater than: <code class="ic">&gt;</code></li>
-                <li>logical and: <code class="ic">&amp;&amp;</code></li>
-                <li>logical or: <code class="ic">||</code></li>
-                <li>logical not: <code class="ic">!</code></li>
-                <li>modulo: <code class="ic">%</code></li>
-            </ul>
-            <p>Functions:</p>
-            <ul>
-                <li><code class="ic">abs(arg)</code> returns the absolute value of the arg</li>
-                <li><code class="ic">cbrt(arg)</code> returns the cube root of the arg</li>
-                <li><code class="ic">ceil(arg)</code> returns the smallest (closest to negative infinity) value that is greater than or equal to the arg and is equal to a mathematical integer</li>
-                <li><code class="ic">dice(arg1,arg2,arg3,arg4)</code> returns a string suitable for passing to <code class="ic nb">roll()</code>. This function can take from 1 to 4 arguments:
-                    <ol>
-                        <li>sides: <code class="ic nb">dice(4)</code> would return <code class="ic nb">1d4</code></li>
-                        <li>count, sides: <code class="ic nb">dice(2,4)</code> would return <code class="ic nb">2d4</code></li>
-                        <li>count, sides, modifier: <code class="ic nb">dice(2,4,-1)</code> would return <code class="ic nb">2d4-1</code></li>
-                        <li>count, sides, modifier, multiplier: <code class="ic nb">dice(2,4,-1,2)</code> would return <code class="ic nb">2d4-1x2</code></li>
-                    </ol>
-                </li>
-                <li><code class="ic">enc(forSkills)</code> returns the current encumbrance modifier (a value from 0 to 4).
-                    'forSkills' should be true to have it return the modifier for the purposes of skill adjustments and
-                    false for the actual modifier. Not available prior to v5.3</li>
-                <li><code class="ic">exp(arg)</code> returns Euler's number e raised to the power of the arg</li>
-                <li><code class="ic">floor(arg)</code> returns the largest (closest to positive infinity) value that is less than or equal to the arg and is equal to a mathematical integer</li>
-                <li><code class="ic">if(arg1, arg2, arg3)</code> returns arg3 if arg1 resolves to 0 or an empty string, otherwise returns arg2</li>
-                <li><code class="ic">log(arg)</code> returns the natural logarithm (base e) of the arg</li>
-                <li><code class="ic">log1p(arg)</code> returns the natural logarithm of the sum of the arg and 1</li>
-                <li><code class="ic">log10(arg)</code> returns the base 10 logarithm of the arg</li>
-                <li><code class="ic">max(arg1, arg2)</code> returns the greater of the two args</li>
-                <li><code class="ic">min(arg1, arg2)</code> returns the lesser of the two args</li>
-                <li><code class="ic">pow(arg1, arg2)</code> returns the value of arg1 raised to the power of arg2</li>
-                <li><code class="ic">roll(arg)</code> returns the result of rolling dice (arg uses standard dice notation)</li>
-                <li><code class="ic">round(arg)</code> returns the closest long to the arg, with ties rounding to positive infinity</li>
-                <li><code class="ic">signed(arg)</code> returns the arg with a leading '+' if it is positive</li>
-                <li><code class="ic">sqrt(arg)</code> returns the positive square root of arg</li>
-                <li><code class="ic">ssrt(length, units, flag)</code> returns a value from the Size and Speed/Range Table on B550.
-                    'length' should be a number. 'units' should be one of "in", "ft", "yd", "mi", "cm", "km", or "m".
-                    'flag' should be true to have it return the size modifier or false to return the speed/range modifier.
-                    Not available prior to v4.32</li>
-                <li><code class="ic">ssrt_to_yards(arg)</code> returns the number of yards for the given size modifier from the Size and Speed/Range Table on B550.
-                    Not available prior to v4.32</li>
-                <li><code class="ic">trait_level(arg)</code> looks for a trait with the name given in arg and returns its level or -1 if it can't be found. Not available prior to v4.31. Available in v4.31-4.37.1 as "advantage_level" instead</li>
-            </ul>
+            <table class="operators">
+                <tr><th>Operator</th><th>Name</th></tr>
+                <tr><td class="op">(</td><td class="op-name">open paren</td></tr>
+                <tr><td class="op">)</td><td class="op-name">close paren</td></tr>
+                <tr><td class="op">+</td><td class="op-name">add</td></tr>
+                <tr><td class="op">-</td><td class="op-name">subtract</td></tr>
+                <tr><td class="op">^</td><td class="op-name">power</td></tr>
+                <tr><td class="op">*</td><td class="op-name">multiply</td></tr>
+                <tr><td class="op">/</td><td class="op-name">divide</td></tr>
+                <tr><td class="op">==</td><td class="op-name">equal to</td></tr>
+                <tr><td class="op">!=</td><td class="op-name">not equal to</td></tr>
+                <tr><td class="op">&lt;=</td><td class="op-name">less than or equal to</td></tr>
+                <tr><td class="op">&lt;</td><td class="op-name">less than</td></tr>
+                <tr><td class="op">&gt;=</td><td class="op-name">greater than or equal to</td></tr>
+                <tr><td class="op">&gt;</td><td class="op-name">greater than</td></tr>
+                <tr><td class="op">&amp;&amp;</td><td class="op-name">logical and</td></tr>
+                <tr><td class="op">||</td><td class="op-name">logical or</td></tr>
+                <tr><td class="op">!</td><td class="op-name">logical not</td></tr>
+                <tr><td class="op">%</td><td class="op-name">modulo</td></tr>
+            </table>
+            <table class="functions">
+                <tr><th>Function</th><th>Description</th></tr>
+                <tr>
+                    <td class="func">abs(number)</td>
+                    <td class="func-desc">Returns the absolute value of the number.</td>
+                </tr>
+                <tr>
+                    <td class="func">cbrt(number)</td>
+                    <td class="func-desc">Returns the cube root of the number.</td>
+                </tr>
+                <tr>
+                    <td class="func">ceil(number)</td>
+                    <td class="func-desc">Returns the smallest (closest to negative infinity) value that is greater than
+                        or equal to the number and is equal to a mathematical integer.</td>
+                </tr>
+                <tr>
+                    <td class="func">dice(count,sides,modifier,multiplier)</td>
+                    <td class="func-desc">Returns a string suitable for passing to the 'roll' function. This function
+                        can take from 1 to 4 arguments:
+                        <ul>
+                            <li>One argument indicates the number of sides: 'dice(4)' would return '1d4'.</li>
+                            <li>Two arguments indicates the die count and the number of sides: 'dice(2,4)' would return
+                                '2d4'.</li>
+                            <li>Three arguments indicates the die count, the number of sides, and a modifier:
+                                'dice(2,4,-1)' would return '2d4-1'.</li>
+                            <li>Four arguments indicates the die count, the number of sides, a modifier, and a
+                                multiplier: 'dice(2,4,-1,2)' would return '2d4-1x2'.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="func">enc(forSkills,returnFactor)</td>
+                    <td class="func-desc">Returns the current encumbrance modifier (a value from 0 to 4) or the move
+                        multiplication factor if 'returnFactor' is true. If 'forSkills' is true, the modifier is
+                        adjusted to account for equipment that has been marked as not having its weight counting against
+                        skills. Not available prior to v5.3. Prior to v5.4, the second argument isn't available.</td>
+                </tr>
+                <tr>
+                    <td class="func">exp(number)</td>
+                    <td class="func-desc">Returns Euler's number e raised to the power of the number.</td>
+                </tr>
+                <tr>
+                    <td class="func">floor(number)</td>
+                    <td class="func-desc">Returns the largest (closest to positive infinity) value that is less than or
+                        equal to the number and is equal to a mathematical integer.</td>
+                </tr>
+                <tr>
+                    <td class="func">if(test, true_result, false_result)</td>
+                    <td class="func-desc">Returns 'false_result' if 'test' resolves to 0 or an empty string, otherwise
+                        returns 'true_result'.</td>
+                </tr>
+                <tr>
+                    <td class="func">log(number)</td>
+                    <td class="func-desc">Returns the natural logarithm (base e) of the number.</td>
+                </tr>
+                <tr>
+                    <td class="func">log1p(number)</td>
+                    <td class="func-desc">Returns the natural logarithm of the sum of the number and 1.</td>
+                </tr>
+                <tr>
+                    <td class="func">log10(number)</td>
+                    <td class="func-desc">Returns the base 10 logarithm of the number.</td>
+                </tr>
+                <tr>
+                    <td class="func">max(num1, num2)</td>
+                    <td class="func-desc">Returns the greater of the two numbers.</td>
+                </tr>
+                <tr>
+                    <td class="func">min(num1, num2)</td>
+                    <td class="func-desc">Returns the lesser of the two numbers.</td>
+                </tr>
+                <tr>
+                    <td class="func">pow(num1, num2)</td>
+                    <td class="func-desc">Returns the value of num1 raised to the power of num2.</td>
+                </tr>
+                <tr>
+                    <td class="func">roll(dice_spec)</td>
+                    <td class="func-desc">Returns the result of rolling dice (dice_spec uses standard dice notation or
+                        the result of a call to the 'dice' function).</td>
+                </tr>
+                <tr>
+                    <td class="func">round(number)</td>
+                    <td class="func-desc">Returns the closest integer value to the number, with ties rounding to
+                        positive infinity.</td>
+                </tr>
+                <tr>
+                    <td class="func">signed(number)</td>
+                    <td class="func-desc">Returns the number with a leading '+' if it is positive.</td>
+                </tr>
+                <tr>
+                    <td class="func">skill_level(name, specialization, relative)</td>
+                    <td class="func-desc">Looks for a skill with 'name' and 'specialization' and returns its level or 0
+                        if it can't be found. If 'relative' is true, the relative level is returned instead. Not
+                        available prior to v5.4.</td>
+                </tr>
+                <tr>
+                    <td class="func">sqrt(number)</td>
+                    <td class="func-desc">Returns the positive square root of number.</td>
+                </tr>
+                <tr>
+                    <td class="func">ssrt(length, units, flag)</td>
+                    <td class="func-desc">Returns a value from the Size and Speed/Range Table on B550. 'length' should
+                        be a number. 'units' should be one of "in", "ft", "yd", "mi", "cm", "km", or "m". 'flag' should
+                        be true to have it return the size modifier or false to return the speed/range modifier. Not
+                        available prior to v4.32.</td>
+                </tr>
+                <tr>
+                    <td class="func">ssrt_to_yards(number)</td>
+                    <td class="func-desc">Returns the number of yards for the given size modifier from the Size and
+                        Speed/Range Table on B550. Not available prior to v4.32.</td>
+                </tr>
+                <tr>
+                    <td class="func">trait_level(name)</td>
+                    <td class="func-desc">Looks for a trait with the 'name' and returns its level or -1 if it can't be
+                        found. Not available prior to v4.31. Available in v4.31-4.37.1 as 'advantage_level' instead.</td>
+                </tr>
+            </table>
         </article>
     </main>
     <div id="aside">

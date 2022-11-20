@@ -351,6 +351,38 @@ body > section {
   font-weight: 900;
 }
 
+.operators, .functions {
+  margin: 1em;
+  border: 1px solid var(--content-fg);
+}
+
+.operators th, .functions th {
+  padding: 0.5em;
+  border: 1px solid var(--content-fg);
+  color: var(--content-bg);
+  background: var(--content-fg);
+}
+
+.operators th:nth-child(2), .functions th:nth-child(2) {
+  border-left: 2px solid var(--content-bg);
+}
+
+.operators td, .functions td {
+  padding: 0.5em;
+  border: 1px solid var(--content-fg);
+}
+
+.op, .func {
+  font-size: 1em;
+  font-family: monospace;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+.op-name, .func-desc {
+  padding-left: 0.5em;
+}
+
 @media screen and (max-width: 1020px) {
   body > section {
     padding: 20px;
