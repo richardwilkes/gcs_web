@@ -138,6 +138,11 @@
                     <td class="func-desc">Returns the absolute value of the number.</td>
                 </tr>
                 <tr>
+                    <td class="func">advantage_level(name)</td>
+                    <td class="func-desc">Looks for a trait with the 'name' and returns its level or -1 if it can't be
+                        found. Not available prior to v4.31. Deprecated; use 'trait_level()' for v5+.</td>
+                </tr>
+                <tr>
                     <td class="func">cbrt(number)</td>
                     <td class="func-desc">Returns the cube root of the number.</td>
                 </tr>
@@ -147,26 +152,38 @@
                         or equal to the number and is equal to a mathematical integer.</td>
                 </tr>
                 <tr>
-                    <td class="func">dice(count,sides,modifier,multiplier)</td>
-                    <td class="func-desc">Returns a string suitable for passing to the 'roll' function. This function
-                        can take from 1 to 4 arguments:
-                        <ul>
-                            <li>One argument indicates the number of sides: 'dice(4)' would return '1d4'.</li>
-                            <li>Two arguments indicates the die count and the number of sides: 'dice(2,4)' would return
-                                '2d4'.</li>
-                            <li>Three arguments indicates the die count, the number of sides, and a modifier:
-                                'dice(2,4,-1)' would return '2d4-1'.</li>
-                            <li>Four arguments indicates the die count, the number of sides, a modifier, and a
-                                multiplier: 'dice(2,4,-1,2)' would return '2d4-1x2'.</li>
-                        </ul>
+                    <td class="func">dice(sides)</td>
+                    <td class="func-desc">Returns a string suitable for passing to the 'roll' function. 'dice(4)' would
+                        return '1d4'.
                     </td>
                 </tr>
                 <tr>
-                    <td class="func">enc(forSkills,returnFactor)</td>
+                    <td class="func">dice(count, sides)</td>
+                    <td class="func-desc">Returns a string suitable for passing to the 'roll' function. 'dice(2,4)'
+                        would return '2d4'.</td>
+                </tr>
+                <tr>
+                    <td class="func">dice(count, sides, modifier)</td>
+                    <td class="func-desc">Returns a string suitable for passing to the 'roll' function. 'dice(2,4,-1)'
+                        would return '2d4-1'.</td>
+                </tr>
+                <tr>
+                    <td class="func">dice(count, sides, modifier, multiplier)</td>
+                    <td class="func-desc">Returns a string suitable for passing to the 'roll' function. 'dice(2,4,-1,2)'
+                        would return '2d4-1x2'.</td>
+                </tr>
+                <tr>
+                    <td class="func">enc(forSkills)</td>
+                    <td class="func-desc">Returns the current encumbrance modifier (a value from 0 to 4). If 'forSkills'
+                        is true, the modifier is adjusted to account for equipment that has been marked as not having
+                        its weight counting against skills. Not available prior to v5.3.</td>
+                </tr>
+                <tr>
+                    <td class="func">enc(forSkills, returnFactor)</td>
                     <td class="func-desc">Returns the current encumbrance modifier (a value from 0 to 4) or the move
                         multiplication factor if 'returnFactor' is true. If 'forSkills' is true, the modifier is
                         adjusted to account for equipment that has been marked as not having its weight counting against
-                        skills. Not available prior to v5.3. Prior to v5.4, the second argument isn't available.</td>
+                        skills. Not available prior to v5.4.</td>
                 </tr>
                 <tr>
                     <td class="func">exp(number)</td>
@@ -221,6 +238,16 @@
                     <td class="func-desc">Returns the number with a leading '+' if it is positive.</td>
                 </tr>
                 <tr>
+                    <td class="func">skill_level(name)</td>
+                    <td class="func-desc">Looks for a skill with 'name' and no specialization and returns its level or 0
+                        if it can't be found. Not available prior to v5.4.</td>
+                </tr>
+                <tr>
+                    <td class="func">skill_level(name, specialization)</td>
+                    <td class="func-desc">Looks for a skill with 'name' and 'specialization' and returns its level or 0
+                        if it can't be found. Not available prior to v5.4.</td>
+                </tr>
+                <tr>
                     <td class="func">skill_level(name, specialization, relative)</td>
                     <td class="func-desc">Looks for a skill with 'name' and 'specialization' and returns its level or 0
                         if it can't be found. If 'relative' is true, the relative level is returned instead. Not
@@ -245,7 +272,7 @@
                 <tr>
                     <td class="func">trait_level(name)</td>
                     <td class="func-desc">Looks for a trait with the 'name' and returns its level or -1 if it can't be
-                        found. Not available prior to v4.31. Available in v4.31-4.37.1 as 'advantage_level' instead.</td>
+                        found. Not available prior to v5.</td>
                 </tr>
             </table>
         </article>
