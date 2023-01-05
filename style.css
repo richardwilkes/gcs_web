@@ -223,6 +223,7 @@ code {
 }
 
 footer {
+  font-size: 12px;
   background: var(--non-content-bg);
   color: var(--non-content-fg);
   max-width: 1000px;
@@ -232,14 +233,12 @@ footer {
   padding: 1em;
 }
 
-.license, #disclaimer {
-  margin-top: 0.5em;
+footer > p {
+  font-size: 12px;
 }
 
-#disclaimer {
-  font-size: 80%;
-  text-align: left;
-  margin-right: 2em;
+.license, .disclaimer {
+  margin-top: 0.5em;
 }
 
 header a:link, footer a:link, #aside a:link {
@@ -285,14 +284,6 @@ header a:active, footer a:active, #aside a:active {
   width: 200px;
   vertical-align: middle;
   border: 1px solid var(--logo-border);
-}
-
-.superscript {
-  font-size: .83em;
-  line-height: 0.5em;
-  vertical-align: baseline;
-  position: relative;
-  top: -0.4em;
 }
 
 #banner_right {
