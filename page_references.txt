@@ -76,7 +76,12 @@ DFT3:	Dungeon Fantasy Treasures 3: Artifacts of Felltower
 DFT4:	Dungeon Fantasy Treasures 4: Mixed Blessings
 DFX	Dungeon Fantasy RPG: Exploits
 DH	Disasters: Hurricane
+DL	Deadlands: Weird West (3E)
+DLH	Deadlands: Hexes (3E)
+DLV	Deadlands: Varmints (3E)
 DMF	Disasters: Meltdown and Fallout
+DN1:	Deadlands: Dime Novel 1 - Aces and Eights (3E)
+DN2:	Deadlands: Dime Novel 2 - Wanted: Undead or Alive (3E)
 DR	Dragons
 DTG	Delvers To Grow
 DW	Discworld Roleplaying Game
