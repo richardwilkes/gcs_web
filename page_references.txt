@@ -215,6 +215,7 @@ T	Thaumatology
 TAB	Thaumatology: Alchemical Baroque
 TAG	Thaumatology: Age of Gold
 TCEP	Thaumatology: Chinese Elemental Powers
+THS	Transhuman Space
 THSBB	Transhuman Space: Bioroid Bazaar
 THSBT	Transhuman Space: Bio-Tech 2100
 THSCE	Transhuman Space: Cities on the Edge
@@ -230,6 +231,8 @@ THSTN1:	Transhuman Space: Teralogos News - 2100, Fourth Quarter
 THSTN2:	Transhuman Space: Teralogos News - 2101, First Quarter
 THSTN3:	Transhuman Space: Teralogos News - 2101, Second Quarter
 THSTN4:	Transhuman Space: Teralogos News - 2101, Third Quarter
+THSTX	Transhuman Space: Toxic Memes
+THSUP	Transhuman Space: Under Pressure
 THSWRS	Transhuman Space: Wings of the Rising Sun
 TIW:	Traveller: Interstellar Wars
 TMS	Thaumatology: Magical Styles
