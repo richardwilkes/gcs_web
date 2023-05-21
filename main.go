@@ -12,6 +12,7 @@ import (
 var pageRefText string
 
 func main() {
+	alt := len(os.Args) != 1
 	keys := make(map[string]bool)
 	descs := make(map[string]bool)
 	for _, line := range strings.Split(pageRefText, "\n") {
@@ -26,10 +27,15 @@ func main() {
 		}
 		keys[parts[0]] = true
 		descs[parts[1]] = true
-		fmt.Printf(`                <tr>
+		if alt {
+			fmt.Printf(`	"%s":      "%s",
+`, parts[0], strings.ReplaceAll(parts[1], `"`, `\"`))
+		} else {
+			fmt.Printf(`                <tr>
                     <td>%s</td>
                     <td>%s</td>
                 </tr>
 `, parts[0], html.EscapeString(parts[1]))
+		}
 	}
 }
