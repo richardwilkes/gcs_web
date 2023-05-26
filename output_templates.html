@@ -370,18 +370,10 @@ Notes
                     square brackets or curly braces).
                 </li>
                 <li>DESCRIPTION_PRIMARY<br>(Outputs the name of the item)</li>
-                <li>EXCLUDE_CATEGORIES_&lt;NAME&gt;<br>Exclude any Advantage that contains "&lt;NAME&gt;", case
-                    insensitive.<br>For example: @EXCLUDE_CATEGORIES_POWER will exclude any Advantages that contain the
-                    category "Power".
-                </li>
                 <li>ID</li>
                 <li>PARENT_ID</li>
                 <li>MODIFIER_NOTES_FOR_&lt;NAME&gt;<br>Display the notes for the modifier named "&lt;NAME&gt;",
                     case insensitive.
-                </li>
-                <li>ONLY_CATEGORIES_&lt;NAME&gt;<br>Only include Advantages that contain "&lt;NAME&gt;", case
-                    insensitive.<br>For example: @ONLY_CATEGORIES_POWER will only display Advantages that contain
-                    the category "Power".
                 </li>
                 <li>POINTS</li>
                 <li>REF</li>
@@ -620,6 +612,18 @@ Notes
             <h3>Notes all combined into one text block</h3>
             <ul>
                 <li>NOTES</li>
+            </ul>
+            <h3>Keys that can be used outside the Advantage/Disadvantage and Equipment loops, filtering the next
+                Advantage/Disadvantage or Equipment loop encountered:</h3>
+            <ul>
+                <li>EXCLUDE_TAGS_&lt;NAME&gt;<br>Exclude any Advantage or Equipment that contains "&lt;NAME&gt;", case
+                    insensitive.<br>For example: @EXCLUDE_TAGS_POWER will exclude any Advantages or Equipment that
+                    contain the tag "Power".
+                </li>
+                <li>ONLY_TAGS_&lt;NAME&gt;<br>Only include Advantages or Equipment that contain "&lt;NAME&gt;", case
+                    insensitive.<br>For example: @ONLY_TAGS_POWER will only display Advantages or Equipment that contain
+                    the category "Power".
+                </li>
             </ul>
             <h3>Formatting</h3>
             <ul>
