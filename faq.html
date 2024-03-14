@@ -45,7 +45,7 @@
                 <a href="https://github.com/richardwilkes/gcs_json_updater/releases">GCS JSON Updater</a>. This will
                 convert them to the v4.20 format.</p>
             <p>Files created before v4.30 need to be converted using the v4.37.1 release. Either open and save each
-                file with GCS v4.37.1 or you can use the command line option to convert a bunch of files at once.</p>
+                file with GCS v4.37.1 or you can use the command-line option to convert a bunch of files at once.</p>
             <p>Once GCS v5.x.x can open the file, you can save it from GCS v5.x.x to have it stored in the current
                 format.</p>
         </article>
@@ -73,17 +73,29 @@
         <article>
             <h2>Where can I find the global settings file?</h2>
             <p>Its location is dependent upon your specific platform. You can find the location of the settings file by
-                running passing <code class="ic">gcs --help</code> on the command line. The output will have the path to
+                running passing <code class="ic">gcs --help</code> on the command-line. The output will have the path to
                 the settings file, among other things.</p>
             <p>For those of you on macOS, you will need to open a terminal and (assuming you have GCS in the top-level
                 Applications folder on your system, type: <code class="ic">/Applications/GCS.app/Contents/MacOS/gcs --help</code></p>
         </article>
         <article>
+            <h2>How can I change where GCS loads settings from and to?</h2>
+            <p>There are two ways to accomplish this. One is to make use of the command-line
+                <code class="ic">--settings</code> option that explicitly tells GCS where to find its settings file. The
+                other is to copy the settings file to be located next to the GCS executable. When a file named
+                <code class="ic">gcs_prefs.json</code> is found next to the GCS executable, it will be used instead of
+                the normal location. Note that this does not override the command-line option, so if you do both, the
+                command-line option will take precedence.
+            </p>
+            <p>When doing this, you may also want to change the location of the log file, which can be adjusted using
+                the <code class="ic">--log-file</code> command-line option.</p>
+        </article>
+        <article>
             <h2>How do I convert my all of my User Library data files to the current file format?</h2>
             <p>If you don't want to manually load and then save each data file to convert it to the current file format,
-                you can use the command line to update every data file at once. How this works depends on your
+                you can use the command-line to update every data file at once. How this works depends on your
                 computer's operating system.</p>
-            <p>Warning: Misusing the command line can seriously damage your operating system. Unless you know what
+            <p>Warning: Misusing the command-line can seriously damage your operating system. Unless you know what
                 you're doing, proceed carefully and don't deviate from the instructions below.</p>
             <ol>
                 <li>Backup your User Library.</li>
