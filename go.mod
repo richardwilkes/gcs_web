@@ -1,3 +1,3 @@
 module github.com/richardwilkes/gcs_web
 
-go 1.17
+go 1.22.1
