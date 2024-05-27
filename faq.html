@@ -1,364 +1,422 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GURPS Character Sheet - FAQ</title>
-    <meta name="description" content="A WYSIWYG character sheet for GURPS Fourth Edition">
-    <meta name="keywords" content="GURPS Character Sheet roleplaying games"/>
-    <meta name="norton-safeweb-site-verification"
-          content="fnn0dveu85-ceabrbo2s7k1kw54q88sqmlvbun2sg86r82l9l01bxz6qlbq6ptnqojpmwzqs8v2viv1jkxhi3jo5ndv931j15xz3j49uup5blqxahylgkqquk-hg5uf9"/>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="shortcut icon" href="images/favicon.ico"/>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GURPS Character Sheet - FAQ</title>
+	<meta name="description" content="A WYSIWYG character sheet for GURPS Fourth Edition">
+	<meta name="keywords" content="GURPS Character Sheet roleplaying games" />
+	<meta name="norton-safeweb-site-verification"
+		content="fnn0dveu85-ceabrbo2s7k1kw54q88sqmlvbun2sg86r82l9l01bxz6qlbq6ptnqojpmwzqs8v2viv1jkxhi3jo5ndv931j15xz3j49uup5blqxahylgkqquk-hg5uf9" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="images/favicon.ico" />
 </head>
 <body>
-<header>
-    <div id="banner">
-        <div id="logo"><a href="index.html"><img src="images/logo.gif" alt="GURPS Character Sheet"></a></div>
-        <div id="banner_right">
-            <div id="banner_title">GURPS Character Sheet</div>
-            <div class="banner_desc">
-                GURPS Character Sheet (GCS) is a standalone, interactive, character sheet editor that allows you to
-                build characters for the <a href="http://www.sjgames.com/gurps">GURPS Fourth Edition</a> roleplaying
-                game.
-            </div>
-        </div>
-    </div>
-</header>
-<section>
-    <h1>Frequently Asked Questions</h1>
-</section>
-<section id="pageContent">
-    <main role="main">
-        <article>
-            <h2>I'm on Windows and GCS doesn't start! How come?</h2>
-            <p>The most likely cause is not having OpenGL 3.2 or better installed on your machine. If you are on an
-                older machine without the necessary OpenGL support, you may be able to work around this by putting the
-                OpenGL32.dll from <a href="https://fdossena.com/?p=mesa/index.frag">Mesa</a> into the same directory as
-                your GCS.exe file.</p>
-        </article>
-        <article>
-            <h2>How can I convert old GCS files to the current format?</h2>
-            <p>This depends greatly on just how old the file is. Files made prior to the v4.20 release need to be
-                converted using the program found here:
-                <a href="https://github.com/richardwilkes/gcs_json_updater/releases">GCS JSON Updater</a>. This will
-                convert them to the v4.20 format.</p>
-            <p>Files created before v4.30 need to be converted using the v4.37.1 release. Either open and save each
-                file with GCS v4.37.1 or you can use the command-line option to convert a bunch of files at once.</p>
-            <p>Once GCS v5.x.x can open the file, you can save it from GCS v5.x.x to have it stored in the current
-                format.</p>
-        </article>
-        <article>
-            <h2>Can I submit new/revised data files?</h2>
-            <p>Absolutely! Almost all of the current data content of GCS was provided by helpful individuals other than
-                me. If you have completely new content, please create a new library for it and send the resulting file.
-                If, on the other hand, you're modifying one of the existing data files, please be sure to update to the
-                latest version from the git repository first, make your changes, then submit a patch file of the
-                differences. In either case, please either create a
-                <a href="https://github.com/richardwilkes/gcs_master_library/pulls">Pull Request</a> or an
-                <a href="https://github.com/richardwilkes/gcs_master_library/issues">Issue</a> for the work and attach
-                the new file or patch file to that.</p>
-        </article>
-        <article>
-            <h2>What page reference abbreviations are being used in the data files?</h2>
-            <p>The current list of page reference abbreviations can be found here:
-                <a href="page_references.html">https://gurpscharactersheet.com/page_references</a></p>
-        </article>
-        <article>
-            <h2>Is there a version of GCS localized for my language?</h2>
-            <p>The <a href="https://github.com/richardwilkes/gcs_translations">GCS Translations Repo</a> may contain
-                one.</p>
-        </article>
-        <article>
-            <h2>Where can I find the global settings file?</h2>
-            <p>Its location is dependent upon your specific platform. You can find the location of the settings file by
-                running passing <code class="ic">gcs --help</code> on the command-line. The output will have the path to
-                the settings file, among other things.</p>
-            <p>For those of you on macOS, you will need to open a terminal and (assuming you have GCS in the top-level
-                Applications folder on your system, type: <code class="ic">/Applications/GCS.app/Contents/MacOS/gcs --help</code></p>
-        </article>
-        <article>
-            <h2>How can I change where GCS loads settings from and to?</h2>
-            <p>There are two ways to accomplish this. One is to make use of the command-line
-                <code class="ic">--settings</code> option that explicitly tells GCS where to find its settings file. The
-                other is to copy the settings file to be located next to the GCS executable. When a file named
-                <code class="ic">gcs_prefs.json</code> is found next to the GCS executable, it will be used instead of
-                the normal location. Note that this does not override the command-line option, so if you do both, the
-                command-line option will take precedence.
-            </p>
-            <p>When doing this, you may also want to change the location of the log file, which can be adjusted using
-                the <code class="ic">--log-file</code> command-line option.</p>
-        </article>
-        <article>
-            <h2>How do I convert my all of my User Library data files to the current file format?</h2>
-            <p>If you don't want to manually load and then save each data file to convert it to the current file format,
-                you can use the command-line to update every data file at once. How this works depends on your
-                computer's operating system.</p>
-            <p>Warning: Misusing the command-line can seriously damage your operating system. Unless you know what
-                you're doing, proceed carefully and don't deviate from the instructions below.</p>
-            <ol>
-                <li>Backup your User Library.</li>
-                <li>Open a terminal (macOS and Linux) or the command prompt (Windows). On Windows, you can do this by
-                    typing "Command Prompt" in the Windows search bar and clicking on the first result.</li>
-                <li>Issue the convert command by typing:
-                    <code class="ic">"PATH_TO_GCS" --convert "PATH_TO_USER_LIBRARY"</code>
-                    substituting the full paths to GCS and the User Library as appropriate. Note that you should make
-                    sure the paths have quotes around them as shown above, in case they contain spaces.
-                    <br>On Windows, the path to GCS might look like this:
-                    <code class="ic">C:\Program Files\GCS\gcs.exe</code>
-                    <br>On macOS, the path to GCS might look like this:
-                    <code class="ic">/Applications/GCS.app/Contents/MacOS/gcs</code>
-                    <br>On Linux, the path to GCS might look like this:
-                    <code class="ic">/usr/local/bin/gcs</code>
-                    <br>The path to the User Library can be found by opening GCS, right-clicking on the User Library folder,
-                    selecting Configure, then copying everything in the Path field in the settings tab that comes up.
-                </li>
-                <li>When the command is run, it will start listing the files it is converting. Once it finishes, you can
-                    close the terminal. If the command gives you an error instead of listing your files, go back to step
-                    3 and try again, double checking that your file paths are correct and that you're typing everything
-                    correctly, spaces included. Note that files that are too old to be opened by the current version may
-                    need you to install an older version of GCS to do a conversion to bring them up to a version that
-                    the current version can process.</li>
-                <li>Open GCS and verify that you can open your data files.</li>
-            </ol>
-        </article>
-        <article>
-            <h2>Can I define my own standard hit location tables and have them show up in the combo for selection?</h2>
-            <p>Yes. Make sure to give the table a unique ID, then export it and place it in a directory named
-                "Hit Locations" at the top level of one of your GCS Library directories.</p>
-        </article>
-        <article>
-            <h2>What operators and functions are available for use in attribute expressions?</h2>
-            <table class="operators">
-                <tr><th>Operator</th><th>Name</th></tr>
-                <tr><td class="op">(</td><td class="op-name">open paren</td></tr>
-                <tr><td class="op">)</td><td class="op-name">close paren</td></tr>
-                <tr><td class="op">+</td><td class="op-name">add</td></tr>
-                <tr><td class="op">-</td><td class="op-name">subtract</td></tr>
-                <tr><td class="op">^</td><td class="op-name">power</td></tr>
-                <tr><td class="op">*</td><td class="op-name">multiply</td></tr>
-                <tr><td class="op">/</td><td class="op-name">divide</td></tr>
-                <tr><td class="op">==</td><td class="op-name">equal to</td></tr>
-                <tr><td class="op">!=</td><td class="op-name">not equal to</td></tr>
-                <tr><td class="op">&lt;=</td><td class="op-name">less than or equal to</td></tr>
-                <tr><td class="op">&lt;</td><td class="op-name">less than</td></tr>
-                <tr><td class="op">&gt;=</td><td class="op-name">greater than or equal to</td></tr>
-                <tr><td class="op">&gt;</td><td class="op-name">greater than</td></tr>
-                <tr><td class="op">&amp;&amp;</td><td class="op-name">logical and</td></tr>
-                <tr><td class="op">||</td><td class="op-name">logical or</td></tr>
-                <tr><td class="op">!</td><td class="op-name">logical not</td></tr>
-                <tr><td class="op">%</td><td class="op-name">modulo</td></tr>
-            </table>
-            <table class="functions">
-                <tr><th>Function</th><th>Description</th></tr>
-                <tr>
-                    <td class="func">abs(number)</td>
-                    <td class="func-desc">Returns the absolute value of the number.</td>
-                </tr>
-                <tr>
-                    <td class="func">advantage_level(name)</td>
-                    <td class="func-desc">Looks for a trait with the 'name' and returns its level or -1 if it can't be
-                        found. Not available prior to v4.31. Deprecated; use 'trait_level()' for v5+.</td>
-                </tr>
-                <tr>
-                    <td class="func">cbrt(number)</td>
-                    <td class="func-desc">Returns the cube root of the number.</td>
-                </tr>
-                <tr>
-                    <td class="func">ceil(number)</td>
-                    <td class="func-desc">Returns the smallest (closest to negative infinity) value that is greater than
-                        or equal to the number and is equal to a mathematical integer.</td>
-                </tr>
-                <tr>
-                    <td class="func">dice(sides)</td>
-                    <td class="func-desc">Returns a string suitable for passing to the 'roll' function. 'dice(4)' would
-                        return '1d4'.
-                    </td>
-                </tr>
-                <tr>
-                    <td class="func">dice(count, sides)</td>
-                    <td class="func-desc">Returns a string suitable for passing to the 'roll' function. 'dice(2,4)'
-                        would return '2d4'.</td>
-                </tr>
-                <tr>
-                    <td class="func">dice(count, sides, modifier)</td>
-                    <td class="func-desc">Returns a string suitable for passing to the 'roll' function. 'dice(2,4,-1)'
-                        would return '2d4-1'.</td>
-                </tr>
-                <tr>
-                    <td class="func">dice(count, sides, modifier, multiplier)</td>
-                    <td class="func-desc">Returns a string suitable for passing to the 'roll' function. 'dice(2,4,-1,2)'
-                        would return '2d4-1x2'.</td>
-                </tr>
-                <tr>
-                    <td class="func">enc(forSkills)</td>
-                    <td class="func-desc">Returns the current encumbrance modifier (a value from 0 to 4). If 'forSkills'
-                        is true, the modifier is adjusted to account for equipment that has been marked as not having
-                        its weight counting against skills. Not available prior to v5.3.</td>
-                </tr>
-                <tr>
-                    <td class="func">enc(forSkills, returnFactor)</td>
-                    <td class="func-desc">Returns the current encumbrance modifier (a value from 0 to 4) or the move
-                        multiplication factor if 'returnFactor' is true. If 'forSkills' is true, the modifier is
-                        adjusted to account for equipment that has been marked as not having its weight counting against
-                        skills. Not available prior to v5.4.</td>
-                </tr>
-                <tr>
-                    <td class="func">exp(number)</td>
-                    <td class="func-desc">Returns Euler's number e raised to the power of the number.</td>
-                </tr>
-                <tr>
-                    <td class="func">floor(number)</td>
-                    <td class="func-desc">Returns the largest (closest to positive infinity) value that is less than or
-                        equal to the number and is equal to a mathematical integer.</td>
-                </tr>
-                <tr>
-                    <td class="func">has_trait(name)</td>
-                    <td class="func-desc">Returns true if the named trait is present and active on the sheet. Not
-                        available prior to v5.12.</td>
-                </tr>
-                <tr>
-                    <td class="func">if(test, true_result, false_result)</td>
-                    <td class="func-desc">Returns 'false_result' if 'test' resolves to 0 or an empty string, otherwise
-                        returns 'true_result'.</td>
-                </tr>
-                <tr>
-                    <td class="func">log(number)</td>
-                    <td class="func-desc">Returns the natural logarithm (base e) of the number.</td>
-                </tr>
-                <tr>
-                    <td class="func">log1p(number)</td>
-                    <td class="func-desc">Returns the natural logarithm of the sum of the number and 1.</td>
-                </tr>
-                <tr>
-                    <td class="func">log10(number)</td>
-                    <td class="func-desc">Returns the base 10 logarithm of the number.</td>
-                </tr>
-                <tr>
-                    <td class="func">max(num1, num2)</td>
-                    <td class="func-desc">Returns the greater of the two numbers.</td>
-                </tr>
-                <tr>
-                    <td class="func">min(num1, num2)</td>
-                    <td class="func-desc">Returns the lesser of the two numbers.</td>
-                </tr>
-                <tr>
-                    <td class="func">pow(num1, num2)</td>
-                    <td class="func-desc">Returns the value of num1 raised to the power of num2.</td>
-                </tr>
-                <tr>
-                    <td class="func">random_height(st)</td>
-                    <td class="func-desc">Returns a random height in inches based on the chart from B18. Adjusts
-                        appropriately for the traits Skinny, Overweight, Fat, and Very Fat, if present on the sheet. Not
-                        available prior to v5.12.</td>
-                </tr>
-                <tr>
-                    <td class="func">random_height(st, shift)</td>
-                    <td class="func-desc">Returns a random height in inches based on the chart from B18. Adjusts
-                        appropriately for the traits Skinny, Overweight, Fat, and Very Fat, if present on the sheet.
-                        'shift' is the number of columns to shift when producing results &mdash; this is in addition to
-                        shifts caused by the traits Skinny, Overweight, Fat, and Very Fat. Use negative values to shift
-                        down, positive values to shift up. Not available prior to v5.12.</td>
-                </tr>
-                <tr>
-                    <td class="func">random_weight(st)</td>
-                    <td class="func-desc">Returns a random weight in pounds based on the chart from B18. Not available
-                        prior to v5.12.</td>
-                </tr>
-                <tr>
-                    <td class="func">roll(dice_spec)</td>
-                    <td class="func-desc">Returns the result of rolling dice (dice_spec uses standard dice notation or
-                        the result of a call to the 'dice' function).</td>
-                </tr>
-                <tr>
-                    <td class="func">round(number)</td>
-                    <td class="func-desc">Returns the closest integer value to the number, with ties rounding to
-                        positive infinity.</td>
-                </tr>
-                <tr>
-                    <td class="func">signed(number)</td>
-                    <td class="func-desc">Returns the number with a leading '+' if it is positive.</td>
-                </tr>
-                <tr>
-                    <td class="func">skill_level(name)</td>
-                    <td class="func-desc">Looks for a skill with 'name' and no specialization and returns its level or 0
-                        if it can't be found. Not available prior to v5.4.</td>
-                </tr>
-                <tr>
-                    <td class="func">skill_level(name, specialization)</td>
-                    <td class="func-desc">Looks for a skill with 'name' and 'specialization' and returns its level or 0
-                        if it can't be found. Not available prior to v5.4.</td>
-                </tr>
-                <tr>
-                    <td class="func">skill_level(name, specialization, relative)</td>
-                    <td class="func-desc">Looks for a skill with 'name' and 'specialization' and returns its level or 0
-                        if it can't be found. If 'relative' is true, the relative level is returned instead. Not
-                        available prior to v5.4.</td>
-                </tr>
-                <tr>
-                    <td class="func">sqrt(number)</td>
-                    <td class="func-desc">Returns the positive square root of number.</td>
-                </tr>
-                <tr>
-                    <td class="func">ssrt(length, units, flag)</td>
-                    <td class="func-desc">Returns a value from the Size and Speed/Range Table on B550. 'length' should
-                        be a number. 'units' should be one of "in", "ft", "yd", "mi", "cm", "km", or "m". 'flag' should
-                        be true to have it return the size modifier or false to return the speed/range modifier. Not
-                        available prior to v4.32.</td>
-                </tr>
-                <tr>
-                    <td class="func">ssrt_to_yards(number)</td>
-                    <td class="func-desc">Returns the number of yards for the given size modifier from the Size and
-                        Speed/Range Table on B550. Not available prior to v4.32.</td>
-                </tr>
-                <tr>
-                    <td class="func">trait_level(name)</td>
-                    <td class="func-desc">Looks for a trait with the 'name' and returns its level or -1 if it can't be
-                        found. Not available prior to v5.</td>
-                </tr>
-            </table>
-        </article>
-    </main>
-    <div id="aside">
-        <div>
-            <h3>GCS</h3>
-            <ul>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="https://github.com/richardwilkes/gcs/releases">Releases</a></li>
-                <li><a href="https://github.com/richardwilkes/gcs/blob/master/README.md">Development Setup</a></li>
-                <li><a href="https://github.com/richardwilkes/gcs">GitHub Repository</a></li>
-                <li><a href="https://github.com/richardwilkes/gcs/issues">Issue Tracker</a>
-                <li><a href="https://groups.io/g/gcs">Mailing List</a></li>
-                <li><a href="https://discord.gg/SxuvXVh">Discord Server</a></li>
-            </ul>
-        </div>
-        <div>
-            <h3>GCS Master Library</h3>
-            <ul>
-                <li><a href="https://github.com/richardwilkes/gcs_master_library/releases">Releases</a></li>
-                <li><a href="https://github.com/richardwilkes/gcs_master_library">GitHub Repository</a></li>
-                <li><a href="https://github.com/richardwilkes/gcs_master_library/issues">Issue Tracker</a>
-                <li><a href="page_references.html">Page Reference List</a></li>
-                <li><a href="output_templates.html">Output Template Docs</a></li>
-            </ul>
-        </div>
-    </div>
-</section>
-<footer>
-    <p class="copyright">
-        Copyright &copy;1998-2023 by <a href="mailto:wilkes@me.com">Richard A. Wilkes</a>. All rights reserved
-        worldwide.
-    </p>
-    <p class="license">
-        GURPS Character Sheet is licensed under the <a href="license.html">Mozilla Public License, version 2.0</a>.
-    </p>
-    <p class="disclaimer">
-        GURPS is a trademark of Steve Jackson Games, and its rules and art are copyrighted by Steve Jackson Games. All
-        rights are reserved by Steve Jackson Games. This game aid is the original creation of Richard A. Wilkes and is
-        released for free distribution, and not for resale, under the permissions granted in the
-        <a href="http://www.sjgames.com/general/online_policy.html">Steve Jackson Games Online Policy</a>.
-    </p>
-</footer>
+	<header>
+		<div id="banner">
+			<div id="logo"><a href="index.html"><img src="images/logo.gif" alt="GURPS Character Sheet"></a></div>
+			<div id="banner_right">
+				<div id="banner_title">GURPS Character Sheet</div>
+				<div class="banner_desc">
+					GURPS Character Sheet (GCS) is a standalone, interactive, character sheet editor that allows you to
+					build characters for the <a href="http://www.sjgames.com/gurps">GURPS Fourth Edition</a> roleplaying
+					game.
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<h1>Frequently Asked Questions</h1>
+	</section>
+	<section id="pageContent">
+		<main role="main">
+			<article>
+				<h2>I'm on Windows and GCS doesn't start! How come?</h2>
+				<p>The most likely cause is not having OpenGL 3.2 or better installed on your machine. If you are on an
+					older machine without the necessary OpenGL support, you may be able to work around this by putting the
+					OpenGL32.dll from <a href="https://fdossena.com/?p=mesa/index.frag">Mesa</a> into the same directory as
+					your GCS.exe file.</p>
+			</article>
+			<article>
+				<h2>How can I convert old GCS files to the current format?</h2>
+				<p>This depends greatly on just how old the file is. Files made prior to the v4.20 release need to be
+					converted using the program found here:
+					<a href="https://github.com/richardwilkes/gcs_json_updater/releases">GCS JSON Updater</a>. This will
+					convert them to the v4.20 format.
+				</p>
+				<p>Files created before v4.30 need to be converted using the v4.37.1 release. Either open and save each
+					file with GCS v4.37.1 or you can use the command-line option to convert a bunch of files at once.</p>
+				<p>Once GCS v5.x.x can open the file, you can save it from GCS v5.x.x to have it stored in the current
+					format.</p>
+			</article>
+			<article>
+				<h2>Can I submit new/revised data files?</h2>
+				<p>Absolutely! Almost all of the current data content of GCS was provided by helpful individuals other than
+					me. If you have completely new content, please create a new library for it and send the resulting file.
+					If, on the other hand, you're modifying one of the existing data files, please be sure to update to the
+					latest version from the git repository first, make your changes, then submit a patch file of the
+					differences. In either case, please either create a
+					<a href="https://github.com/richardwilkes/gcs_master_library/pulls">Pull Request</a> or an
+					<a href="https://github.com/richardwilkes/gcs_master_library/issues">Issue</a> for the work and attach
+					the new file or patch file to that.
+				</p>
+			</article>
+			<article>
+				<h2>What page reference abbreviations are being used in the data files?</h2>
+				<p>The current list of page reference abbreviations can be found here:
+					<a href="page_references.html">https://gurpscharactersheet.com/page_references</a>
+				</p>
+			</article>
+			<article>
+				<h2>Is there a version of GCS localized for my language?</h2>
+				<p>The <a href="https://github.com/richardwilkes/gcs_translations">GCS Translations Repo</a> may contain
+					one.</p>
+			</article>
+			<article>
+				<h2>Where can I find the global settings file?</h2>
+				<p>Its location is dependent upon your specific platform. You can find the location of the settings file by
+					running passing <code class="ic">gcs --help</code> on the command-line. The output will have the path to
+					the settings file, among other things.</p>
+				<p>For those of you on macOS, you will need to open a terminal and (assuming you have GCS in the top-level
+					Applications folder on your system, type:
+					<code class="ic">/Applications/GCS.app/Contents/MacOS/gcs --help</code>
+				</p>
+			</article>
+			<article>
+				<h2>How can I change where GCS loads settings from and to?</h2>
+				<p>There are two ways to accomplish this. One is to make use of the command-line
+					<code class="ic">--settings</code> option that explicitly tells GCS where to find its settings file. The
+					other is to copy the settings file to be located next to the GCS executable. When a file named
+					<code class="ic">gcs_prefs.json</code> is found next to the GCS executable, it will be used instead of
+					the normal location. Note that this does not override the command-line option, so if you do both, the
+					command-line option will take precedence.
+				</p>
+				<p>When doing this, you may also want to change the location of the log file, which can be adjusted using
+					the <code class="ic">--log-file</code> command-line option.</p>
+			</article>
+			<article>
+				<h2>How do I convert my all of my User Library data files to the current file format?</h2>
+				<p>If you don't want to manually load and then save each data file to convert it to the current file format,
+					you can use the command-line to update every data file at once. How this works depends on your
+					computer's operating system.</p>
+				<p>Warning: Misusing the command-line can seriously damage your operating system. Unless you know what
+					you're doing, proceed carefully and don't deviate from the instructions below.</p>
+				<ol>
+					<li>Backup your User Library.</li>
+					<li>Open a terminal (macOS and Linux) or the command prompt (Windows). On Windows, you can do this by
+						typing "Command Prompt" in the Windows search bar and clicking on the first result.</li>
+					<li>Issue the convert command by typing:
+						<code class="ic">"PATH_TO_GCS" --convert "PATH_TO_USER_LIBRARY"</code>
+						substituting the full paths to GCS and the User Library as appropriate. Note that you should make
+						sure the paths have quotes around them as shown above, in case they contain spaces.
+						<br>On Windows, the path to GCS might look like this:
+						<code class="ic">C:\Program Files\GCS\gcs.exe</code>
+						<br>On macOS, the path to GCS might look like this:
+						<code class="ic">/Applications/GCS.app/Contents/MacOS/gcs</code>
+						<br>On Linux, the path to GCS might look like this:
+						<code class="ic">/usr/local/bin/gcs</code>
+						<br>The path to the User Library can be found by opening GCS, right-clicking on the User Library folder,
+						selecting Configure, then copying everything in the Path field in the settings tab that comes up.
+					</li>
+					<li>When the command is run, it will start listing the files it is converting. Once it finishes, you can
+						close the terminal. If the command gives you an error instead of listing your files, go back to step
+						3 and try again, double checking that your file paths are correct and that you're typing everything
+						correctly, spaces included. Note that files that are too old to be opened by the current version may
+						need you to install an older version of GCS to do a conversion to bring them up to a version that
+						the current version can process.</li>
+					<li>Open GCS and verify that you can open your data files.</li>
+				</ol>
+			</article>
+			<article>
+				<h2>Can I define my own standard hit location tables and have them show up in the combo for selection?</h2>
+				<p>Yes. Make sure to give the table a unique ID, then export it and place it in a directory named
+					"Hit Locations" at the top level of one of your GCS Library directories.</p>
+			</article>
+			<article>
+				<h2>What operators and functions are available for use in attribute expressions?</h2>
+				<table class="operators">
+					<tr>
+						<th>Operator</th>
+						<th>Name</th>
+					</tr>
+					<tr>
+						<td class="op">(</td>
+						<td class="op-name">open paren</td>
+					</tr>
+					<tr>
+						<td class="op">)</td>
+						<td class="op-name">close paren</td>
+					</tr>
+					<tr>
+						<td class="op">+</td>
+						<td class="op-name">add</td>
+					</tr>
+					<tr>
+						<td class="op">-</td>
+						<td class="op-name">subtract</td>
+					</tr>
+					<tr>
+						<td class="op">^</td>
+						<td class="op-name">power</td>
+					</tr>
+					<tr>
+						<td class="op">*</td>
+						<td class="op-name">multiply</td>
+					</tr>
+					<tr>
+						<td class="op">/</td>
+						<td class="op-name">divide</td>
+					</tr>
+					<tr>
+						<td class="op">==</td>
+						<td class="op-name">equal to</td>
+					</tr>
+					<tr>
+						<td class="op">!=</td>
+						<td class="op-name">not equal to</td>
+					</tr>
+					<tr>
+						<td class="op">&lt;=</td>
+						<td class="op-name">less than or equal to</td>
+					</tr>
+					<tr>
+						<td class="op">&lt;</td>
+						<td class="op-name">less than</td>
+					</tr>
+					<tr>
+						<td class="op">&gt;=</td>
+						<td class="op-name">greater than or equal to</td>
+					</tr>
+					<tr>
+						<td class="op">&gt;</td>
+						<td class="op-name">greater than</td>
+					</tr>
+					<tr>
+						<td class="op">&amp;&amp;</td>
+						<td class="op-name">logical and</td>
+					</tr>
+					<tr>
+						<td class="op">||</td>
+						<td class="op-name">logical or</td>
+					</tr>
+					<tr>
+						<td class="op">!</td>
+						<td class="op-name">logical not</td>
+					</tr>
+					<tr>
+						<td class="op">%</td>
+						<td class="op-name">modulo</td>
+					</tr>
+				</table>
+				<table class="functions">
+					<tr>
+						<th>Function</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td class="func">abs(number)</td>
+						<td class="func-desc">Returns the absolute value of the number.</td>
+					</tr>
+					<tr>
+						<td class="func">advantage_level(name)</td>
+						<td class="func-desc">Looks for a trait with the 'name' and returns its level or -1 if it can't be
+							found. Not available prior to v4.31. Deprecated; use 'trait_level()' for v5+.</td>
+					</tr>
+					<tr>
+						<td class="func">cbrt(number)</td>
+						<td class="func-desc">Returns the cube root of the number.</td>
+					</tr>
+					<tr>
+						<td class="func">ceil(number)</td>
+						<td class="func-desc">Returns the smallest (closest to negative infinity) value that is greater than
+							or equal to the number and is equal to a mathematical integer.</td>
+					</tr>
+					<tr>
+						<td class="func">dice(sides)</td>
+						<td class="func-desc">Returns a string suitable for passing to the 'roll' function. 'dice(4)' would
+							return '1d4'.
+						</td>
+					</tr>
+					<tr>
+						<td class="func">dice(count, sides)</td>
+						<td class="func-desc">Returns a string suitable for passing to the 'roll' function. 'dice(2,4)'
+							would return '2d4'.</td>
+					</tr>
+					<tr>
+						<td class="func">dice(count, sides, modifier)</td>
+						<td class="func-desc">Returns a string suitable for passing to the 'roll' function. 'dice(2,4,-1)'
+							would return '2d4-1'.</td>
+					</tr>
+					<tr>
+						<td class="func">dice(count, sides, modifier, multiplier)</td>
+						<td class="func-desc">Returns a string suitable for passing to the 'roll' function. 'dice(2,4,-1,2)'
+							would return '2d4-1x2'.</td>
+					</tr>
+					<tr>
+						<td class="func">enc(forSkills)</td>
+						<td class="func-desc">Returns the current encumbrance modifier (a value from 0 to 4). If 'forSkills'
+							is true, the modifier is adjusted to account for equipment that has been marked as not having
+							its weight counting against skills. Not available prior to v5.3.</td>
+					</tr>
+					<tr>
+						<td class="func">enc(forSkills, returnFactor)</td>
+						<td class="func-desc">Returns the current encumbrance modifier (a value from 0 to 4) or the move
+							multiplication factor if 'returnFactor' is true. If 'forSkills' is true, the modifier is
+							adjusted to account for equipment that has been marked as not having its weight counting against
+							skills. Not available prior to v5.4.</td>
+					</tr>
+					<tr>
+						<td class="func">exp(number)</td>
+						<td class="func-desc">Returns Euler's number e raised to the power of the number.</td>
+					</tr>
+					<tr>
+						<td class="func">floor(number)</td>
+						<td class="func-desc">Returns the largest (closest to positive infinity) value that is less than or
+							equal to the number and is equal to a mathematical integer.</td>
+					</tr>
+					<tr>
+						<td class="func">has_trait(name)</td>
+						<td class="func-desc">Returns true if the named trait is present and active on the sheet. Not
+							available prior to v5.12.</td>
+					</tr>
+					<tr>
+						<td class="func">if(test, true_result, false_result)</td>
+						<td class="func-desc">Returns 'false_result' if 'test' resolves to 0 or an empty string, otherwise
+							returns 'true_result'.</td>
+					</tr>
+					<tr>
+						<td class="func">log(number)</td>
+						<td class="func-desc">Returns the natural logarithm (base e) of the number.</td>
+					</tr>
+					<tr>
+						<td class="func">log1p(number)</td>
+						<td class="func-desc">Returns the natural logarithm of the sum of the number and 1.</td>
+					</tr>
+					<tr>
+						<td class="func">log10(number)</td>
+						<td class="func-desc">Returns the base 10 logarithm of the number.</td>
+					</tr>
+					<tr>
+						<td class="func">max(num1, num2)</td>
+						<td class="func-desc">Returns the greater of the two numbers.</td>
+					</tr>
+					<tr>
+						<td class="func">min(num1, num2)</td>
+						<td class="func-desc">Returns the lesser of the two numbers.</td>
+					</tr>
+					<tr>
+						<td class="func">random_height(st)</td>
+						<td class="func-desc">Returns a random height in inches based on the chart from B18. Adjusts
+							appropriately for the traits Skinny, Overweight, Fat, and Very Fat, if present on the sheet. Not
+							available prior to v5.12.</td>
+					</tr>
+					<tr>
+						<td class="func">random_height(st, shift)</td>
+						<td class="func-desc">Returns a random height in inches based on the chart from B18. Adjusts
+							appropriately for the traits Skinny, Overweight, Fat, and Very Fat, if present on the sheet.
+							'shift' is the number of columns to shift when producing results &mdash; this is in addition to
+							shifts caused by the traits Skinny, Overweight, Fat, and Very Fat. Use negative values to shift
+							down, positive values to shift up. Not available prior to v5.12.</td>
+					</tr>
+					<tr>
+						<td class="func">random_weight(st)</td>
+						<td class="func-desc">Returns a random weight in pounds based on the chart from B18. Not available
+							prior to v5.12.</td>
+					</tr>
+					<tr>
+						<td class="func">roll(dice_spec)</td>
+						<td class="func-desc">Returns the result of rolling dice (dice_spec uses standard dice notation or
+							the result of a call to the 'dice' function).</td>
+					</tr>
+					<tr>
+						<td class="func">round(number)</td>
+						<td class="func-desc">Returns the closest integer value to the number, with ties rounding to
+							positive infinity.</td>
+					</tr>
+					<tr>
+						<td class="func">signed(number)</td>
+						<td class="func-desc">Returns the number with a leading '+' if it is positive.</td>
+					</tr>
+					<tr>
+						<td class="func">skill_level(name)</td>
+						<td class="func-desc">Looks for a skill with 'name' and no specialization and returns its level or 0
+							if it can't be found. Not available prior to v5.4.</td>
+					</tr>
+					<tr>
+						<td class="func">skill_level(name, specialization)</td>
+						<td class="func-desc">Looks for a skill with 'name' and 'specialization' and returns its level or 0
+							if it can't be found. Not available prior to v5.4.</td>
+					</tr>
+					<tr>
+						<td class="func">skill_level(name, specialization, relative)</td>
+						<td class="func-desc">Looks for a skill with 'name' and 'specialization' and returns its level or 0
+							if it can't be found. If 'relative' is true, the relative level is returned instead. Not
+							available prior to v5.4.</td>
+					</tr>
+					<tr>
+						<td class="func">sqrt(number)</td>
+						<td class="func-desc">Returns the positive square root of number.</td>
+					</tr>
+					<tr>
+						<td class="func">ssrt(length, units, flag)</td>
+						<td class="func-desc">Returns a value from the Size and Speed/Range Table on B550. 'length' should
+							be a number. 'units' should be one of "in", "ft", "yd", "mi", "cm", "km", or "m". 'flag' should
+							be true to have it return the size modifier or false to return the speed/range modifier. Not
+							available prior to v4.32.</td>
+					</tr>
+					<tr>
+						<td class="func">ssrt_to_yards(number)</td>
+						<td class="func-desc">Returns the number of yards for the given size modifier from the Size and
+							Speed/Range Table on B550. Not available prior to v4.32.</td>
+					</tr>
+					<tr>
+						<td class="func">trait_level(name)</td>
+						<td class="func-desc">Looks for a trait with the 'name' and returns its level or -1 if it can't be
+							found. Not available prior to v5.</td>
+					</tr>
+				</table>
+			</article>
+		</main>
+		<div id="aside">
+			<div>
+				<h3>GCS</h3>
+				<ul>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="https://github.com/richardwilkes/gcs/releases">Releases</a></li>
+					<li><a href="https://github.com/richardwilkes/gcs/blob/master/README.md">Development Setup</a></li>
+					<li><a href="https://github.com/richardwilkes/gcs">GitHub Repository</a></li>
+					<li><a href="https://github.com/richardwilkes/gcs/issues">Issue Tracker</a>
+					<li><a href="https://groups.io/g/gcs">Mailing List</a></li>
+					<li><a href="https://discord.gg/SxuvXVh">Discord Server</a></li>
+				</ul>
+			</div>
+			<div>
+				<h3>GCS Master Library</h3>
+				<ul>
+					<li><a href="https://github.com/richardwilkes/gcs_master_library/releases">Releases</a></li>
+					<li><a href="https://github.com/richardwilkes/gcs_master_library">GitHub Repository</a></li>
+					<li><a href="https://github.com/richardwilkes/gcs_master_library/issues">Issue Tracker</a>
+					<li><a href="page_references.html">Page Reference List</a></li>
+					<li><a href="output_templates.html">Output Template Docs</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p class="copyright">
+			Copyright &copy;1998-2023 by <a href="mailto:wilkes@me.com">Richard A. Wilkes</a>. All rights reserved
+			worldwide.
+		</p>
+		<p class="license">
+			GURPS Character Sheet is licensed under the <a href="license.html">Mozilla Public License, version 2.0</a>.
+		</p>
+		<p class="disclaimer">
+			GURPS is a trademark of Steve Jackson Games, and its rules and art are copyrighted by Steve Jackson Games. All
+			rights are reserved by Steve Jackson Games. This game aid is the original creation of Richard A. Wilkes and is
+			released for free distribution, and not for resale, under the permissions granted in the
+			<a href="http://www.sjgames.com/general/online_policy.html">Steve Jackson Games Online Policy</a>.
+		</p>
+	</footer>
 </body>
 </html>
