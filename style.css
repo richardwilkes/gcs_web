@@ -54,6 +54,7 @@
   --non-content-link-active: purple;
   --dotted-line: #999;
   --logo-border: black;
+	--sponsor-bg: #f8f8f8;
 }
 
 html, body, div, span, div, p, h1, h2, h3, h4, h5, h6 {
@@ -314,13 +315,20 @@ body > section {
 
 .sponsor {
   margin-top: 1em;
-  text-align: center;
+	display: flex;
+	justify-content: center;
 }
 
-.sponsor iframe {
-  width: 116px;
-  height: 35px;
-  border: none;
+.sponsor > a {
+	font: bold normal normal 16px 'Optima';
+	text-decoration: none;
+	border: 1px solid var(--content-fg);
+	border-radius: 8px;
+	padding: 6px 12px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	background-color: var(--sponsor-bg);
 }
 
 .downloads {
@@ -424,6 +432,7 @@ body > section {
     --non-content-link-visited: #bbcdff;
     --non-content-link-hover: #bbcdff;
     --non-content-link-active: blue;
+		--sponsor-bg: #222;
   }
 
   .notable {
