@@ -1,57 +1,59 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GURPS Character Sheet - FAQ</title>
-    <meta name="description" content="A WYSIWYG character sheet for GURPS Fourth Edition">
-    <meta name="keywords" content="GURPS Character Sheet roleplaying games"/>
-    <meta name="norton-safeweb-site-verification"
-          content="fnn0dveu85-ceabrbo2s7k1kw54q88sqmlvbun2sg86r82l9l01bxz6qlbq6ptnqojpmwzqs8v2viv1jkxhi3jo5ndv931j15xz3j49uup5blqxahylgkqquk-hg5uf9"/>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="shortcut icon" href="images/favicon.ico"/>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GURPS Character Sheet - FAQ</title>
+	<meta name="description" content="A WYSIWYG character sheet for GURPS Fourth Edition">
+	<meta name="keywords" content="GURPS Character Sheet roleplaying games" />
+	<meta name="norton-safeweb-site-verification"
+		content="fnn0dveu85-ceabrbo2s7k1kw54q88sqmlvbun2sg86r82l9l01bxz6qlbq6ptnqojpmwzqs8v2viv1jkxhi3jo5ndv931j15xz3j49uup5blqxahylgkqquk-hg5uf9" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="images/favicon.ico" />
 </head>
 <body>
-<header>
-    <div id="banner">
-        <div id="logo"><a href="index.html"><img src="images/logo.gif" alt="GURPS Character Sheet"></a></div>
-        <div id="banner_right">
-            <div id="banner_title">GURPS Character Sheet</div>
-            <div class="banner_desc">
-                GURPS Character Sheet (GCS) is a standalone, interactive, character sheet editor that allows you to
-                build characters for the <a href="http://www.sjgames.com/gurps">GURPS Fourth Edition</a> roleplaying
-                game.
-            </div>
-        </div>
-    </div>
-</header>
-<section id="pageContent">
-    <main role="main">
-        <article>
-            <h1>NOTE!</h1>
-            <p>As of <span class="notable">GCS 5.15</span>, a new format for output templates was introduced and is
-                described in the file <span class="notable">Markdown/Help/Export Templates</span> in the
-                <span class="notable">Master Library</span>. For now, you can still use this old format, but it may go
-                away at some point in the future.</p>
-            <hr>
-            <h1>Output Templates</h1>
-            <p>When GCS exports a character sheet to text, it uses a modifiable template to create the resulting file.
-                This template is itself is plain text and can be customized in any way desired. GCS looks for templates
-                in the <span class="notable">Output Templates</span> folder of both the Master Library and the User
-                Library.</p>
-            <h2>Creating New Templates</h2>
-            <p>Templates are text files. The extension of the template file is used when creating a newly exported sheet
-                from a template. Instructions on inserting character information and other functions are given to GCS
-                with <span class="notable">keys</span>, which are of the form, <span class="notable">@KEY</span> or
-                <span class="notable">@KEY@</span>. (Note that this turns <span class="notable">@</span> into a reserved
-                character, and so you must use <span class="notable">&amp;#64;</span> if you wish the final HTML
-                character sheet to include one.) Keys are case-sensitive and must be in all-caps. Incorrectly entered
-                keys will be replaced with <span class="notable">Unidentified key!</span> in the output.</p>
-            <p>The following example shows the creation of a template that will output a plain text list of the sort
-                generally used to post characters on Internet forums. The most basic keys are simply markers for a
-                find-and-replace operation.</p>
-            <code>@NAME [@TOTAL_POINTS]
+	<header>
+		<div id="banner">
+			<div id="logo"><a href="index.html"><img src="images/logo.gif" alt="GURPS Character Sheet"></a></div>
+			<div id="banner_right">
+				<div id="banner_title">GURPS Character Sheet</div>
+				<div class="banner_desc">
+					GURPS Character Sheet (GCS) is a standalone, interactive, character sheet editor that allows you to
+					build characters for the <a href="http://www.sjgames.com/gurps">GURPS Fourth Edition</a> roleplaying
+					game.
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="pageContent">
+		<main role="main">
+			<article>
+				<h1>NOTE!</h1>
+				<p>As of <span class="notable">GCS 5.15</span>, a new format for output templates was introduced and is
+					described in the file <span class="notable">Markdown/Help/Export Templates</span> in the
+					<span class="notable">Master Library</span>. For now, you can still use this old format, but it may go
+					away at some point in the future.
+				</p>
+				<hr>
+				<h1>Output Templates</h1>
+				<p>When GCS exports a character sheet to text, it uses a modifiable template to create the resulting file.
+					This template is itself is plain text and can be customized in any way desired. GCS looks for templates
+					in the <span class="notable">Output Templates</span> folder of both the Master Library and the User
+					Library.</p>
+				<h2>Creating New Templates</h2>
+				<p>Templates are text files. The extension of the template file is used when creating a newly exported sheet
+					from a template. Instructions on inserting character information and other functions are given to GCS
+					with <span class="notable">keys</span>, which are of the form, <span class="notable">@KEY</span> or
+					<span class="notable">@KEY@</span>. (Note that this turns <span class="notable">@</span> into a reserved
+					character, and so you must use <span class="notable">&amp;#64;</span> if you wish the final HTML
+					character sheet to include one.) Keys are case-sensitive and must be in all-caps. Incorrectly entered
+					keys will be replaced with <span class="notable">Unidentified key!</span> in the output.
+				</p>
+				<p>The following example shows the creation of a template that will output a plain text list of the sort
+					generally used to post characters on Internet forums. The most basic keys are simply markers for a
+					find-and-replace operation.</p>
+				<code>@NAME [@TOTAL_POINTS]
 Sex: @GENDER
 Age: @AGE
 Size: @SIZE
@@ -72,8 +74,8 @@ WL @WILL
 
 Basic Speed: @BASIC_SPEED
 Basic Move: @BASIC_MOVE</code>
-            <p>Results in:</p>
-            <code>Jack Jackson [120]
+				<p>Results in:</p>
+				<code>Jack Jackson [120]
 Sex: Male
 Age: 38
 Size: +0
@@ -94,13 +96,13 @@ WILL 10
 
 Basic Speed: 5.5
 Basic Move: 5</code>
-            <p>Lists of traits are generated with loop keys. When GCS encounters a loop, it applies the template within
-                the loop once for each item on the list.</p>
-            <code>@ADVANTAGES_LOOP_START
+				<p>Lists of traits are generated with loop keys. When GCS encounters a loop, it applies the template within
+					the loop once for each item on the list.</p>
+				<code>@ADVANTAGES_LOOP_START
 @DESCRIPTION_PRIMARY@DESCRIPTION_MODIFIER_NOTES_PAREN [@POINTS]
 @ADVANTAGES_LOOP_END</code>
-            <p>Results in:</p>
-            <code>Advantages  [15]
+				<p>Results in:</p>
+				<code>Advantages  [15]
 Fit [5]
 High Pain Threshold [10]
 Language: English (Native; Spoken (Native); Written (Native)) [0]
@@ -108,18 +110,19 @@ Disadvantages [-25]
 Bad Temper (CR: 15 (Almost All The Time)) [-5]
 Charitable (CR: 12 (Quite Often)) [-15]
 Skinny [-5]</code>
-            <p>There are several different forms of the <span class="notable">@DESCRIPTION</span> keys.
-                <span class="notable">_PRIMARY</span> outputs the name only,
-                <span class="notable">_MODIFIER_NOTES</span> outputs those notes due to modifiers, and
-                <span class="notable">_NOTES</span> outputs the text in the Notes field of the advantage, skill, or
-                equipment. The latter two can also have <span class="notable">_PAREN</span>,
-                <span class="notable">_BRACKET</span>, or <span class="notable">_CURLY</span> appended to them to
-                surround the output, if any, in parenthesis, square brackets or curly braces.
-                <span class="notable">@DESCRIPTION_NOTES</span> is omitted here because notes on advantages are rules
-                summaries, which, while useful on character sheets meant for use in play, are not desirable in this
-                template. Notes are, however, meaningful on skills, equipment, and spells, and so are included in those
-                loops:</p>
-            <code>Skills [@SKILL_POINTS]
+				<p>There are several different forms of the <span class="notable">@DESCRIPTION</span> keys.
+					<span class="notable">_PRIMARY</span> outputs the name only,
+					<span class="notable">_MODIFIER_NOTES</span> outputs those notes due to modifiers, and
+					<span class="notable">_NOTES</span> outputs the text in the Notes field of the advantage, skill, or
+					equipment. The latter two can also have <span class="notable">_PAREN</span>,
+					<span class="notable">_BRACKET</span>, or <span class="notable">_CURLY</span> appended to them to
+					surround the output, if any, in parenthesis, square brackets or curly braces.
+					<span class="notable">@DESCRIPTION_NOTES</span> is omitted here because notes on advantages are rules
+					summaries, which, while useful on character sheets meant for use in play, are not desirable in this
+					template. Notes are, however, meaningful on skills, equipment, and spells, and so are included in those
+					loops:
+				</p>
+				<code>Skills [@SKILL_POINTS]
 @SKILLS_LOOP_START
 @DESCRIPTION_PRIMARY @DESCRIPTION_NOTES_PAREN @SL (@RSL) [@POINTS]
 @SKILLS_LOOP_END
@@ -139,562 +142,563 @@ Notes
 @NOTE
 @NOTES_LOOP_END
 </code>
-            <p>Adding <span class="notable">@NOTES</span> to the end finishes this template.</p>
-            <h2>Available Keys</h2>
-            <h3>Description</h3>
-            <ul>
-                <li>AGE</li>
-                <li>BIRTHDAY</li>
-                <li>CREATED_ON</li>
-                <li>EYES</li>
-                <li>GENDER</li>
-                <li>HAIR</li>
-                <li>HAND</li>
-                <li>HEIGHT</li>
-                <li>NAME</li>
-                <li>NOTES</li>
-                <li>PLAYER</li>
-                <li>PORTRAIT<br>
-                    (Outputs the file name of the character's portrait, which is saved in the same directory as the
-                    character sheet)</li>
-                <li>RELIGION</li>
-                <li>SIZE</li>
-                <li>SKIN</li>
-                <li>TITLE</li>
-                <li>TL</li>
-                <li>WEIGHT</li>
-                <li>BODY_TYPE</li>
-                <li>ANCESTRY</li>
-                <li>RACE</li>
-            </ul>
-            <h3>Point Cost</h3>
-            <ul>
-                <li>ADVANTAGE_POINTS</li>
-                <li>ANCESTRY_POINTS</li>
-                <li>ATTRIBUTE_POINTS</li>
-                <li>BASIC_MOVE_POINTS</li>
-                <li>BASIC_SPEED_POINTS</li>
-                <li>DISADVANTAGE_POINTS</li>
-                <li>DX_POINTS</li>
-                <li>UNSPENT_POINTS</li>
-                <li>FP_POINTS</li>
-                <li>HP_POINTS</li>
-                <li>HT_POINTS</li>
-                <li>IQ_POINTS</li>
-                <li>PERCEPTION_POINTS</li>
-                <li>QUIRK_POINTS</li>
-                <li>RACE_POINTS</li>
-                <li>SKILL_POINTS</li>
-                <li>SPELL_POINTS</li>
-                <li>ST_POINTS</li>
-                <li>TOTAL_POINTS</li>
-                <li>WILL_POINTS</li>
-            </ul>
-            <h3>Attributes</h3>
-            <ul>
-                <li>BASIC_MOVE</li>
-                <li>BASIC_SPEED</li>
-                <li>DX</li>
-                <li>FRIGHT_CHECK</li>
-                <li>HEARING</li>
-                <li>HT</li>
-                <li>IQ</li>
-                <li>PERCEPTION</li>
-                <li>ST</li>
-                <li>SWING</li>
-                <li>TASTE_SMELL</li>
-                <li>THRUST</li>
-                <li>TOUCH</li>
-                <li>VISION</li>
-                <li>WILL</li>
-            </ul>
-            <h3>HP and FP</h3>
-            <ul>
-                <li>BASIC_FP<br>(Maximum FP. For current FP, use <span class="notable">FP</span>)</li>
-                <li>BASIC_HP<br>(Maximum HP. For current HP, use <span class="notable">HP</span>)</li>
-                <li>DEAD</li>
-                <li>DEATH_CHECK_1</li>
-                <li>DEATH_CHECK_2</li>
-                <li>DEATH_CHECK_3</li>
-                <li>DEATH_CHECK_4</li>
-                <li>FP<br>(Current FP. For maximum FP, use <span class="notable">BASIC_FP</span>)</li>
-                <li>FP_COLLAPSE</li>
-                <li>HP<br>(Current HP. For maximum HP, use <span class="notable">BASIC_HP</span>)</li>
-                <li>HP_COLLAPSE</li>
-                <li>REELING</li>
-                <li>TIRED</li>
-                <li>UNCONSCIOUS</li>
-            </ul>
-            <h3>Primary Attributes Loop</h3>
-            <ul>
-                <li>PRIMARY_ATTRIBUTE_LOOP_END</li>
-                <li>PRIMARY_ATTRIBUTE_LOOP_START</li>
-                <li>PRIMARY_ATTRIBUTE_LOOP_COUNT (emits the total number of items in the loop)</li>
-                <li>ID</li>
-                <li>NAME</li>
-                <li>FULL_NAME</li>
-                <li>COMBINED_NAME</li>
-                <li>VALUE</li>
-                <li>POINTS</li>
-            </ul>
-            <h3>Secondary Attributes Loop</h3>
-            <ul>
-                <li>SECONDARY_ATTRIBUTE_LOOP_END</li>
-                <li>SECONDARY_ATTRIBUTE_LOOP_START</li>
-                <li>SECONDARY_ATTRIBUTE_LOOP_COUNT (emits the total number of items in the loop)</li>
-                <li>ID</li>
-                <li>NAME</li>
-                <li>FULL_NAME</li>
-                <li>COMBINED_NAME</li>
-                <li>VALUE</li>
-                <li>POINTS</li>
-            </ul>
-            <h3>Point Pools Loop</h3>
-            <ul>
-                <li>POINT_POOL_LOOP_END</li>
-                <li>POINT_POOL_LOOP_START</li>
-                <li>POINT_POOL_LOOP_COUNT (emits the total number of items in the loop)</li>
-                <li>ID</li>
-                <li>NAME</li>
-                <li>FULL_NAME</li>
-                <li>COMBINED_NAME</li>
-                <li>CURRENT</li>
-                <li>MAXIMUM</li>
-                <li>POINTS</li>
-            </ul>
-            <h3>Encumbrance Loop</h3>
-            <ul>
-                <li>ENCUMBRANCE_LOOP_START</li>
-                <li>ENCUMBRANCE_LOOP_END</li>
-                <li>ENCUMBRANCE_LOOP_COUNT (emits the total number of items in the loop)</li>
-                <li>DODGE</li>
-                <li>LEVEL<br>(Level of encumbrance; None (0), Light (1), etc.)</li>
-                <li>LEVEL_ONLY<br>(Level of encumbrance; 0, 1, etc.)</li>
-                <li>MAX_LOAD</li>
-                <li>MOVE</li>
-                <li>CURRENT_MARKER (emits the word "current" when on the current encumbrance level, otherwise is emits
-                    an empty value)</li>
-                <li>CURRENT_MARKER_1 (emits the number "1" when on the current encumbrance level, otherwise is emits an
-                    empty value)</li>
-            </ul>
-            <h3>Hit Location Loop</h3>
-            <ul>
-                <li>HIT_LOCATION_LOOP_START</li>
-                <li>HIT_LOCATION_LOOP_END</li>
-                <li>HIT_LOCATION_LOOP_COUNT (emits the total number of items in the loop)</li>
-                <li>DR</li>
-                <li>EQUIPMENT<br>(Show the name(s) of the equipment providing the DR bonus on a single line)</li>
-                <li>EQUIPMENT_FORMATTED<br>(Show the name(s) of the equipment providing the DR bonus, each on a separate
-                    line surrounded by &lt;p&gt;...&lt;/p&gt;)
-                </li>
-                <li>PENALTY<br>(The penalty to attack this location deliberately)</li>
-                <li>ROLL<br>(Roll required to hit this location using random hit locations)</li>
-                <li>WHERE<br>(Name of the hit location)</li>
-            </ul>
-            <h3>General Defenses</h3>
-            <ul>
-                <li>GENERAL_DR (effectively the torso DR)</li>
-                <li>CURRENT_DODGE (current dodge based on encumbrance)</li>
-                <li>CURRENT_MOVE (current move based on encumbrance)</li>
-                <li>BEST_CURRENT_BLOCK</li>
-                <li>BEST_CURRENT_PARRY</li>
-            </ul>
-            <h3>Lifting &amp; Moving Things</h3>
-            <ul>
-                <li>BASIC_LIFT</li>
-                <li>CARRY_ON_BACK</li>
-                <li>ONE_HANDED_LIFT</li>
-                <li>RUNNING_SHOVE</li>
-                <li>SHIFT_SLIGHTLY</li>
-                <li>SHOVE</li>
-                <li>TWO_HANDED_LIFT</li>
-            </ul>
-            <h3>Advantages Loop (all advantages/disadvantages/perks/quirks)</h3>
-            <ul>
-                <li>ADVANTAGES_LOOP_START</li>
-                <li>ADVANTAGES_LOOP_END</li>
-                <li>ADVANTAGES_LOOP_COUNT (emits the total number of items in the loop)</li>
-            </ul>
-            <h3>Advantages Only Loop (only advantages costing 2 points or more)</h3>
-            <ul>
-                <li>ADVANTAGES_ONLY_LOOP_START</li>
-                <li>ADVANTAGES_ONLY_LOOP_END</li>
-                <li>ADVANTAGES_ONLY_LOOP_COUNT (emits the total number of items in the loop)</li>
-            </ul>
-            <h3>All Advantages Only Loop (only advantages, any cost)</h3>
-            <ul>
-                <li>ADVANTAGES_ALL_LOOP_START</li>
-                <li>ADVANTAGES_ALL_LOOP_END</li>
-                <li>ADVANTAGES_ALL_COUNT (emits the total number of items in the loop)</li>
-            </ul>
-            <h3>Disadvantages Loop (only disadvantages costing -2 points or less)</h3>
-            <ul>
-                <li>DISADVANTAGES_LOOP_START</li>
-                <li>DISADVANTAGES_LOOP_END</li>
-                <li>DISADVANTAGES_LOOP_COUNT (emits the total number of items in the loop)</li>
-            </ul>
-            <h3>All Disadvantages Loop (only disadvantages, any cost)</h3>
-            <ul>
-                <li>DISADVANTAGES_ALL_LOOP_END</li>
-                <li>DISADVANTAGES_ALL_LOOP_START</li>
-                <li>DISADVANTAGES_ALL_LOOP_COUNT (emits the total number of items in the loop)</li>
-            </ul>
-            <h3>Quirks Loop (only disadvantages costing -1 point)</h3>
-            <ul>
-                <li>QUIRKS_LOOP_START</li>
-                <li>QUIRKS_LOOP_END</li>
-                <li>QUIRKS_LOOP_COUNT (emits the total number of items in the loop)</li>
-            </ul>
-            <h3>Perks Loop (only advantages costing 1 point)</h3>
-            <ul>
-                <li>PERKS_LOOP_START</li>
-                <li>PERKS_LOOP_END</li>
-                <li>PERKS_LOOP_COUNT (emits the total number of items in the loop)</li>
-            </ul>
-            <h3>Languages Loop (only Advantages that contain the Category "Language")</h3>
-            <ul>
-                <li>LANGUAGES_LOOP_START</li>
-                <li>LANGUAGES_LOOP_END</li>
-                <li>LANGUAGES_LOOP_COUNT (emits the total number of items in the loop)</li>
-            </ul>
-            <h3>Cultural Familiarities Loop (only Advantages that start with "Cultural Familiarity")</h3>
-            <ul>
-                <li>CULTURAL_FAMILIARITIES_LOOP_START</li>
-                <li>CULTURAL_FAMILIARITIES_LOOP_END</li>
-                <li>CULTURAL_FAMILIARITIES_LOOP_COUNT (emits the total number of items in the loop)</li>
-            </ul>
-            <h3>Keys that can be used in any of the above Advantage/Disadvantage loops</h3>
-            <ul>
-                <li>DESCRIPTION<br>(Produces output of the form below, excluding those sections not present)<br>
-                    <code>@DESCRIPTION_PRIMARY&lt;div class="note"&gt;@DESCRIPTION_MODIFIER_NOTES&lt;/div&gt;&lt;div class="note"&gt;@DESCRIPTION_NOTES&lt;/div&gt;</code>
-                </li>
-                <li>DESCRIPTION_MODIFIER_NOTES<br>(Outputs the notes generated by active modifiers. Can also
-                    have <span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
-                    <span class="notable">_CURLY</span> appended to them to surround the output, if any, in parenthesis,
-                    square brackets or curly braces).
-                </li>
-                <li>DESCRIPTION_NOTES<br>(Outputs the text in the Notes field of the item. Can also have
-                    <span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
-                    <span class="notable">_CURLY</span> appended to them to surround the output, if any, in parenthesis,
-                    square brackets or curly braces).
-                </li>
-                <li>DESCRIPTION_PRIMARY<br>(Outputs the name of the item)</li>
-                <li>ID</li>
-                <li>PARENT_ID</li>
-                <li>MODIFIER_NOTES_FOR_&lt;NAME&gt;<br>Display the notes for the modifier named "&lt;NAME&gt;",
-                    case insensitive.
-                </li>
-                <li>POINTS</li>
-                <li>REF</li>
-                <li>TYPE</li>
-            </ul>
-            <h3>Reactions Loop</h3>
-            <ul>
-                <li>REACTION_LOOP_END</li>
-                <li>REACTION_LOOP_START</li>
-                <li>REACTION_LOOP_COUNT (emits the total number of items in the loop)</li>
-                <li>MODIFIER</li>
-                <li>SITUATION</li>
-                <li>ID</li>
-            </ul>
-            <h3>Conditional Modifiers Loop</h3>
-            <ul>
-                <li>CONDITIONAL_MODIFIERS_LOOP_END</li>
-                <li>CONDITIONAL_MODIFIERS_LOOP_START</li>
-                <li>CONDITIONAL_MODIFIERS_LOOP_COUNT (emits the total number of items in the loop)</li>
-                <li>MODIFIER</li>
-                <li>SITUATION</li>
-                <li>ID</li>
-            </ul>
-            <h3>Skills Loop</h3>
-            <ul>
-                <li>SKILLS_LOOP_START</li>
-                <li>SKILLS_LOOP_END</li>
-                <li>SKILLS_LOOP_COUNT (emits the total number of items in the loop)</li>
-                <li>DESCRIPTION<br>(Produces output of the form below, excluding those sections not present)<br>
-                    <code>@DESCRIPTION_PRIMARY&lt;div class="note"&gt;@DESCRIPTION_MODIFIER_NOTES&lt;/div&gt;&lt;div class="note"&gt;@DESCRIPTION_NOTES&lt;/div&gt;</code>
-                </li>
-                <li>DESCRIPTION_MODIFIER_NOTES<br>(Outputs the notes generated by active modifiers. Can also have
-                    <span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
-                    <span class="notable">_CURLY</span> appended to them to surround the output, if any, in parenthesis,
-                    square brackets or curly braces).
-                </li>
-                <li>DESCRIPTION_NOTES<br>(Outputs the text in the Notes field of the item. Can also have
-                    <span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
-                    <span class="notable">_CURLY</span> appended to them to surround the output, if any, in
-                    parenthesis, square brackets or curly braces).
-                </li>
-                <li>DESCRIPTION_PRIMARY<br>(Outputs the name of the item)</li>
-                <li>DIFFICULTY</li>
-                <li>POINTS</li>
-                <li>REF</li>
-                <li>ID</li>
-                <li>PARENT_ID</li>
-                <li>RSL<br>(Relative skill level)</li>
-                <li>SL<br>(Skill level)</li>
-            </ul>
-            <h3>Spells Loop</h3>
-            <ul>
-                <li>SPELLS_LOOP_START</li>
-                <li>SPELLS_LOOP_END</li>
-                <li>SPELLS_LOOP_COUNT (emits the total number of items in the loop)</li>
-                <li>CLASS</li>
-                <li>COLLEGE</li>
-                <li>DESCRIPTION<br>(Produces output of the form below, excluding those sections not present)<br>
-                    <code>@DESCRIPTION_PRIMARY&lt;div class="note"&gt;@DESCRIPTION_MODIFIER_NOTES&lt;/div&gt;&lt;div class="note"&gt;@DESCRIPTION_NOTES&lt;/div&gt;</code>
-                </li>
-                <li>DESCRIPTION_MODIFIER_NOTES<br>(Outputs the notes generated by active modifiers. Can also have
-                    <span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
-                    <span class="notable">_CURLY</span> appended to them to surround the output, if any, in parenthesis,
-                    square brackets or curly braces).
-                </li>
-                <li>DESCRIPTION_NOTES<br>(Outputs the text in the Notes field of the item. Can also have
-                    <span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
-                    <span class="notable">_CURLY</span> appended to them to surround the output, if any, in parenthesis,
-                    square brackets or curly braces).
-                </li>
-                <li>DESCRIPTION_PRIMARY<br>(Outputs the name of the item)</li>
-                <li>DIFFICULTY</li>
-                <li>DURATION</li>
-                <li>MANA_CAST</li>
-                <li>MANA_MAINTAIN</li>
-                <li>POINTS</li>
-                <li>REF</li>
-                <li>ID</li>
-                <li>PARENT_ID</li>
-                <li>RSL<br>(Relative skill level)</li>
-                <li>SL<br>(Skill level)</li>
-                <li>TIME_CAST</li>
-            </ul>
-            <h3>Simple Melee Attacks Loop (one line for every mode of attack for each weapon)</h3>
-            <ul>
-                <li>MELEE_LOOP_START</li>
-                <li>MELEE_LOOP_END</li>
-                <li>MELEE_LOOP_COUNT (emits the total number of items in the loop)</li>
-            </ul>
-            <h3>Hierarchical Melee Attacks Loop (one line for each weapon, and then one line for each mode of attack)</h3>
-            <ul>
-                <li>HIERARCHICAL_MELEE_LOOP_START
-                    <ul>
-                        <li>ATTACK_MODES_LOOP_START</li>
-                        <li>ATTACK_MODES_LOOP_END</li>
-                    </ul>
-                </li>
-                <li>HIERARCHICAL_MELEE_LOOP_END</li>
-                <li>HIERARCHICAL_MELEE_LOOP_COUNT (emits the total number of items in the loop)</li>
-            </ul>
-            <h3>Keys that can be used in any of the above Melee loops</h3>
-            <ul>
-                <li>BLOCK</li>
-                <li>DAMAGE</li>
-                <li>DESCRIPTION<br>(Produces output of the form below, excluding those sections not present)<br>
-                    <code>@DESCRIPTION_PRIMARY&lt;div class="note"&gt;@DESCRIPTION_MODIFIER_NOTES&lt;/div&gt;&lt;div class="note"&gt;@DESCRIPTION_NOTES&lt;/div&gt;</code>
-                </li>
-                <li>DESCRIPTION_MODIFIER_NOTES<br>(Outputs the notes generated by active modifiers. Can also have
-                    <span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
-                    <span class="notable">_CURLY</span> appended to them to surround the output, if any, in parenthesis,
-                    square brackets or curly braces).
-                </li>
-                <li>DESCRIPTION_NOTES<br>(Outputs the text in the Notes field of the item. Can also have
-                    <span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
-                    <span class="notable">_CURLY</span> appended to them to surround the output, if any, in parenthesis,
-                    square brackets or curly braces).
-                </li>
-                <li>DESCRIPTION_PRIMARY<br>(Outputs the name of the item)</li>
-                <li>LEGALITY_CLASS</li>
-                <li>LEVEL</li>
-                <li>PARRY</li>
-                <li>REACH</li>
-                <li>STRENGTH<br>(Weapon strength as a String, which can include additional symbols)</li>
-                <li>WEAPON_STRENGTH<br>(Weapon strength as a Number)</li>
-                <li>UNMODIFIED_DAMAGE</li>
-                <li>USAGE</li>
-                <li>ID</li>
-            </ul>
-            <h3>Simple Ranged Attack Loop (one line for every mode of attack for each weapon)</h3>
-            <ul>
-                <li>RANGED_LOOP_END</li>
-                <li>RANGED_LOOP_START</li>
-                <li>RANGED_LOOP_COUNT (emits the total number of items in the loop)</li>
-            </ul>
-            <h3>Hierarchical Ranged Attack Loop (one line for each weapon, and then one line for each mode of
-                attack)</h3>
-            <ul>
-                <li>HIERARCHICAL_RANGED_LOOP_START
-                    <ul>
-                        <li>ATTACK_MODES_LOOP_START</li>
-                        <li>ATTACK_MODES_LOOP_END</li>
-                    </ul>
-                </li>
-                <li>HIERARCHICAL_RANGED_LOOP_END</li>
-                <li>HIERARCHICAL_RANGED_LOOP_COUNT (emits the total number of items in the loop)</li>
-            </ul>
-            <h3>Keys that can be used in any of the above Ranged loops</h3>
-            <ul>
-                <li>ACCURACY</li>
-                <li>AMMO<br>(Report the quantity of ammo used by this weapon. Correlates categories "UsesAmmoType:" and
-                    "AmmoType:")
-                </li>
-                <li>BULK</li>
-                <li>DAMAGE</li>
-                <li>DESCRIPTION<br>(Produces output of the form below, excluding those sections not present)<br>
-                    <code>@DESCRIPTION_PRIMARY&lt;div class="note"&gt;@DESCRIPTION_MODIFIER_NOTES&lt;/div&gt;&lt;div class="note"&gt;@DESCRIPTION_NOTES&lt;/div&gt;</code>
-                </li>
-                <li>DESCRIPTION_MODIFIER_NOTES<br>(Outputs the notes generated by active modifiers. Can also have
-                    <span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
-                    <span class="notable">_CURLY</span> appended to them to surround the output, if any, in parenthesis,
-                    square brackets or curly braces).
-                </li>
-                <li>DESCRIPTION_NOTES<br>(Outputs the text in the Notes field of the item. Can also have
-                    <span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
-                    <span class="notable">_CURLY</span> appended to them to surround the output, if any, in parenthesis,
-                    square brackets or curly braces).
-                </li>
-                <li>DESCRIPTION_PRIMARY<br>(Outputs the name of the item)</li>
-                <li>LEGALITY_CLASS</li>
-                <li>LEVEL</li>
-                <li>RANGE</li>
-                <li>RECOIL</li>
-                <li>ROF</li>
-                <li>SHOTS</li>
-                <li>STRENGTH</li>
-                <li>UNMODIFIED_DAMAGE</li>
-                <li>USAGE</li>
-                <li>ID</li>
-            </ul>
-            <h3>Equipment</h3>
-            <ul>
-                <li>CARRIED_VALUE<br>(Includes preceding $)</li>
-                <li>CARRIED_WEIGHT</li>
-                <li>OTHER_EQUIPMENT_VALUE<br>(Includes preceding $)</li>
-            </ul>
-            <h3>Equipment Loop (carried equipment)</h3>
-            <ul>
-                <li>EQUIPMENT_LOOP_START</li>
-                <li>EQUIPMENT_LOOP_END</li>
-                <li>EQUIPMENT_LOOP_COUNT (emits the total number of items in the loop)</li>
-            </ul>
-            <h3>Other Equipment Loop (non-carried equipment)</h3>
-            <ul>
-                <li>OTHER_EQUIPMENT_LOOP_START</li>
-                <li>OTHER_EQUIPMENT_LOOP_END</li>
-                <li>OTHER_EQUIPMENT_LOOP_COUNT (emits the total number of items in the loop)</li>
-            </ul>
-            <h3>Keys that can be used in both Equipment loops</h3>
-            <ul>
-                <li>COST<br>(Does not include preceding $)</li>
-                <li>COST_SUMMARY<br>(Cost multiplied by qty)</li>
-                <li>DESCRIPTION<br>(Produces output of the form below, excluding those sections not present)<br>
-                    <code>@DESCRIPTION_PRIMARY&lt;div class="note"&gt;@DESCRIPTION_MODIFIER_NOTES&lt;/div&gt;&lt;div class="note"&gt;@DESCRIPTION_NOTES&lt;/div&gt;</code>
-                </li>
-                <li>DESCRIPTION_MODIFIER_NOTES<br>(Outputs the notes generated by active modifiers. Can also have
-                    <span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
-                    <span class="notable">_CURLY</span> appended to them to surround the output, if any, in parenthesis,
-                    square brackets or curly braces).
-                </li>
-                <li>DESCRIPTION_NOTES<br>(Outputs the text in the Notes field of the item. Can also have
-                    <span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
-                    <span class="notable">_CURLY</span> appended to them to surround the output, if any, in parenthesis,
-                    square brackets or curly braces).
-                </li>
-                <li>DESCRIPTION_PRIMARY<br>(Outputs the name of the item)</li>
-                <li>EQUIPPED<br>Checkmark if equipped</li>
-                <li>EQUIPPED_NUM<br>1 if equipped, 0 if not equipped</li>
-                <li>ID</li>
-                <li>PARENT_ID</li>
-                <li>QTY</li>
-                <li>REF</li>
-                <li>STATE<br>(Whether the item is carried ("C"), equipped ("E") or not carried ("-"))</li>
-                <li>WEIGHT</li>
-                <li>WEIGHT_SUMMARY<br>(Weight multiplied by qty)</li>
-            </ul>
-            <h3>Notes Loop</h3>
-            <ul>
-                <li>NOTES_LOOP_END</li>
-                <li>NOTES_LOOP_START</li>
-                <li>NOTES_LOOP_COUNT (emits the total number of items in the loop)</li>
-                <li>NOTE</li>
-                <li>REF</li>
-                <li>ID</li>
-                <li>PARENT_ID</li>
-            </ul>
-            <h3>Notes all combined into one text block</h3>
-            <ul>
-                <li>NOTES</li>
-            </ul>
-            <h3>Keys that can be used outside the Advantage/Disadvantage and Equipment loops, filtering the next
-                Advantage/Disadvantage or Equipment loop encountered:</h3>
-            <ul>
-                <li>EXCLUDE_TAGS_&lt;NAME&gt;<br>Exclude any Advantage or Equipment that contains "&lt;NAME&gt;", case
-                    insensitive.<br>For example: @EXCLUDE_TAGS_POWER will exclude any Advantages or Equipment that
-                    contain the tag "Power".
-                </li>
-                <li>ONLY_TAGS_&lt;NAME&gt;<br>Only include Advantages or Equipment that contain "&lt;NAME&gt;", case
-                    insensitive.<br>For example: @ONLY_TAGS_POWER will only display Advantages or Equipment that contain
-                    the category "Power".
-                </li>
-            </ul>
-            <h3>Formatting</h3>
-            <ul>
-                <li>ENCODING_OFF<br>If present, all text field encoding from that point on will be disabled. Normally,
-                    text field output is encoded so that it will display properly as HTML.
-                </li>
-                <li>ENHANCED_KEY_PARSING<br>Allows, but does not require, that a key be surrounded with @. For example,
-                    <span class="notable">@ID@</span> or <span class="notable">@NAME@</span>. Useful for when output
-                    needs to be embedded. ex: "&lt;HTML@KEY@TAG&gt;"
-                </li>
-                <li>DEPTHx<br>(Outputs the current indention depth multiplied by the number appended to the key. For
-                    example, <span class="notable">@DEPTHx12</span> would output <span class="notable">0</span> for
-                    depth 0, <span class="notable">12</span> for depth 1, <span class="notable">24</span> for depth 2,
-                    etc.)
-                </li>
-                <li>STYLE_INDENT_WARNING<br>(Produces output of the form below if the current indentation depth is
-                    greater than 0, otherwise nothing)<br>
-                    <code>style="padding-left: @DEPTHx12px;"</code> or
-                    <code>style="padding-left: @DEPTHx12px; color: red;"</code> if the item has unsatisfied
-                    requirements.</li>
-            </ul>
-        </article>
-    </main>
-    <div id="aside">
-        <div>
-            <h3>GCS</h3>
-            <ul>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="https://github.com/richardwilkes/gcs/releases">Releases</a></li>
-                <li><a href="https://github.com/richardwilkes/gcs/blob/master/README.md">Development Setup</a></li>
-                <li><a href="https://github.com/richardwilkes/gcs">GitHub Repository</a></li>
-                <li><a href="https://github.com/richardwilkes/gcs/issues">Issue Tracker</a>
-                <li><a href="https://groups.io/g/gcs">Mailing List</a></li>
-                <li><a href="https://discord.gg/SxuvXVh">Discord Server</a></li>
-            </ul>
-        </div>
-        <div>
-            <h3>GCS Master Library</h3>
-            <ul>
-                <li><a href="https://github.com/richardwilkes/gcs_master_library/releases">Releases</a></li>
-                <li><a href="https://github.com/richardwilkes/gcs_master_library">GitHub Repository</a></li>
-                <li><a href="https://github.com/richardwilkes/gcs_master_library/issues">Issue Tracker</a>
-                <li><a href="page_references.html">Page Reference List</a></li>
-                <li><a href="output_templates.html">Output Template Docs</a></li>
-            </ul>
-        </div>
-    </div>
-</section>
-<footer>
-    <p class="copyright">
-        Copyright &copy;1998-2023 by <a href="mailto:wilkes@me.com">Richard A. Wilkes</a>. All rights reserved
-        worldwide.
-    </p>
-    <p class="license">
-        GURPS Character Sheet is licensed under the <a href="license.html">Mozilla Public License, version 2.0</a>.
-    </p>
-    <p class="disclaimer">
-        GURPS is a trademark of Steve Jackson Games, and its rules and art are copyrighted by Steve Jackson Games. All
-        rights are reserved by Steve Jackson Games. This game aid is the original creation of Richard A. Wilkes and is
-        released for free distribution, and not for resale, under the permissions granted in the
-        <a href="http://www.sjgames.com/general/online_policy.html">Steve Jackson Games Online Policy</a>.
-    </p>
-</footer>
+				<p>Adding <span class="notable">@NOTES</span> to the end finishes this template.</p>
+				<h2>Available Keys</h2>
+				<h3>Description</h3>
+				<ul>
+					<li>AGE</li>
+					<li>BIRTHDAY</li>
+					<li>CREATED_ON</li>
+					<li>EYES</li>
+					<li>GENDER</li>
+					<li>HAIR</li>
+					<li>HAND</li>
+					<li>HEIGHT</li>
+					<li>NAME</li>
+					<li>NOTES</li>
+					<li>PLAYER</li>
+					<li>PORTRAIT<br>
+						(Outputs the file name of the character's portrait, which is saved in the same directory as the
+						character sheet)</li>
+					<li>RELIGION</li>
+					<li>SIZE</li>
+					<li>SKIN</li>
+					<li>TITLE</li>
+					<li>TL</li>
+					<li>WEIGHT</li>
+					<li>BODY_TYPE</li>
+					<li>ANCESTRY</li>
+					<li>RACE</li>
+				</ul>
+				<h3>Point Cost</h3>
+				<ul>
+					<li>ADVANTAGE_POINTS</li>
+					<li>ANCESTRY_POINTS</li>
+					<li>ATTRIBUTE_POINTS</li>
+					<li>BASIC_MOVE_POINTS</li>
+					<li>BASIC_SPEED_POINTS</li>
+					<li>DISADVANTAGE_POINTS</li>
+					<li>DX_POINTS</li>
+					<li>UNSPENT_POINTS</li>
+					<li>FP_POINTS</li>
+					<li>HP_POINTS</li>
+					<li>HT_POINTS</li>
+					<li>IQ_POINTS</li>
+					<li>PERCEPTION_POINTS</li>
+					<li>QUIRK_POINTS</li>
+					<li>RACE_POINTS</li>
+					<li>SKILL_POINTS</li>
+					<li>SPELL_POINTS</li>
+					<li>ST_POINTS</li>
+					<li>TOTAL_POINTS</li>
+					<li>WILL_POINTS</li>
+				</ul>
+				<h3>Attributes</h3>
+				<ul>
+					<li>BASIC_MOVE</li>
+					<li>BASIC_SPEED</li>
+					<li>DX</li>
+					<li>FRIGHT_CHECK</li>
+					<li>HEARING</li>
+					<li>HT</li>
+					<li>IQ</li>
+					<li>PERCEPTION</li>
+					<li>ST</li>
+					<li>SWING</li>
+					<li>TASTE_SMELL</li>
+					<li>THRUST</li>
+					<li>TOUCH</li>
+					<li>VISION</li>
+					<li>WILL</li>
+				</ul>
+				<h3>HP and FP</h3>
+				<ul>
+					<li>BASIC_FP<br>(Maximum FP. For current FP, use <span class="notable">FP</span>)</li>
+					<li>BASIC_HP<br>(Maximum HP. For current HP, use <span class="notable">HP</span>)</li>
+					<li>DEAD</li>
+					<li>DEATH_CHECK_1</li>
+					<li>DEATH_CHECK_2</li>
+					<li>DEATH_CHECK_3</li>
+					<li>DEATH_CHECK_4</li>
+					<li>FP<br>(Current FP. For maximum FP, use <span class="notable">BASIC_FP</span>)</li>
+					<li>FP_COLLAPSE</li>
+					<li>HP<br>(Current HP. For maximum HP, use <span class="notable">BASIC_HP</span>)</li>
+					<li>HP_COLLAPSE</li>
+					<li>REELING</li>
+					<li>TIRED</li>
+					<li>UNCONSCIOUS</li>
+				</ul>
+				<h3>Primary Attributes Loop</h3>
+				<ul>
+					<li>PRIMARY_ATTRIBUTE_LOOP_END</li>
+					<li>PRIMARY_ATTRIBUTE_LOOP_START</li>
+					<li>PRIMARY_ATTRIBUTE_LOOP_COUNT (emits the total number of items in the loop)</li>
+					<li>ID</li>
+					<li>NAME</li>
+					<li>FULL_NAME</li>
+					<li>COMBINED_NAME</li>
+					<li>VALUE</li>
+					<li>POINTS</li>
+				</ul>
+				<h3>Secondary Attributes Loop</h3>
+				<ul>
+					<li>SECONDARY_ATTRIBUTE_LOOP_END</li>
+					<li>SECONDARY_ATTRIBUTE_LOOP_START</li>
+					<li>SECONDARY_ATTRIBUTE_LOOP_COUNT (emits the total number of items in the loop)</li>
+					<li>ID</li>
+					<li>NAME</li>
+					<li>FULL_NAME</li>
+					<li>COMBINED_NAME</li>
+					<li>VALUE</li>
+					<li>POINTS</li>
+				</ul>
+				<h3>Point Pools Loop</h3>
+				<ul>
+					<li>POINT_POOL_LOOP_END</li>
+					<li>POINT_POOL_LOOP_START</li>
+					<li>POINT_POOL_LOOP_COUNT (emits the total number of items in the loop)</li>
+					<li>ID</li>
+					<li>NAME</li>
+					<li>FULL_NAME</li>
+					<li>COMBINED_NAME</li>
+					<li>CURRENT</li>
+					<li>MAXIMUM</li>
+					<li>POINTS</li>
+				</ul>
+				<h3>Encumbrance Loop</h3>
+				<ul>
+					<li>ENCUMBRANCE_LOOP_START</li>
+					<li>ENCUMBRANCE_LOOP_END</li>
+					<li>ENCUMBRANCE_LOOP_COUNT (emits the total number of items in the loop)</li>
+					<li>DODGE</li>
+					<li>LEVEL<br>(Level of encumbrance; None (0), Light (1), etc.)</li>
+					<li>LEVEL_ONLY<br>(Level of encumbrance; 0, 1, etc.)</li>
+					<li>MAX_LOAD</li>
+					<li>MOVE</li>
+					<li>CURRENT_MARKER (emits the word "current" when on the current encumbrance level, otherwise is emits
+						an empty value)</li>
+					<li>CURRENT_MARKER_1 (emits the number "1" when on the current encumbrance level, otherwise is emits an
+						empty value)</li>
+				</ul>
+				<h3>Hit Location Loop</h3>
+				<ul>
+					<li>HIT_LOCATION_LOOP_START</li>
+					<li>HIT_LOCATION_LOOP_END</li>
+					<li>HIT_LOCATION_LOOP_COUNT (emits the total number of items in the loop)</li>
+					<li>DR</li>
+					<li>EQUIPMENT<br>(Show the name(s) of the equipment providing the DR bonus on a single line)</li>
+					<li>EQUIPMENT_FORMATTED<br>(Show the name(s) of the equipment providing the DR bonus, each on a separate
+						line surrounded by &lt;p&gt;...&lt;/p&gt;)
+					</li>
+					<li>PENALTY<br>(The penalty to attack this location deliberately)</li>
+					<li>ROLL<br>(Roll required to hit this location using random hit locations)</li>
+					<li>WHERE<br>(Name of the hit location)</li>
+				</ul>
+				<h3>General Defenses</h3>
+				<ul>
+					<li>GENERAL_DR (effectively the torso DR)</li>
+					<li>CURRENT_DODGE (current dodge based on encumbrance)</li>
+					<li>CURRENT_MOVE (current move based on encumbrance)</li>
+					<li>BEST_CURRENT_BLOCK</li>
+					<li>BEST_CURRENT_PARRY</li>
+				</ul>
+				<h3>Lifting &amp; Moving Things</h3>
+				<ul>
+					<li>BASIC_LIFT</li>
+					<li>CARRY_ON_BACK</li>
+					<li>ONE_HANDED_LIFT</li>
+					<li>RUNNING_SHOVE</li>
+					<li>SHIFT_SLIGHTLY</li>
+					<li>SHOVE</li>
+					<li>TWO_HANDED_LIFT</li>
+				</ul>
+				<h3>Advantages Loop (all advantages/disadvantages/perks/quirks)</h3>
+				<ul>
+					<li>ADVANTAGES_LOOP_START</li>
+					<li>ADVANTAGES_LOOP_END</li>
+					<li>ADVANTAGES_LOOP_COUNT (emits the total number of items in the loop)</li>
+				</ul>
+				<h3>Advantages Only Loop (only advantages costing 2 points or more)</h3>
+				<ul>
+					<li>ADVANTAGES_ONLY_LOOP_START</li>
+					<li>ADVANTAGES_ONLY_LOOP_END</li>
+					<li>ADVANTAGES_ONLY_LOOP_COUNT (emits the total number of items in the loop)</li>
+				</ul>
+				<h3>All Advantages Only Loop (only advantages, any cost)</h3>
+				<ul>
+					<li>ADVANTAGES_ALL_LOOP_START</li>
+					<li>ADVANTAGES_ALL_LOOP_END</li>
+					<li>ADVANTAGES_ALL_COUNT (emits the total number of items in the loop)</li>
+				</ul>
+				<h3>Disadvantages Loop (only disadvantages costing -2 points or less)</h3>
+				<ul>
+					<li>DISADVANTAGES_LOOP_START</li>
+					<li>DISADVANTAGES_LOOP_END</li>
+					<li>DISADVANTAGES_LOOP_COUNT (emits the total number of items in the loop)</li>
+				</ul>
+				<h3>All Disadvantages Loop (only disadvantages, any cost)</h3>
+				<ul>
+					<li>DISADVANTAGES_ALL_LOOP_END</li>
+					<li>DISADVANTAGES_ALL_LOOP_START</li>
+					<li>DISADVANTAGES_ALL_LOOP_COUNT (emits the total number of items in the loop)</li>
+				</ul>
+				<h3>Quirks Loop (only disadvantages costing -1 point)</h3>
+				<ul>
+					<li>QUIRKS_LOOP_START</li>
+					<li>QUIRKS_LOOP_END</li>
+					<li>QUIRKS_LOOP_COUNT (emits the total number of items in the loop)</li>
+				</ul>
+				<h3>Perks Loop (only advantages costing 1 point)</h3>
+				<ul>
+					<li>PERKS_LOOP_START</li>
+					<li>PERKS_LOOP_END</li>
+					<li>PERKS_LOOP_COUNT (emits the total number of items in the loop)</li>
+				</ul>
+				<h3>Languages Loop (only Advantages that contain the Category "Language")</h3>
+				<ul>
+					<li>LANGUAGES_LOOP_START</li>
+					<li>LANGUAGES_LOOP_END</li>
+					<li>LANGUAGES_LOOP_COUNT (emits the total number of items in the loop)</li>
+				</ul>
+				<h3>Cultural Familiarities Loop (only Advantages that start with "Cultural Familiarity")</h3>
+				<ul>
+					<li>CULTURAL_FAMILIARITIES_LOOP_START</li>
+					<li>CULTURAL_FAMILIARITIES_LOOP_END</li>
+					<li>CULTURAL_FAMILIARITIES_LOOP_COUNT (emits the total number of items in the loop)</li>
+				</ul>
+				<h3>Keys that can be used in any of the above Advantage/Disadvantage loops</h3>
+				<ul>
+					<li>DESCRIPTION<br>(Produces output of the form below, excluding those sections not present)<br>
+						<code>@DESCRIPTION_PRIMARY&lt;div class="note"&gt;@DESCRIPTION_MODIFIER_NOTES&lt;/div&gt;&lt;div class="note"&gt;@DESCRIPTION_NOTES&lt;/div&gt;</code>
+					</li>
+					<li>DESCRIPTION_MODIFIER_NOTES<br>(Outputs the notes generated by active modifiers. Can also
+						have <span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
+						<span class="notable">_CURLY</span> appended to them to surround the output, if any, in parenthesis,
+						square brackets or curly braces).
+					</li>
+					<li>DESCRIPTION_NOTES<br>(Outputs the text in the Notes field of the item. Can also have
+						<span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
+						<span class="notable">_CURLY</span> appended to them to surround the output, if any, in parenthesis,
+						square brackets or curly braces).
+					</li>
+					<li>DESCRIPTION_PRIMARY<br>(Outputs the name of the item)</li>
+					<li>ID</li>
+					<li>PARENT_ID</li>
+					<li>MODIFIER_NOTES_FOR_&lt;NAME&gt;<br>Display the notes for the modifier named "&lt;NAME&gt;",
+						case insensitive.
+					</li>
+					<li>POINTS</li>
+					<li>REF</li>
+					<li>TYPE</li>
+				</ul>
+				<h3>Reactions Loop</h3>
+				<ul>
+					<li>REACTION_LOOP_END</li>
+					<li>REACTION_LOOP_START</li>
+					<li>REACTION_LOOP_COUNT (emits the total number of items in the loop)</li>
+					<li>MODIFIER</li>
+					<li>SITUATION</li>
+					<li>ID</li>
+				</ul>
+				<h3>Conditional Modifiers Loop</h3>
+				<ul>
+					<li>CONDITIONAL_MODIFIERS_LOOP_END</li>
+					<li>CONDITIONAL_MODIFIERS_LOOP_START</li>
+					<li>CONDITIONAL_MODIFIERS_LOOP_COUNT (emits the total number of items in the loop)</li>
+					<li>MODIFIER</li>
+					<li>SITUATION</li>
+					<li>ID</li>
+				</ul>
+				<h3>Skills Loop</h3>
+				<ul>
+					<li>SKILLS_LOOP_START</li>
+					<li>SKILLS_LOOP_END</li>
+					<li>SKILLS_LOOP_COUNT (emits the total number of items in the loop)</li>
+					<li>DESCRIPTION<br>(Produces output of the form below, excluding those sections not present)<br>
+						<code>@DESCRIPTION_PRIMARY&lt;div class="note"&gt;@DESCRIPTION_MODIFIER_NOTES&lt;/div&gt;&lt;div class="note"&gt;@DESCRIPTION_NOTES&lt;/div&gt;</code>
+					</li>
+					<li>DESCRIPTION_MODIFIER_NOTES<br>(Outputs the notes generated by active modifiers. Can also have
+						<span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
+						<span class="notable">_CURLY</span> appended to them to surround the output, if any, in parenthesis,
+						square brackets or curly braces).
+					</li>
+					<li>DESCRIPTION_NOTES<br>(Outputs the text in the Notes field of the item. Can also have
+						<span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
+						<span class="notable">_CURLY</span> appended to them to surround the output, if any, in
+						parenthesis, square brackets or curly braces).
+					</li>
+					<li>DESCRIPTION_PRIMARY<br>(Outputs the name of the item)</li>
+					<li>DIFFICULTY</li>
+					<li>POINTS</li>
+					<li>REF</li>
+					<li>ID</li>
+					<li>PARENT_ID</li>
+					<li>RSL<br>(Relative skill level)</li>
+					<li>SL<br>(Skill level)</li>
+				</ul>
+				<h3>Spells Loop</h3>
+				<ul>
+					<li>SPELLS_LOOP_START</li>
+					<li>SPELLS_LOOP_END</li>
+					<li>SPELLS_LOOP_COUNT (emits the total number of items in the loop)</li>
+					<li>CLASS</li>
+					<li>COLLEGE</li>
+					<li>DESCRIPTION<br>(Produces output of the form below, excluding those sections not present)<br>
+						<code>@DESCRIPTION_PRIMARY&lt;div class="note"&gt;@DESCRIPTION_MODIFIER_NOTES&lt;/div&gt;&lt;div class="note"&gt;@DESCRIPTION_NOTES&lt;/div&gt;</code>
+					</li>
+					<li>DESCRIPTION_MODIFIER_NOTES<br>(Outputs the notes generated by active modifiers. Can also have
+						<span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
+						<span class="notable">_CURLY</span> appended to them to surround the output, if any, in parenthesis,
+						square brackets or curly braces).
+					</li>
+					<li>DESCRIPTION_NOTES<br>(Outputs the text in the Notes field of the item. Can also have
+						<span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
+						<span class="notable">_CURLY</span> appended to them to surround the output, if any, in parenthesis,
+						square brackets or curly braces).
+					</li>
+					<li>DESCRIPTION_PRIMARY<br>(Outputs the name of the item)</li>
+					<li>DIFFICULTY</li>
+					<li>DURATION</li>
+					<li>MANA_CAST</li>
+					<li>MANA_MAINTAIN</li>
+					<li>POINTS</li>
+					<li>REF</li>
+					<li>ID</li>
+					<li>PARENT_ID</li>
+					<li>RSL<br>(Relative skill level)</li>
+					<li>SL<br>(Skill level)</li>
+					<li>TIME_CAST</li>
+				</ul>
+				<h3>Simple Melee Attacks Loop (one line for every mode of attack for each weapon)</h3>
+				<ul>
+					<li>MELEE_LOOP_START</li>
+					<li>MELEE_LOOP_END</li>
+					<li>MELEE_LOOP_COUNT (emits the total number of items in the loop)</li>
+				</ul>
+				<h3>Hierarchical Melee Attacks Loop (one line for each weapon, and then one line for each mode of attack)</h3>
+				<ul>
+					<li>HIERARCHICAL_MELEE_LOOP_START
+						<ul>
+							<li>ATTACK_MODES_LOOP_START</li>
+							<li>ATTACK_MODES_LOOP_END</li>
+						</ul>
+					</li>
+					<li>HIERARCHICAL_MELEE_LOOP_END</li>
+					<li>HIERARCHICAL_MELEE_LOOP_COUNT (emits the total number of items in the loop)</li>
+				</ul>
+				<h3>Keys that can be used in any of the above Melee loops</h3>
+				<ul>
+					<li>BLOCK</li>
+					<li>DAMAGE</li>
+					<li>DESCRIPTION<br>(Produces output of the form below, excluding those sections not present)<br>
+						<code>@DESCRIPTION_PRIMARY&lt;div class="note"&gt;@DESCRIPTION_MODIFIER_NOTES&lt;/div&gt;&lt;div class="note"&gt;@DESCRIPTION_NOTES&lt;/div&gt;</code>
+					</li>
+					<li>DESCRIPTION_MODIFIER_NOTES<br>(Outputs the notes generated by active modifiers. Can also have
+						<span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
+						<span class="notable">_CURLY</span> appended to them to surround the output, if any, in parenthesis,
+						square brackets or curly braces).
+					</li>
+					<li>DESCRIPTION_NOTES<br>(Outputs the text in the Notes field of the item. Can also have
+						<span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
+						<span class="notable">_CURLY</span> appended to them to surround the output, if any, in parenthesis,
+						square brackets or curly braces).
+					</li>
+					<li>DESCRIPTION_PRIMARY<br>(Outputs the name of the item)</li>
+					<li>LEGALITY_CLASS</li>
+					<li>LEVEL</li>
+					<li>PARRY</li>
+					<li>REACH</li>
+					<li>STRENGTH<br>(Weapon strength as a String, which can include additional symbols)</li>
+					<li>WEAPON_STRENGTH<br>(Weapon strength as a Number)</li>
+					<li>UNMODIFIED_DAMAGE</li>
+					<li>USAGE</li>
+					<li>ID</li>
+				</ul>
+				<h3>Simple Ranged Attack Loop (one line for every mode of attack for each weapon)</h3>
+				<ul>
+					<li>RANGED_LOOP_END</li>
+					<li>RANGED_LOOP_START</li>
+					<li>RANGED_LOOP_COUNT (emits the total number of items in the loop)</li>
+				</ul>
+				<h3>Hierarchical Ranged Attack Loop (one line for each weapon, and then one line for each mode of
+					attack)</h3>
+				<ul>
+					<li>HIERARCHICAL_RANGED_LOOP_START
+						<ul>
+							<li>ATTACK_MODES_LOOP_START</li>
+							<li>ATTACK_MODES_LOOP_END</li>
+						</ul>
+					</li>
+					<li>HIERARCHICAL_RANGED_LOOP_END</li>
+					<li>HIERARCHICAL_RANGED_LOOP_COUNT (emits the total number of items in the loop)</li>
+				</ul>
+				<h3>Keys that can be used in any of the above Ranged loops</h3>
+				<ul>
+					<li>ACCURACY</li>
+					<li>AMMO<br>(Report the quantity of ammo used by this weapon. Correlates categories "UsesAmmoType:" and
+						"AmmoType:")
+					</li>
+					<li>BULK</li>
+					<li>DAMAGE</li>
+					<li>DESCRIPTION<br>(Produces output of the form below, excluding those sections not present)<br>
+						<code>@DESCRIPTION_PRIMARY&lt;div class="note"&gt;@DESCRIPTION_MODIFIER_NOTES&lt;/div&gt;&lt;div class="note"&gt;@DESCRIPTION_NOTES&lt;/div&gt;</code>
+					</li>
+					<li>DESCRIPTION_MODIFIER_NOTES<br>(Outputs the notes generated by active modifiers. Can also have
+						<span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
+						<span class="notable">_CURLY</span> appended to them to surround the output, if any, in parenthesis,
+						square brackets or curly braces).
+					</li>
+					<li>DESCRIPTION_NOTES<br>(Outputs the text in the Notes field of the item. Can also have
+						<span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
+						<span class="notable">_CURLY</span> appended to them to surround the output, if any, in parenthesis,
+						square brackets or curly braces).
+					</li>
+					<li>DESCRIPTION_PRIMARY<br>(Outputs the name of the item)</li>
+					<li>LEGALITY_CLASS</li>
+					<li>LEVEL</li>
+					<li>RANGE</li>
+					<li>RECOIL</li>
+					<li>ROF</li>
+					<li>SHOTS</li>
+					<li>STRENGTH</li>
+					<li>UNMODIFIED_DAMAGE</li>
+					<li>USAGE</li>
+					<li>ID</li>
+				</ul>
+				<h3>Equipment</h3>
+				<ul>
+					<li>CARRIED_VALUE<br>(Includes preceding $)</li>
+					<li>CARRIED_WEIGHT</li>
+					<li>OTHER_EQUIPMENT_VALUE<br>(Includes preceding $)</li>
+				</ul>
+				<h3>Equipment Loop (carried equipment)</h3>
+				<ul>
+					<li>EQUIPMENT_LOOP_START</li>
+					<li>EQUIPMENT_LOOP_END</li>
+					<li>EQUIPMENT_LOOP_COUNT (emits the total number of items in the loop)</li>
+				</ul>
+				<h3>Other Equipment Loop (non-carried equipment)</h3>
+				<ul>
+					<li>OTHER_EQUIPMENT_LOOP_START</li>
+					<li>OTHER_EQUIPMENT_LOOP_END</li>
+					<li>OTHER_EQUIPMENT_LOOP_COUNT (emits the total number of items in the loop)</li>
+				</ul>
+				<h3>Keys that can be used in both Equipment loops</h3>
+				<ul>
+					<li>COST<br>(Does not include preceding $)</li>
+					<li>COST_SUMMARY<br>(Cost multiplied by qty)</li>
+					<li>DESCRIPTION<br>(Produces output of the form below, excluding those sections not present)<br>
+						<code>@DESCRIPTION_PRIMARY&lt;div class="note"&gt;@DESCRIPTION_MODIFIER_NOTES&lt;/div&gt;&lt;div class="note"&gt;@DESCRIPTION_NOTES&lt;/div&gt;</code>
+					</li>
+					<li>DESCRIPTION_MODIFIER_NOTES<br>(Outputs the notes generated by active modifiers. Can also have
+						<span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
+						<span class="notable">_CURLY</span> appended to them to surround the output, if any, in parenthesis,
+						square brackets or curly braces).
+					</li>
+					<li>DESCRIPTION_NOTES<br>(Outputs the text in the Notes field of the item. Can also have
+						<span class="notable">_PAREN</span>, <span class="notable">_BRACKET</span>, or
+						<span class="notable">_CURLY</span> appended to them to surround the output, if any, in parenthesis,
+						square brackets or curly braces).
+					</li>
+					<li>DESCRIPTION_PRIMARY<br>(Outputs the name of the item)</li>
+					<li>EQUIPPED<br>Checkmark if equipped</li>
+					<li>EQUIPPED_NUM<br>1 if equipped, 0 if not equipped</li>
+					<li>ID</li>
+					<li>PARENT_ID</li>
+					<li>QTY</li>
+					<li>REF</li>
+					<li>STATE<br>(Whether the item is carried ("C"), equipped ("E") or not carried ("-"))</li>
+					<li>WEIGHT</li>
+					<li>WEIGHT_SUMMARY<br>(Weight multiplied by qty)</li>
+				</ul>
+				<h3>Notes Loop</h3>
+				<ul>
+					<li>NOTES_LOOP_END</li>
+					<li>NOTES_LOOP_START</li>
+					<li>NOTES_LOOP_COUNT (emits the total number of items in the loop)</li>
+					<li>NOTE</li>
+					<li>REF</li>
+					<li>ID</li>
+					<li>PARENT_ID</li>
+				</ul>
+				<h3>Notes all combined into one text block</h3>
+				<ul>
+					<li>NOTES</li>
+				</ul>
+				<h3>Keys that can be used outside the Advantage/Disadvantage and Equipment loops, filtering the next
+					Advantage/Disadvantage or Equipment loop encountered:</h3>
+				<ul>
+					<li>EXCLUDE_TAGS_&lt;NAME&gt;<br>Exclude any Advantage or Equipment that contains "&lt;NAME&gt;", case
+						insensitive.<br>For example: @EXCLUDE_TAGS_POWER will exclude any Advantages or Equipment that
+						contain the tag "Power".
+					</li>
+					<li>ONLY_TAGS_&lt;NAME&gt;<br>Only include Advantages or Equipment that contain "&lt;NAME&gt;", case
+						insensitive.<br>For example: @ONLY_TAGS_POWER will only display Advantages or Equipment that contain
+						the category "Power".
+					</li>
+				</ul>
+				<h3>Formatting</h3>
+				<ul>
+					<li>ENCODING_OFF<br>If present, all text field encoding from that point on will be disabled. Normally,
+						text field output is encoded so that it will display properly as HTML.
+					</li>
+					<li>ENHANCED_KEY_PARSING<br>Allows, but does not require, that a key be surrounded with @. For example,
+						<span class="notable">@ID@</span> or <span class="notable">@NAME@</span>. Useful for when output
+						needs to be embedded. ex: "&lt;HTML@KEY@TAG&gt;"
+					</li>
+					<li>DEPTHx<br>(Outputs the current indention depth multiplied by the number appended to the key. For
+						example, <span class="notable">@DEPTHx12</span> would output <span class="notable">0</span> for
+						depth 0, <span class="notable">12</span> for depth 1, <span class="notable">24</span> for depth 2,
+						etc.)
+					</li>
+					<li>STYLE_INDENT_WARNING<br>(Produces output of the form below if the current indentation depth is
+						greater than 0, otherwise nothing)<br>
+						<code>style="padding-left: @DEPTHx12px;"</code> or
+						<code>style="padding-left: @DEPTHx12px; color: red;"</code> if the item has unsatisfied
+						requirements.
+					</li>
+				</ul>
+			</article>
+		</main>
+		<div id="aside">
+			<div>
+				<h3>GCS</h3>
+				<ul>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="https://github.com/richardwilkes/gcs/releases">Releases</a></li>
+					<li><a href="https://github.com/richardwilkes/gcs/blob/master/README.md">Development Setup</a></li>
+					<li><a href="https://github.com/richardwilkes/gcs">GitHub Repository</a></li>
+					<li><a href="https://github.com/richardwilkes/gcs/issues">Issue Tracker</a>
+					<li><a href="https://groups.io/g/gcs">Mailing List</a></li>
+					<li><a href="https://discord.gg/SxuvXVh">Discord Server</a></li>
+				</ul>
+			</div>
+			<div>
+				<h3>GCS Master Library</h3>
+				<ul>
+					<li><a href="https://github.com/richardwilkes/gcs_master_library/releases">Releases</a></li>
+					<li><a href="https://github.com/richardwilkes/gcs_master_library">GitHub Repository</a></li>
+					<li><a href="https://github.com/richardwilkes/gcs_master_library/issues">Issue Tracker</a>
+					<li><a href="page_references.html">Page Reference List</a></li>
+					<li><a href="output_templates.html">Output Template Docs</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p class="copyright">
+			Copyright &copy;1998-2024 by <a href="mailto:wilkes@me.com">Richard A. Wilkes</a>. All rights reserved
+			worldwide.
+		</p>
+		<p class="license">
+			GURPS Character Sheet is licensed under the <a href="license.html">Mozilla Public License, version 2.0</a>.
+		</p>
+		<p class="disclaimer">
+			GURPS is a trademark of Steve Jackson Games, and its rules and art are copyrighted by Steve Jackson Games. All
+			rights are reserved by Steve Jackson Games. This game aid is the original creation of Richard A. Wilkes and is
+			released for free distribution, and not for resale, under the permissions granted in the
+			<a href="http://www.sjgames.com/general/online_policy.html">Steve Jackson Games Online Policy</a>.
+		</p>
+	</footer>
 </body>
 </html>
