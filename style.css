@@ -55,6 +55,7 @@
   --dotted-line: #999;
   --logo-border: black;
 	--sponsor-bg: #f8f8f8;
+	--popover-border: black;
 }
 
 html, body, div, span, div, p, h1, h2, h3, h4, h5, h6 {
@@ -334,9 +335,12 @@ body > section {
 .downloads {
   margin-top: 1em;
   text-align: center;
+	display: flex;
+	justify-content: center;
 }
 
 .download {
+	position: relative;
   display: inline-block;
   padding-left: 16px;
   padding-right: 16px;
@@ -346,6 +350,26 @@ body > section {
   display: inline-block;
   width: 42px;
   height: 57px;
+}
+
+.popover {
+	opacity: 0;
+	visibility: hidden;
+  position: absolute;
+	left: 74px;
+	top: 0;
+	width: 100px;
+	background-color: var(--non-content-bg);
+	color: var(--non-content-fg);
+	border: 1px solid var(--popover-border);
+	padding: 4px 8px;
+	font-size: smaller;
+}
+
+.download:hover .popover {
+	z-index: 10;
+	opacity: 1;
+	visibility: visible;
 }
 
 .notable {
