@@ -307,22 +307,22 @@
 					</tr>
 					<tr>
 						<td class="func">random_height(st)</td>
-						<td class="func-desc">Returns a random height in inches based on the chart from B18. Adjusts
+						<td class="func-desc">Returns a random height in inches based on the provided strength. Not available prior
+							to v5.12.</td>
+					</tr>
+					<tr>
+						<td class="func">random_weight(st)</td>
+						<td class="func-desc">Returns a random weight in pounds based on the provided strength. Adjusts
 							appropriately for the traits Skinny, Overweight, Fat, and Very Fat, if present on the sheet. Not
 							available prior to v5.12.</td>
 					</tr>
 					<tr>
-						<td class="func">random_height(st, shift)</td>
-						<td class="func-desc">Returns a random height in inches based on the chart from B18. Adjusts
+						<td class="func">random_weight(st, shift)</td>
+						<td class="func-desc">Returns a random weight in pounds based on the provided strength. Adjusts
 							appropriately for the traits Skinny, Overweight, Fat, and Very Fat, if present on the sheet.
-							'shift' is the number of columns to shift when producing results &mdash; this is in addition to
-							shifts caused by the traits Skinny, Overweight, Fat, and Very Fat. Use negative values to shift
-							down, positive values to shift up. Not available prior to v5.12.</td>
-					</tr>
-					<tr>
-						<td class="func">random_weight(st)</td>
-						<td class="func-desc">Returns a random weight in pounds based on the chart from B18. Not available
-							prior to v5.12.</td>
+							'shift' causes a shift towards a lighter value if negative and a heavier value if positive, similar to
+							having one of the traits Skinny, Overweight, Fat, and Very Fat applied, but is additive to them. Not
+							available prior to v5.12.</td>
 					</tr>
 					<tr>
 						<td class="func">roll(dice_spec)</td>
