@@ -37,6 +37,10 @@
 					older machine without the necessary OpenGL support, you may be able to work around this by putting the
 					OpenGL32.dll from <a href="https://fdossena.com/?p=mesa/index.frag">Mesa</a> into the same directory as
 					your GCS.exe file.</p>
+				<p>The second most likely cause is that somehow you managed to get a copy of GCS running in the background
+					without any visible windows. You can check for this by opening the Task Manager and looking for GCS in
+					the list of running applications. If you find it, you can end the task and try starting GCS again.</p>
+				</p>
 			</article>
 			<article>
 				<h2>How can I convert old GCS files to the current format?</h2>
@@ -72,16 +76,6 @@
 				<h2>Is there a version of GCS localized for my language?</h2>
 				<p>The <a href="https://github.com/richardwilkes/gcs_translations">GCS Translations Repo</a> may contain
 					one.</p>
-			</article>
-			<article>
-				<h2>Where can I find the global settings file?</h2>
-				<p>Its location is dependent upon your specific platform. You can find the location of the settings file by
-					running passing <code class="ic">gcs --help</code> on the command-line. The output will have the path to
-					the settings file, among other things.</p>
-				<p>For those of you on macOS, you will need to open a terminal and (assuming you have GCS in the top-level
-					Applications folder on your system, type:
-					<code class="ic">/Applications/GCS.app/Contents/MacOS/gcs --help</code>
-				</p>
 			</article>
 			<article>
 				<h2>How can I change where GCS loads settings from and to?</h2>
@@ -130,8 +124,9 @@
 			</article>
 			<article>
 				<h2>Can I define my own standard hit location tables and have them show up in the combo for selection?</h2>
-				<p>Yes. Make sure to give the table a unique ID, then export it and place it in a directory named
-					"Hit Locations" at the top level of one of your GCS Library directories.</p>
+				<p>Yes. Make sure to give the table a unique ID, then export it and place it in the "Body Types" directory
+					inside the "Settings" directory in one of your GCS library directories (the User Library is a good choice for
+					this, as it won't get overwritten when you update your libraries).</p>
 			</article>
 			<article>
 				<h2>What operators and functions are available for use in attribute expressions?</h2>
@@ -173,8 +168,9 @@
 		</p>
 		<p class="disclaimer">
 			GURPS is a trademark of Steve Jackson Games, and its rules and art are copyrighted by Steve Jackson Games. All
-			rights are reserved by Steve Jackson Games. This game aid is the original creation of Richard A. Wilkes and is
-			released for free distribution, and not for resale, under the permissions granted in the
+			rights are reserved by Steve Jackson Games.<br>
+			This game aid is the original creation of Richard A. Wilkes and is released for free distribution, and not for
+			resale, under the permissions granted in the
 			<a href="http://www.sjgames.com/general/online_policy.html">Steve Jackson Games Online Policy</a>.
 		</p>
 	</footer>

@@ -245,6 +245,10 @@ footer > p {
   margin-top: 0.5em;
 }
 
+.disclaimer {
+	font-size: 10px;
+}
+
 header a:link, footer a:link, #aside a:link {
   color: var(--non-content-link);
 }
