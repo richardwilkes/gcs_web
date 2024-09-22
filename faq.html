@@ -31,7 +31,7 @@
 	</section>
 	<section id="pageContent">
 		<main role="main">
-			<article>
+			<article id='windows-launch'>
 				<h2>I'm on Windows and GCS doesn't start! How come?</h2>
 				<p>The most likely cause is not having OpenGL 3.2 or better installed on your machine. If you are on an
 					older machine without the necessary OpenGL support, you may be able to work around this by putting the
@@ -42,19 +42,7 @@
 					the list of running applications. If you find it, you can end the task and try starting GCS again.</p>
 				</p>
 			</article>
-			<article>
-				<h2>How can I convert old GCS files to the current format?</h2>
-				<p>This depends greatly on just how old the file is. Files made prior to the v4.20 release need to be
-					converted using the program found here:
-					<a href="https://github.com/richardwilkes/gcs_json_updater/releases">GCS JSON Updater</a>. This will
-					convert them to the v4.20 format.
-				</p>
-				<p>Files created before v4.30 need to be converted using the v4.37.1 release. Either open and save each
-					file with GCS v4.37.1 or you can use the command-line option to convert a bunch of files at once.</p>
-				<p>Once GCS v5.x.x can open the file, you can save it from GCS v5.x.x to have it stored in the current
-					format.</p>
-			</article>
-			<article>
+			<article id='update-data-files'>
 				<h2>Can I submit new/revised data files?</h2>
 				<p>Absolutely! Almost all of the current data content of GCS was provided by helpful individuals other than
 					me. If you have completely new content, please create a new library for it and send the resulting file.
@@ -66,18 +54,18 @@
 					the new file or patch file to that.
 				</p>
 			</article>
-			<article>
+			<article id='page-refs'>
 				<h2>What page reference abbreviations are being used in the data files?</h2>
 				<p>The current list of page reference abbreviations can be found here:
 					<a href="page_references.html">https://gurpscharactersheet.com/page_references</a>
 				</p>
 			</article>
-			<article>
+			<article id='localization'>
 				<h2>Is there a version of GCS localized for my language?</h2>
 				<p>The <a href="https://github.com/richardwilkes/gcs_translations">GCS Translations Repo</a> may contain
 					one.</p>
 			</article>
-			<article>
+			<article id='load-settings'>
 				<h2>How can I change where GCS loads settings from and to?</h2>
 				<p>There are two ways to accomplish this. One is to make use of the command-line
 					<code class="ic">--settings</code> option that explicitly tells GCS where to find its settings file. The
@@ -89,7 +77,19 @@
 				<p>When doing this, you may also want to change the location of the log file, which can be adjusted using
 					the <code class="ic">--log-file</code> command-line option.</p>
 			</article>
-			<article>
+			<article id='convert-old-files'>
+				<h2>How can I convert old GCS files to the current format?</h2>
+				<p>This depends greatly on just how old the file is. Files made prior to the v4.20 release need to be
+					converted using the program found here:
+					<a href="https://github.com/richardwilkes/gcs_json_updater/releases">GCS JSON Updater</a>. This will
+					convert them to the v4.20 format.
+				</p>
+				<p>Files created before v4.30 need to be converted using the v4.37.1 release. Either open and save each
+					file with GCS v4.37.1 or you can use the command-line option to convert a bunch of files at once.</p>
+				<p>Once GCS v5.x.x can open the file, you can save it from GCS v5.x.x to have it stored in the current
+					format.</p>
+			</article>
+			<article id='mass-convert-old-files'>
 				<h2>How do I convert my all of my User Library data files to the current file format?</h2>
 				<p>If you don't want to manually load and then save each data file to convert it to the current file format,
 					you can use the command-line to update every data file at once. How this works depends on your
@@ -122,13 +122,13 @@
 					<li>Open GCS and verify that you can open your data files.</li>
 				</ol>
 			</article>
-			<article>
+			<article id='hit-locations'>
 				<h2>Can I define my own standard hit location tables and have them show up in the combo for selection?</h2>
 				<p>Yes. Make sure to give the table a unique ID, then export it and place it in the "Body Types" directory
 					inside the "Settings" directory in one of your GCS library directories (the User Library is a good choice for
 					this, as it won't get overwritten when you update your libraries).</p>
 			</article>
-			<article>
+			<article id='operators-and-functions'>
 				<h2>What operators and functions are available for use in attribute expressions?</h2>
 				<p>You can find help for these in the <b>Master Library/Markdown/Help</b> folder.</p>
 			</article>
