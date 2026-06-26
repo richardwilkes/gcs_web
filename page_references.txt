@@ -8,6 +8,7 @@ ACT5:	Action 5: Dictionary of Danger
 ACT6:	Action 6: Tricked-Out Rides
 ACT7:	Action 7: Mercenaries
 ACT9:	Action 9: The City
+ACTA1:	Action Adventure 1: Templar's Gold
 AD	Adaptations
 AS	Aliens: Sparrials
 ATE1:	After the End 1: Wastelanders
@@ -23,6 +24,7 @@ BT	Bio-Tech
 BX	Basic Set: Campaigns
 C	Crusades
 CA	Casey & Andy
+CEA	Caravan to Ein Arris
 CN1:	Creatures of the Night, Volume 1
 CN2:	Creatures of the Night, Volume 2
 CN3:	Creatures of the Night, Volume 3
@@ -50,16 +52,24 @@ DF17:	Dungeon Fantasy 17: Guilds
 DF18:	Dungeon Fantasy 18: Power Items
 DF19:	Dungeon Fantasy 19: Incantation Magic
 DF20:	Dungeon Fantasy 20: Slayers
+DF21:	Dungeon Fantasy 21: Megadungeons
+DF22:	Dungeon Fantasy 22: Gates
+DF23:	Dungeon Fantasy 23: Twists
+DF24:	Dungeon Fantasy 24: Finer Points
 DFA	Dungeon Fantasy RPG: Adventurers
 DFA1:	Dungeon Fantasy Adventure 1: Mirror of the Fire Demon
 DFA2:	Dungeon Fantasy Adventure 2: Tomb of the Dragon King
 DFA3:	Dungeon Fantasy Adventure 3: Deep Night and the Star
-DFCG	Dungeon Fantasy Career Guide
+DFA4:	Dungeon Fantasy Adventure 4: Two-Page Dungeons
+DFC	Dungeon Fantasy Collected
+DFCG	Dungeon Fantasy Career Guide 2020 Edition
 DFDB	Dungeon Fantasy Denizens: Barbarians
 DFDS	Dungeon Fantasy Denizens: Swashbucklers
+DFDT	Dungeon Fantasy Denizens: Thieves
 DFE1:	Dungeon Fantasy Encounters 1: The Pagoda of Worlds
 DFE2:	Dungeon Fantasy Encounters 2: The Room
 DFE3:	Dungeon Fantasy Encounters 3: The Carnival of Madness
+DFE4:	Dungeon Fantasy Encounters 4: Ring Fort
 DFM	Dungeon Fantasy RPG: Monsters
 DFM1:	Dungeon Fantasy Monsters 1
 DFM2:	Dungeon Fantasy Monsters 2: Icky Goo
@@ -68,11 +78,14 @@ DFM4:	Dungeon Fantasy Monsters 4: Dragons
 DFM5:	Dungeon Fantasy Monsters 5: Demons
 DFMI1:	Dungeon Fantasy RPG: Magic Items 1
 DFMI2:	Dungeon Fantasy RPG: Magic Items 2
+DFRC1:	Dungeon Fantasy RPG: Companion 1
 DFRC2:	Dungeon Fantasy RPG: Companion 2
+DFRC3:	Dungeon Fantasy RPG: Companion 3
 DFRM2:	Dungeon Fantasy RPG: Monsters 2
 DFS	Dungeon Fantasy RPG: Spells
 DFSC	Dungeon Fantasy Setting: Caverntown
 DFSCSM	Dungeon Fantasy Setting: Cold Shard Mountain
+DFT	Dungeon Fantasy RPG: Traps
 DFT1:	Dungeon Fantasy Treasures 1: Glittering Prizes
 DFT2:	Dungeon Fantasy Treasures 2: Epic Treasures
 DFT3:	Dungeon Fantasy Treasures 3: Artifacts of Felltower
@@ -87,8 +100,9 @@ DN1:	Deadlands: Dime Novel 1 - Aces and Eights (3E)
 DN2:	Deadlands: Dime Novel 2 - Wanted: Undead or Alive (3E)
 DR	Dragons
 DTG	Delvers To Grow
-DW	Discworld Roleplaying Game
-EHHC	Encounter: The Harrowed Hearts Club
+DW	Discworld RPG
+EHHC	Encounters: The Harrowed Hearts Club
+EMA	Encounters: The Mysterious Airfield
 F	Fantasy
 FED	Federation
 FF	Fantasy Folk (3E)
@@ -105,13 +119,22 @@ FUR	Furries
 FW	Transhuman Space: Fifth Wave (3E)
 GF	Gun Fu
 GG	Girl Genius RPG
+GGB	GURPS Ghost Busters
+GM	The Green Madonna
+GS	Gun Stats
 GUL	Gulliver Mini
 H	Horror
+HBP	Horror: Beyond the Pale
 HF	Historical Folks
 HMD	Horror: The Madness Dossier
 HOA	Hand of Asgard
 HOSF	Horror: The Old Stone Fort
 HOW	How to Be a GURPS GM
+HOWCE	How to be a GURPS GM: Combat Encounters
+HOWCH	How to be a GURPS GM: Counting Heads
+HOWHPO	How to be a GURPS GM: High-Powered Origins
+HOWI	How to be a GURPS GM: Improvising
+HOWME	How to be a GURPS GM: Managing Expectations
 HOWRPM	How to Be a GURPS GM: Ritual Path Magic
 HSC	Hot Spots: Constantinople, 527-1204 A.D.
 HSIT	Hot Spots: The Incense Trail
@@ -129,6 +152,8 @@ IW	Infinite Worlds
 IWB	Infinite Worlds: Britannica-6
 IWCJ	Infinite Worlds: Collegio Januari
 IWLW	Infinite Worlds: Lost Worlds
+IWNR	Infinite Worlds: Neightreign
+IWOW	Infinite Worlds: The Osiris Worlds
 IWWH	Infinite Worlds: Worlds of Horror
 KL	Klingons
 L	Lite
@@ -152,6 +177,7 @@ MA	Martial Arts
 MAFCCS	Martial Arts: Fairbairn Close Combat Systems
 MAG	Martial Arts: Gladiators
 MAS	Magic: Artillery Spells
+MATCS	Martial Arts: Techniques Cheat-Sheet
 MATG	Martial Arts: Technical Grappling
 MAYFS	Martial Arts: Yrth Fighting Styles
 MC	Mass Combat
@@ -168,6 +194,7 @@ MHPU1:	Monster Hunters Power-Ups 1
 MPS	Magic: Plant Spells
 MSDM	Magical Styles: Dungeon Magic
 MSHM	Magical Styles: Horror Magic
+MT	Meta-Tech
 MTLOS	Magic: The Least of Spells
 MYST	Mysteries
 MYTH	Myth (3E)
@@ -195,14 +222,16 @@ PU6:	Power-Ups 6: Quirks
 PU7:	Power-Ups 7: Wildcard Skills
 PU8:	Power-Ups 8: Limitations
 PU9:	Power-Ups 9: Alternate Attributes
+PU10:	Power-Ups 10: Skill Trees
 PW	Powers: The Weird
-PY#:	Pyramid 3 issues (replace # with the issue number, but leave out the leading "3-")
 PY4-#:	Pyramid 4 issues (replace # with the issue number)
+PY#:	Pyramid 3 issues (replace # with the issue number, but leave out the leading \"3-\")
 PYDC	Pyramid Dungeon Collection
 RM	Realm Management
 ROM	Romulans
 RSRS	Reign of Steel: Read the Sky
 RSWL	Reign of Steel: Will to Live
+RVSV	Renaissance Venice: Spies of Venice
 S	Space
 SCASPC	Supporting Cast: Age of Sail Pirate Crew
 SE	Social Engineering
@@ -253,8 +282,9 @@ THSTN4:	Transhuman Space: Teralogos News - 2101, Third Quarter
 THSTX	Transhuman Space: Toxic Memes
 THSUP	Transhuman Space: Under Pressure
 THSWRS	Transhuman Space: Wings of the Rising Sun
-TIW:	Traveller: Interstellar Wars
+TIW	Traveller: Interstellar Wars
 TMS	Thaumatology: Magical Styles
+TPI	Traveller: Psionic Institutes
 TRPM	Thaumatology: Ritual Path Magic
 TS	Tactical Shooting
 TSOR	Thaumatology: Sorcery
@@ -270,5 +300,6 @@ UTWT	Ultra-Tech: Weapon Tables
 VOR	Vorkosigan Saga RPG
 VSC	Vehicles: Steampunk Conveyances
 VTF	Vehicles: Transports of Fantasy
+VWG	Vehicles: War Galleys
 Z	Zombies
 ZDO	Zombies: Day One
