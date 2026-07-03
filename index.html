@@ -44,30 +44,43 @@
 			</article>
 			<article>
 				<h2>GCS version 5.43.0 was released on July 2, 2026!</h2>
-				<p>Download a copy for your OS:</p>
-				<div class="downloads">
-					<div class="download">
+				<p id="downloadIntro">Download a copy for your OS:</p>
+				<div id="downloadGrid" class="downloads" data-version="5.43.0">
+					<div class="download" data-os="macos" data-arch="arm64">
 						<a href="https://github.com/richardwilkes/gcs/releases/download/v5.43.0/gcs-5.43.0-macos-arm64.dmg">
-							<img src="images/macos.svg" alt="macOS (Apple)">
+							<img src="images/macos.svg" alt="macOS">
 							<div>macOS 11+<br>(Apple Silicon)</div>
 						</a>
 					</div>
-					<div class="download">
+					<div class="download" data-os="macos" data-arch="amd64">
 						<a href="https://github.com/richardwilkes/gcs/releases/download/v5.43.0/gcs-5.43.0-macos-amd64.dmg">
-							<img src="images/macos.svg" alt="macOS (Intel)">
+							<img src="images/macos.svg" alt="macOS">
 							<div>macOS 11+<br>(Intel)</div>
 						</a>
 					</div>
-					<div class="download">
+					<div class="download" data-os="windows" data-arch="amd64">
 						<a href="https://github.com/richardwilkes/gcs/releases/download/v5.43.0/gcs-5.43.0-windows-amd64.zip">
 							<img src="images/windows.svg" alt="Windows">
-							<div>Windows 10+</div>
+							<div>Windows 10+<br>(Intel / AMD)</div>
 						</a>
 					</div>
-					<div class="download">
+					<div class="download" data-os="windows" data-arch="arm64">
+						<a href="https://github.com/richardwilkes/gcs/releases/download/v5.43.0/gcs-5.43.0-windows-arm64.zip">
+							<img src="images/windows.svg" alt="Windows">
+							<div>Windows 10+<br>(ARM)</div>
+						</a>
+					</div>
+					<div class="download" data-os="linux" data-arch="amd64">
 						<a href="https://github.com/richardwilkes/gcs/releases/download/v5.43.0/gcs-5.43.0-linux-amd64.tgz">
 							<img src="images/linux.svg" alt="Linux">
-							<div>Linux</div>
+							<div>Linux<br>(Intel / AMD)</div>
+						</a>
+						<div class="popover">Requires a 3.2+ kernel &amp; glibc 2.35+</div>
+					</div>
+					<div class="download" data-os="linux" data-arch="arm64">
+						<a href="https://github.com/richardwilkes/gcs/releases/download/v5.43.0/gcs-5.43.0-linux-arm64.tgz">
+							<img src="images/linux.svg" alt="Linux">
+							<div>Linux<br>(ARM)</div>
 						</a>
 						<div class="popover">Requires a 3.2+ kernel &amp; glibc 2.35+</div>
 					</div>
@@ -136,5 +149,199 @@
 			Richard A. Wilkes and is released for free distribution, and not for resale, under the permissions granted in the
 			<a href="http://www.sjgames.com/general/online_policy.html">Steve Jackson Games Online Policy</a>.</p>
 	</footer>
+	<script>
+		// Progressively enhances the download list: detects the visitor's OS + CPU architecture, promotes the matching
+		// build to a prominent primary download, and collapses the remaining builds into an expandable section. If no
+		// match is found (mobile, unknown platform, or an unusual browser), the full static list is left in place.
+		(function () {
+			"use strict";
+
+			var grid = document.getElementById("downloadGrid");
+			if (!grid) {
+				return;
+			}
+			var intro = document.getElementById("downloadIntro");
+			var items = Array.prototype.slice.call(grid.querySelectorAll(".download"));
+
+			// macOS browsers report "Intel Mac OS X" in the user agent even on Apple Silicon, so the user agent string
+			// can't be trusted for the CPU architecture there. Probe the GPU renderer instead: Apple Silicon reports an
+			// "Apple" GPU, while Intel Macs report Intel/AMD.
+			function macArchFromGPU() {
+				try {
+					var canvas = document.createElement("canvas");
+					var gl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
+					if (!gl) {
+						return null;
+					}
+					var renderer = "";
+					var dbg = gl.getExtension("WEBGL_debug_renderer_info");
+					if (dbg) {
+						renderer = gl.getParameter(dbg.UNMASKED_RENDERER_WEBGL) || "";
+					}
+					if (!renderer) {
+						renderer = gl.getParameter(gl.RENDERER) || "";
+					}
+					renderer = renderer.toLowerCase();
+					if (renderer.indexOf("apple") !== -1) {
+						return "arm64";
+					}
+					if (/intel|amd|radeon|nvidia|geforce/.test(renderer)) {
+						return "amd64";
+					}
+				} catch (e) {
+					// Ignore; fall through to the default.
+				}
+				return null;
+			}
+
+			// Resolves to {os, arch}. os is one of "macos", "windows", "linux", or null when there's no desktop build for
+			// the visitor. arch is always "arm64" or "amd64" (defaulted per-OS when it can't be determined).
+			function detectPlatform() {
+				return new Promise(function (resolve) {
+					var ua = navigator.userAgent || "";
+					var plat = navigator.platform || "";
+					var uaData = navigator.userAgentData;
+					var isMobile = /Android|iPhone|iPad|iPod|Mobile|Silk|Kindle/i.test(ua);
+
+					var os = null;
+					var dataPlatform = uaData && uaData.platform ? uaData.platform.toLowerCase() : "";
+					if (dataPlatform.indexOf("mac") !== -1) {
+						os = "macos";
+					} else if (dataPlatform.indexOf("win") !== -1) {
+						os = "windows";
+					} else if (dataPlatform.indexOf("linux") !== -1) {
+						os = "linux";
+					}
+					if (!os) {
+						if (/Mac/i.test(plat) || /Mac OS X/i.test(ua)) {
+							os = "macos";
+						} else if (/Win/i.test(plat) || /Windows/i.test(ua)) {
+							os = "windows";
+						} else if (/Linux|X11/i.test(plat) || /Linux|X11/i.test(ua)) {
+							os = "linux";
+						}
+					}
+					// Chrome OS and mobile devices can't run any of the desktop builds.
+					if (isMobile || /CrOS/i.test(ua)) {
+						os = null;
+					}
+
+					function finish(arch) {
+						resolve({ os: os, arch: arch });
+					}
+
+					function fallbackArch() {
+						var arch = null;
+						if (/arm64|aarch64/i.test(ua) || /arm/i.test(plat)) {
+							arch = "arm64";
+						} else if (/x86_64|Win64|WOW64|x64|amd64/i.test(ua)) {
+							arch = "amd64";
+						}
+						if (os === "macos" && arch !== "arm64") {
+							var gpuArch = macArchFromGPU();
+							if (gpuArch) {
+								arch = gpuArch;
+							}
+						}
+						if (!arch && os) {
+							// Default new Macs to Apple Silicon; everything else to x86-64.
+							arch = os === "macos" ? "arm64" : "amd64";
+						}
+						finish(arch);
+					}
+
+					if (uaData && typeof uaData.getHighEntropyValues === "function") {
+						uaData.getHighEntropyValues(["architecture"]).then(function (hints) {
+							var a = (hints && hints.architecture ? hints.architecture : "").toLowerCase();
+							if (a.indexOf("arm") !== -1) {
+								finish("arm64");
+							} else if (a.indexOf("x86") !== -1) {
+								finish("amd64");
+							} else {
+								fallbackArch();
+							}
+						}).catch(fallbackArch);
+					} else {
+						fallbackArch();
+					}
+				});
+			}
+
+			function findMatch(platform) {
+				if (!platform.os) {
+					return null;
+				}
+				var exact = items.filter(function (el) {
+					return el.dataset.os === platform.os && el.dataset.arch === platform.arch;
+				})[0];
+				if (exact) {
+					return exact;
+				}
+				return items.filter(function (el) {
+					return el.dataset.os === platform.os;
+				})[0] || null;
+			}
+
+			function enhance(match) {
+				if (!match) {
+					// Leave the full static list in place as the fallback.
+					return;
+				}
+				var version = grid.dataset.version || "";
+				if (intro) {
+					intro.hidden = true;
+				}
+
+				// Promote the matching build to a prominent primary download.
+				var primary = document.createElement("div");
+				primary.className = "primary-download";
+				var link = match.querySelector("a");
+				if (version && link) {
+					var headline = document.createElement("div");
+					headline.className = "primary-headline";
+					headline.textContent = "Download GCS " + version;
+					link.insertBefore(headline, link.firstChild);
+				}
+
+				// Surface any hover-only note (e.g. the Linux requirements) as visible text under the primary download.
+				var note = null;
+				var popover = match.querySelector(".popover");
+				if (popover) {
+					note = document.createElement("p");
+					note.className = "primary-note";
+					note.textContent = popover.textContent;
+					popover.parentNode.removeChild(popover);
+				}
+				primary.appendChild(match);
+
+				// Collapse the remaining builds into an expandable "Other Downloads" section.
+				var details = document.createElement("details");
+				details.className = "other-downloads";
+				var summary = document.createElement("summary");
+				summary.textContent = "Other Downloads";
+				details.appendChild(summary);
+				var others = document.createElement("div");
+				others.className = "downloads";
+				items.forEach(function (el) {
+					if (el !== match) {
+						others.appendChild(el);
+					}
+				});
+				details.appendChild(others);
+
+				var parent = grid.parentNode;
+				parent.insertBefore(primary, grid);
+				if (note) {
+					parent.insertBefore(note, grid);
+				}
+				parent.insertBefore(details, grid);
+				parent.removeChild(grid);
+			}
+
+			detectPlatform().then(function (platform) {
+				enhance(findMatch(platform));
+			});
+		})();
+	</script>
 </body>
 </html>

@@ -362,6 +362,8 @@ body > section {
 	margin-top: 1em;
 	text-align: center;
 	display: flex;
+	flex-wrap: wrap;
+	row-gap: 1em;
 	justify-content: center;
 }
 
@@ -396,6 +398,74 @@ body > section {
 	z-index: 10;
 	opacity: 1;
 	visibility: visible;
+}
+
+.primary-download {
+	margin: 1em 0 0.5em;
+	display: flex;
+	justify-content: center;
+}
+
+.primary-download .download {
+	padding: 0;
+}
+
+.primary-download .download > a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6px;
+	text-decoration: none;
+	color: var(--content-fg);
+	border: 1px solid var(--content-fg);
+	border-radius: 12px;
+	padding: 16px 28px;
+	background-color: var(--sponsor-bg);
+}
+
+.primary-download .download img {
+	width: 56px;
+	height: 76px;
+}
+
+.primary-download .download > a > div {
+	text-align: center;
+	line-height: 1.3;
+}
+
+.primary-headline {
+	font-weight: 900;
+	font-size: 18px;
+}
+
+.primary-note {
+	text-align: center;
+	font-size: smaller;
+	margin-bottom: 0.5em;
+}
+
+.other-downloads {
+	margin-top: 0.75em;
+	text-align: center;
+}
+
+.other-downloads > summary {
+	cursor: pointer;
+	display: inline-block;
+	font-weight: bold;
+	list-style: none;
+}
+
+.other-downloads > summary::-webkit-details-marker {
+	display: none;
+}
+
+.other-downloads > summary::before {
+	content: "\25B8\00a0";
+}
+
+.other-downloads[open] > summary::before {
+	content: "\25BE\00a0";
 }
 
 .notable {
