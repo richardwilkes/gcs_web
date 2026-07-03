@@ -403,6 +403,14 @@ body > section {
 .primary-download {
 	margin: 1em 0 0.5em;
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.primary-cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
 	justify-content: center;
 }
 
@@ -438,10 +446,19 @@ body > section {
 	font-size: 18px;
 }
 
-.primary-note {
+.primary-download > .primary-headline {
+	margin-bottom: 8px;
+}
+
+.primary-note,
+.primary-hint {
 	text-align: center;
 	font-size: smaller;
 	margin-bottom: 0.5em;
+}
+
+.primary-hint {
+	max-width: 32em;
 }
 
 .other-downloads {

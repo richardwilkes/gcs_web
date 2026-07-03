@@ -164,9 +164,9 @@
 			var items = Array.prototype.slice.call(grid.querySelectorAll(".download"));
 
 			// macOS browsers report "Intel Mac OS X" in the user agent even on Apple Silicon, so the user agent string
-			// can't be trusted for the CPU architecture there. Probe the GPU renderer instead: Apple Silicon reports an
-			// "Apple" GPU, while Intel Macs report Intel/AMD.
-			function macArchFromGPU() {
+			// can't be trusted for the CPU architecture there. Probe the GPU renderer instead. Returns "amd64", "arm64",
+			// or null when it can't be determined.
+			function macArchFromGPU(isSafari) {
 				try {
 					var canvas = document.createElement("canvas");
 					var gl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
@@ -182,11 +182,13 @@
 						renderer = gl.getParameter(gl.RENDERER) || "";
 					}
 					renderer = renderer.toLowerCase();
-					if (renderer.indexOf("apple") !== -1) {
-						return "arm64";
-					}
 					if (/intel|amd|radeon|nvidia|geforce/.test(renderer)) {
 						return "amd64";
+					}
+					if (renderer.indexOf("apple") !== -1) {
+						// Safari masks every Mac's renderer as "Apple GPU" - even Intel Macs - so it proves nothing there.
+						// Other browsers (e.g. Firefox) report the real GPU, so an Apple GPU there means Apple Silicon.
+						return isSafari ? null : "arm64";
 					}
 				} catch (e) {
 					// Ignore; fall through to the default.
@@ -195,13 +197,16 @@
 			}
 
 			// Resolves to {os, arch}. os is one of "macos", "windows", "linux", or null when there's no desktop build for
-			// the visitor. arch is always "arm64" or "amd64" (defaulted per-OS when it can't be determined).
+			// the visitor. arch is "arm64" or "amd64", or null when it can't be determined (only happens on macOS, where
+			// Safari deliberately hides whether the CPU is Intel or Apple Silicon).
 			function detectPlatform() {
 				return new Promise(function (resolve) {
 					var ua = navigator.userAgent || "";
 					var plat = navigator.platform || "";
 					var uaData = navigator.userAgentData;
 					var isMobile = /Android|iPhone|iPad|iPod|Mobile|Silk|Kindle/i.test(ua);
+					// Safari, but not the Chromium/Firefox browsers that also carry "Safari" in their user agent.
+					var isSafari = /Safari\//.test(ua) && !/Chrome|Chromium|Edg|OPR|CriOS|FxiOS|Android/.test(ua);
 
 					var os = null;
 					var dataPlatform = uaData && uaData.platform ? uaData.platform.toLowerCase() : "";
@@ -238,14 +243,15 @@
 							arch = "amd64";
 						}
 						if (os === "macos" && arch !== "arm64") {
-							var gpuArch = macArchFromGPU();
+							var gpuArch = macArchFromGPU(isSafari);
 							if (gpuArch) {
 								arch = gpuArch;
 							}
 						}
-						if (!arch && os) {
-							// Default new Macs to Apple Silicon; everything else to x86-64.
-							arch = os === "macos" ? "arm64" : "amd64";
+						if (!arch && os && os !== "macos") {
+							// ARM Windows/Linux is rare and their user agents rarely admit it, so default to x86-64.
+							// macOS is left as null when unknown so the caller can offer both Mac builds.
+							arch = "amd64";
 						}
 						finish(arch);
 					}
@@ -282,37 +288,68 @@
 				})[0] || null;
 			}
 
-			function enhance(match) {
-				if (!match) {
-					// Leave the full static list in place as the fallback.
-					return;
-				}
+			function macBuilds() {
+				return items.filter(function (el) {
+					return el.dataset.os === "macos";
+				});
+			}
+
+			// Promotes one or more builds to a prominent primary download and collapses the rest into an expandable
+			// "Other Downloads" section. opts: {headline} shows a shared heading above the card(s); {cardHeadline: true}
+			// injects "Download GCS <version>" inside a single card instead; {hint} adds a line of explanatory text.
+			function promote(primaryEls, opts) {
+				opts = opts || {};
 				var version = grid.dataset.version || "";
 				if (intro) {
 					intro.hidden = true;
 				}
 
-				// Promote the matching build to a prominent primary download.
 				var primary = document.createElement("div");
 				primary.className = "primary-download";
-				var link = match.querySelector("a");
-				if (version && link) {
+				if (opts.headline) {
 					var headline = document.createElement("div");
 					headline.className = "primary-headline";
-					headline.textContent = "Download GCS " + version;
-					link.insertBefore(headline, link.firstChild);
+					headline.textContent = opts.headline;
+					primary.appendChild(headline);
 				}
 
-				// Surface any hover-only note (e.g. the Linux requirements) as visible text under the primary download.
-				var note = null;
-				var popover = match.querySelector(".popover");
-				if (popover) {
-					note = document.createElement("p");
-					note.className = "primary-note";
-					note.textContent = popover.textContent;
-					popover.parentNode.removeChild(popover);
+				var cards = document.createElement("div");
+				cards.className = "primary-cards";
+				// Surface any hover-only notes (e.g. the Linux requirements) as visible text under the primary download.
+				var notes = [];
+				primaryEls.forEach(function (el) {
+					var popover = el.querySelector(".popover");
+					if (popover) {
+						notes.push(popover.textContent);
+						popover.parentNode.removeChild(popover);
+					}
+					if (opts.cardHeadline && version) {
+						var link = el.querySelector("a");
+						if (link) {
+							var cardHeadline = document.createElement("div");
+							cardHeadline.className = "primary-headline";
+							cardHeadline.textContent = "Download GCS " + version;
+							link.insertBefore(cardHeadline, link.firstChild);
+						}
+					}
+					cards.appendChild(el);
+				});
+				primary.appendChild(cards);
+
+				var parent = grid.parentNode;
+				parent.insertBefore(primary, grid);
+				if (opts.hint) {
+					var hint = document.createElement("p");
+					hint.className = "primary-hint";
+					hint.textContent = opts.hint;
+					parent.insertBefore(hint, grid);
 				}
-				primary.appendChild(match);
+				notes.forEach(function (text) {
+					var note = document.createElement("p");
+					note.className = "primary-note";
+					note.textContent = text;
+					parent.insertBefore(note, grid);
+				});
 
 				// Collapse the remaining builds into an expandable "Other Downloads" section.
 				var details = document.createElement("details");
@@ -323,23 +360,38 @@
 				var others = document.createElement("div");
 				others.className = "downloads";
 				items.forEach(function (el) {
-					if (el !== match) {
+					if (primaryEls.indexOf(el) === -1) {
 						others.appendChild(el);
 					}
 				});
 				details.appendChild(others);
-
-				var parent = grid.parentNode;
-				parent.insertBefore(primary, grid);
-				if (note) {
-					parent.insertBefore(note, grid);
-				}
 				parent.insertBefore(details, grid);
+
 				parent.removeChild(grid);
 			}
 
 			detectPlatform().then(function (platform) {
-				enhance(findMatch(platform));
+				if (!platform.os) {
+					// Mobile, Chrome OS, or an unrecognized platform: leave the full static list in place.
+					return;
+				}
+				if (platform.os === "macos" && !platform.arch) {
+					// Safari hides whether the Mac uses Intel or Apple Silicon, so present both rather than guess wrong.
+					var macs = macBuilds();
+					if (macs.length) {
+						var version = grid.dataset.version || "";
+						promote(macs, {
+							headline: version ? "Download GCS " + version + " for macOS" : "Download GCS for macOS",
+							hint: "Your browser doesn’t reveal whether this Mac uses Apple Silicon or Intel. Macs from " +
+								"2020 or later are almost always Apple Silicon."
+						});
+						return;
+					}
+				}
+				var match = findMatch(platform);
+				if (match) {
+					promote([match], { cardHeadline: true });
+				}
 			});
 		})();
 	</script>
