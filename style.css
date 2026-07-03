@@ -437,6 +437,8 @@ body > section {
 }
 
 .primary-download .download > a > div {
+	/* Give every label the same min width so cards with shorter labels (e.g. Intel) match the widest (Apple Silicon). */
+	min-width: 8em;
 	text-align: center;
 	line-height: 1.3;
 }
@@ -459,6 +461,8 @@ body > section {
 
 .primary-hint {
 	max-width: 32em;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .other-downloads {
