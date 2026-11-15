@@ -108,12 +108,10 @@ var (
 				<h3>GCS</h3>
 				<ul>
 					<li><a href="faq.html">FAQ</a></li>
-					<li><a href="https://github.com/richardwilkes/gcs/wiki">User Guide</a></li>
 					<li><a href="https://github.com/richardwilkes/gcs/releases">Releases</a></li>
 					<li><a href="https://github.com/richardwilkes/gcs/blob/master/README.md">Development Setup</a></li>
 					<li><a href="https://github.com/richardwilkes/gcs">GitHub Repository</a></li>
 					<li><a href="https://github.com/richardwilkes/gcs/issues">Issue Tracker</a>
-					<li><a href="https://groups.io/g/gcs">Mailing List</a></li>
 					<li><a href="https://discord.gg/MKhuDPPagY">Discord Server</a></li>
 				</ul>
 			</div>
